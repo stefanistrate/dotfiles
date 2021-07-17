@@ -64,8 +64,8 @@ alias ws='cd ~/workspace'
 alias activate='source .env/bin/activate'
 alias mkenv='python3 -m venv .env'
 alias yt='yt720'
-alias yt720='youtube-dl -f "bestvideo[height=720]+bestaudio"'
-alias yt1080='youtube-dl -f "bestvideo[height=1080]+bestaudio"'
+alias yt720='youtube-dl -f "bestvideo[height<=720]+bestaudio"'
+alias yt1080='youtube-dl -f "bestvideo[height<=1080]+bestaudio"'
 
 # Map various keys to custom functionality.
 autoload history-search-end
