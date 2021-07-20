@@ -8,6 +8,8 @@
 - link:
     ~/.dircolors: managed/dircolors/dircolors.ansi-light
 
+    ~/.flink: managed/flink
+
     ~/.gitconfig: managed/git/gitconfig
 
     ~/.iterm2:

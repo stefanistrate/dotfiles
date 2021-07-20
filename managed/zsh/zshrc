@@ -61,11 +61,16 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # Set additional aliases.
 alias ds='cd ~/datastore'
 alias ws='cd ~/workspace'
+
 alias activate='source .env/bin/activate'
 alias mkenv='python3 -m venv .env'
+
 alias yt='yt720'
 alias yt720='youtube-dl -f "bestvideo[height<=720]+bestaudio"'
 alias yt1080='youtube-dl -f "bestvideo[height<=1080]+bestaudio"'
+
+alias flink-start='FLINK_CONF_DIR=~/.flink /usr/local/Cellar/apache-flink/1.13.1/libexec/bin/start-cluster.sh'
+alias flink-stop='FLINK_CONF_DIR=~/.flink /usr/local/Cellar/apache-flink/1.13.1/libexec/bin/stop-cluster.sh'
 
 # Map various keys to custom functionality.
 autoload history-search-end
