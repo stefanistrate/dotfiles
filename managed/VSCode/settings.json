@@ -33,5 +33,7 @@
         "*.ipynb": "jupyter.notebook.ipynb"
     },
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "GitLive.Issue tracker integration": "Disabled",
+    "workbench.startupEditor": "none"
 }
