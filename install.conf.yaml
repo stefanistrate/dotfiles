@@ -6,6 +6,8 @@
 - clean: ['~']
 
 - link:
+    ~/.condarc: managed/anaconda/condarc
+
     ~/.dircolors: managed/dircolors/dircolors.ansi-light
 
     ~/.flink: managed/flink
@@ -21,8 +23,8 @@
     ~/.vim/after: managed/vim/after
     ~/.vimrc: managed/vim/vimrc
 
+    ~/.zshrc: managed/zsh/zshrc
+
     ~/Library/Application Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
       path: managed/VSCode/settings.json
-
-    ~/.zshrc: managed/zsh/zshrc
