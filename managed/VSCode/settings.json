@@ -1,4 +1,5 @@
 {
+    "GitLive.Issue tracker integration": "Disabled",
     "editor.formatOnSave": true,
     "editor.rulers": [
         80
@@ -11,8 +12,13 @@
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
     "git.path": "/usr/local/bin/git",
+    "gitlens.hovers.currentLine.over": "line",
     "markdown.extension.math.enabled": false,
     "markdown.preview.fontSize": 16,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
     "python.analysis.typeCheckingMode": "basic",
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.formatting.provider": "yapf",
@@ -30,10 +36,9 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Solarized Autumn",
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
-    "GitLive.Issue tracker integration": "Enabled",
     "workbench.startupEditor": "none"
 }
