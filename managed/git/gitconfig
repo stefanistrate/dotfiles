@@ -28,7 +28,7 @@
 [difftool]
 	prompt = false
 [gpg]
-	program = /usr/local/bin/gpg
+	program = gpg
 [include]
 	path = .gitconfig.local
 [init]
