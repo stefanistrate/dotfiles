@@ -63,7 +63,7 @@ alias ds='cd ~/datastore'
 alias ws='cd ~/workspace'
 
 alias activate='source .env/bin/activate'
-alias mkenv='python3 -m venv .env'
+alias mkenv='python3 -m venv .env && source .env/bin/activate'
 
 alias yt='yt720'
 alias yt720='youtube-dl -f "bestvideo[height<=720]+bestaudio"'
