@@ -18,6 +18,8 @@
       if: '[ `uname` = Darwin ]'
       path: managed/iTerm2
 
+    ~/.oh-my-zsh: managed/ohmyzsh
+
     ~/.tmux.conf: managed/tmux/tmux.conf
 
     ~/.vim/after: managed/vim/after
