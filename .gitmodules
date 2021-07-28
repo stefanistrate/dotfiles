@@ -14,3 +14,6 @@
 [submodule "managed/Vundle.vim"]
 	path = managed/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "managed/tpm"]
+	path = managed/tpm
+	url = https://github.com/tmux-plugins/tpm

@@ -22,6 +22,7 @@
     ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
       path: managed/bullet-train.zsh/bullet-train.zsh-theme
 
+    ~/.tmux/plugins/tpm: managed/tpm
     ~/.tmux.conf: managed/tmux/tmux.conf
 
     ~/.vim/after: managed/vim/after
