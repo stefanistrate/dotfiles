@@ -8,3 +8,6 @@
 [submodule "managed/bullet-train.zsh"]
 	path = managed/bullet-train.zsh
 	url = https://github.com/caiogondim/bullet-train.zsh.git
+[submodule "managed/dircolors-solarized"]
+	path = managed/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized
