@@ -14,4 +14,4 @@ original developers!
 
 * [`managed/vim/after/indent/python.vim`](managed/vim/after/indent/python.vim)
   was adapted from
-  [here](https://github.com/google/styleguide/blob/gh-pages/google_python_style.vim).
+  [`google/styleguide`](https://github.com/google/styleguide/blob/gh-pages/google_python_style.vim).
