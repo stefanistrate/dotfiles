@@ -11,3 +11,6 @@
 [submodule "managed/dircolors-solarized"]
 	path = managed/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized
+[submodule "managed/Vundle.vim"]
+	path = managed/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git

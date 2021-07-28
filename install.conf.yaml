@@ -25,6 +25,7 @@
     ~/.tmux.conf: managed/tmux/tmux.conf
 
     ~/.vim/after: managed/vim/after
+    ~/.vim/bundle/Vundle.vim: managed/Vundle.vim
     ~/.vimrc: managed/vim/vimrc
 
     ~/.zshrc: managed/zsh/zshrc
