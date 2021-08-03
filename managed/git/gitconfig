@@ -16,8 +16,6 @@
 	who = shortlog -s --
 [color]
 	ui = true
-[commit]
-	gpgsign = true
 [core]
 	editor = vim
 	hooksPath = .githooks
@@ -27,8 +25,6 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
-[gpg]
-	program = gpg
 [include]
 	path = .gitconfig.local
 [init]
