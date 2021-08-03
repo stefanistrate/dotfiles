@@ -10,8 +10,6 @@
 
     ~/.dircolors: managed/dircolors-solarized/dircolors.ansi-light
 
-    ~/.flink: managed/flink
-
     ~/.gitconfig: managed/git/gitconfig
 
     ~/.iterm2:
