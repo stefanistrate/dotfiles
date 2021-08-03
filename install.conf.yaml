@@ -19,8 +19,6 @@
       path: managed/iTerm2
 
     ~/.oh-my-zsh: managed/ohmyzsh
-    ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
-      path: managed/bullet-train.zsh/bullet-train.zsh-theme
 
     ~/.tmux/plugins/tpm: managed/tpm
     ~/.tmux.conf: managed/tmux/tmux.conf
@@ -34,3 +32,7 @@
     ~/Library/Application Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
       path: managed/VSCode/settings.json
+
+- link:
+    ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
+      path: managed/bullet-train.zsh/bullet-train.zsh-theme
