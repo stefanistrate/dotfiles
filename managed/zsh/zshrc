@@ -1,9 +1,9 @@
 # Set global configuration.
-export EDITOR='vim'
+export EDITOR="vim"
 export PATH="$HOME/bin:$HOME/opt/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-export LD_LIBRARY_PATH=$HOME/opt/lib:$LD_LIBRARY_PATH
-export MANPATH=$HOME/opt/share/man:$MANPATH
-export TERM='xterm-256color'
+export LD_LIBRARY_PATH="$HOME/opt/lib:$LD_LIBRARY_PATH"
+export MANPATH="$HOME/opt/share/man:$MANPATH"
+export TERM="xterm-256color"
 export ZSH=~/.oh-my-zsh
 
 # Display red dots whilst waiting for completion.
@@ -16,7 +16,7 @@ HYPHEN_INSENSITIVE=true
 unsetopt NOMATCH
 
 # Set theme and configure prompt segments.
-ZSH_THEME='bullet-train'
+ZSH_THEME="bullet-train"
 BULLETTRAIN_PROMPT_ORDER=(
   time
   status
@@ -36,41 +36,19 @@ BULLETTRAIN_TIME_FG=254
 
 # Set plugins to load.
 plugins=(
-  common-aliases  # aliases for common Unix utilities
-  copyfile  # copy file to system-wide clipboard
-  osx  # access OS X applications from terminal
-  python  # pyfind, pyclean, pygrep
+  common-aliases  # aliases for many commonly used commands
+  copydir  # copy path of current folder to system clipboard
+  copyfile  # copy file contents to system clipboard
+  docker  # autocompletion for docker
+  emoji  # emojis using human-readable identifiers
+  osx  # access to a few macOS applications from terminal
+  pip  # autocompletion for pip
+  python  # useful python aliases (e.g. pyfind, pyclean, pygrep)
+  sudo  # prefix current/previous commands with sudo by pressing ESC twice
 )
 
 # Load oh-my-zsh.
-source $ZSH/oh-my-zsh.sh
-
-# Set colors for the GNU ls utility and for zsh completion.
-case "$OSTYPE" in
-  darwin*)
-    eval `gdircolors ~/.dircolors`
-    alias ls='gls -F --color=auto'
-    ;;
-  linux*)
-    eval `dircolors ~/.dircolors`
-    alias ls='ls -F --color=auto'
-    ;;
-esac
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-
-# Set additional aliases.
-alias ds='cd ~/datastore'
-alias ws='cd ~/workspace'
-
-alias activate='source .env/bin/activate'
-alias mkenv='python3 -m venv .env && source .env/bin/activate'
-
-alias yt='yt720'
-alias yt720='youtube-dl -f "bestvideo[height<=720]+bestaudio"'
-alias yt1080='youtube-dl -f "bestvideo[height<=1080]+bestaudio"'
-
-alias flink-start='FLINK_CONF_DIR=~/.flink /usr/local/Cellar/apache-flink/1.13.1/libexec/bin/start-cluster.sh'
-alias flink-stop='FLINK_CONF_DIR=~/.flink /usr/local/Cellar/apache-flink/1.13.1/libexec/bin/stop-cluster.sh'
+source "$ZSH/oh-my-zsh.sh"
 
 # Map various keys to custom functionality.
 autoload history-search-end
@@ -83,17 +61,52 @@ bindkey "$terminfo[kcud1]" history-beginning-search-forward-end  # Down arrow
 bindkey "^[[1~" beginning-of-line  # Fn + Left arrow
 bindkey "^[[4~" end-of-line  # Fn + Right arrow
 
+# Set colors for the GNU ls utility and for zsh completion.
+case "$OSTYPE" in
+  darwin*)
+    eval `gdircolors ~/.dircolors`
+    alias ls="gls -F --color=auto"
+    ;;
+  linux*)
+    eval `dircolors ~/.dircolors`
+    alias ls="ls -F --color=auto"
+    ;;
+esac
+zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
+
+# Define additional aliases and functions.
+
+alias ds="cd ~/datastore"
+alias ws="cd ~/workspace"
+
+alias mkenv="python3 -m venv .env && source .env/bin/activate"
+function activate() {
+  if [[ $# -gt 1 ]]; then
+    echo "Too many arguments! Usage: activate [workspace_dir]"
+    return 1
+  fi
+  if [[ $# -eq 0 ]]; then
+    source .env/bin/activate
+  else
+    source "$HOME/workspace/$1/.env/bin/activate"
+  fi
+}
+
+alias yt="yt720"
+alias yt720="youtube-dl -f 'bestvideo[height<=720]+bestaudio'"
+alias yt1080="youtube-dl -f 'bestvideo[height<=1080]+bestaudio'"
+
 # Enable local settings, which override general settings.
-if [ -f ~/.zshrc.local ]; then
+if [[ -f ~/.zshrc.local ]]; then
   source ~/.zshrc.local
 fi
 
 # Attach to an existing tmux session or start a new one.
-if [ "$TERM_PROGRAM" != "vscode" ]; then
+if [[ $TERM_PROGRAM != "vscode" ]]; then
   if which tmux &>/dev/null; then
-    if [ -z "$TMUX" ]; then
+    if [[ -z $TMUX ]]; then
       tmux has &>/dev/null
-      if [ $? -eq 1 ]; then
+      if [[ $? -eq 1 ]]; then
         exec tmux new
       else
         exec tmux attach
@@ -103,13 +116,13 @@ if [ "$TERM_PROGRAM" != "vscode" ]; then
 fi
 
 # >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
+# !!! Contents within this block are managed by `conda init` !!!
 __conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
+if [[ $? -eq 0 ]]; then
     eval "$__conda_setup"
 else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    if [[ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]]; then
+        source "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
     else
         export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
     fi
