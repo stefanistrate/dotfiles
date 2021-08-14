@@ -20,7 +20,11 @@
 	editor = vim
 	hooksPath = .githooks
 [credential]
-	helper = "`case \"$OSTYPE\" in darwin*) echo \"osxkeychain\" ;; *) echo \"cache\" ;; esac`"
+	helper =
+	helper = cache
+	helper = manager-core
+[credential "https://dev.azure.com"]
+	useHttpPath = true
 [diff]
 	tool = vimdiff
 [difftool]
