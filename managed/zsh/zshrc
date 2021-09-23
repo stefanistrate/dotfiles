@@ -48,6 +48,9 @@ plugins=(
   sudo  # prefix current/previous commands with sudo by pressing ESC twice
 )
 
+# Disable `url-quote-magic`.
+DISABLE_MAGIC_FUNCTIONS=true
+
 # Load oh-my-zsh.
 source "$ZSH/oh-my-zsh.sh"
 
