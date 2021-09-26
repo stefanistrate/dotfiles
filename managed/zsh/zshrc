@@ -51,8 +51,16 @@ plugins=(
 # Disable `url-quote-magic`.
 DISABLE_MAGIC_FUNCTIONS=true
 
-# Load oh-my-zsh.
+# Load `oh-my-zsh`.
 source "$ZSH/oh-my-zsh.sh"
+
+# Load `google-cloud-sdk`.
+if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" ]]; then
+  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+fi
+if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ]]; then
+  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+fi
 
 # Map various keys to custom functionality.
 autoload history-search-end
