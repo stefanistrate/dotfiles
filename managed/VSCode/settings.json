@@ -39,5 +39,6 @@
     "workbench.startupEditor": "none",
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.dockerPath": "/usr/local/bin/docker",
-    "jupyter.askForKernelRestart": false
+    "jupyter.askForKernelRestart": false,
+    "editor.inlineSuggest.enabled": true
 }
