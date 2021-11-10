@@ -42,7 +42,7 @@ plugins=(
   copyfile  # copy file contents to system clipboard
   docker  # autocompletion for docker
   emoji  # emojis using human-readable identifiers
-  osx  # access to a few macOS applications from terminal
+  macos  # access to a few macOS applications from terminal
   pip  # autocompletion for pip
   python  # useful python aliases (e.g. pyfind, pyclean, pygrep)
   sudo  # prefix current/previous commands with sudo by pressing ESC twice
