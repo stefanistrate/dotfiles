@@ -25,7 +25,6 @@
     "python.languageServer": "Jedi",
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "python.pythonPath": "/usr/local/bin/python3",
-    "terminal.integrated.automationShell.osx": "",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
     "terminal.integrated.rendererType": "dom",
@@ -40,5 +39,9 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.dockerPath": "/usr/local/bin/docker",
     "jupyter.askForKernelRestart": false,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ]
 }
