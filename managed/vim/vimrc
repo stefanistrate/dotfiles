@@ -5,6 +5,7 @@
 "   --with-features=huge
 
 " General. {{{
+set encoding=utf-8
 set nocompatible  " Disable vi compatibility.
 set history=1024  " Number of items to remember in history.
 set clipboard=unnamed  " Copy to/from the system clipboard.
