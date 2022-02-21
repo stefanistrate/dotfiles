@@ -1,5 +1,4 @@
 {
-    "editor.formatOnSave": true,
     "editor.rulers": [
         80
     ],
@@ -43,5 +42,6 @@
     "jupyter.widgetScriptSources": [
         "jsdelivr.com",
         "unpkg.com"
-    ]
+    ],
+    "editor.formatOnSave": true
 }
