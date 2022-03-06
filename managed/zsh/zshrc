@@ -38,8 +38,8 @@ BULLETTRAIN_TIME_FG=254
 # Set plugins to load.
 plugins=(
   common-aliases  # aliases for many commonly used commands
-  copydir  # copy path of current folder to system clipboard
   copyfile  # copy file contents to system clipboard
+  copypath  # copy path of given file or directory to system clipboard
   docker  # autocompletion for docker
   emoji  # emojis using human-readable identifiers
   macos  # access to a few macOS applications from terminal
