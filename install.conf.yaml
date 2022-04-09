@@ -38,3 +38,4 @@
 - shell:
   - [~/.tmux/plugins/tpm/bin/install_plugins, Installing tmux plugins]
   - [vim +PluginInstall +qall, Installing Vim plugins]
+  - [managed/fonts/install.sh, Installing Powerline fonts]
