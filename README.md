@@ -3,6 +3,12 @@ dotfiles
 
 Settings for various tools I use frequently.
 
+Clone with the following:
+
+```bash
+git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
+```
+
 [`managed/*`](managed) config files can be installed and updated via the
 [`install`](install) script.
 

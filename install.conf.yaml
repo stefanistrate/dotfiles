@@ -34,3 +34,8 @@
 - link:
     ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
       path: managed/bullet-train.zsh/bullet-train.zsh-theme
+
+- shell:
+  - [~/.tmux/plugins/tpm/bin/install_plugins, Installing tmux plugins]
+  - [vim +PluginInstall +qall, Installing Vim plugins]
+  - [managed/fonts/install.sh, Installing Powerline fonts]

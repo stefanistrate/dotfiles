@@ -17,3 +17,6 @@
 [submodule "managed/tpm"]
 	path = managed/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "managed/fonts"]
+	path = managed/fonts
+	url = https://github.com/powerline/fonts.git
