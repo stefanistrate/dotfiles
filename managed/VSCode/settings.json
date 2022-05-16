@@ -43,5 +43,6 @@
         "jsdelivr.com",
         "unpkg.com"
     ],
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "security.workspace.trust.untrustedFiles": "open"
 }
