@@ -55,10 +55,10 @@ DISABLE_MAGIC_FUNCTIONS=true
 source "$ZSH/oh-my-zsh.sh"
 
 # Load `google-cloud-sdk`.
-if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" ]]; then
+if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" ]] ; then
   source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 fi
-if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ]]; then
+if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ]] ; then
   source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 fi
 
@@ -93,11 +93,11 @@ alias ws="cd ~/workspace"
 
 alias mkenv="python3 -m venv .env && source .env/bin/activate"
 function activate() {
-  if [[ $# -gt 1 ]]; then
+  if [[ $# -gt 1 ]] ; then
     echo "Too many arguments! Usage: activate [workspace_dir]"
     return 1
   fi
-  if [[ $# -eq 0 ]]; then
+  if [[ $# -eq 0 ]] ; then
     source .env/bin/activate
   else
     source "$HOME/workspace/$1/.env/bin/activate"
@@ -109,16 +109,16 @@ alias yt720="youtube-dl -f 'bestvideo[height<=720]+bestaudio'"
 alias yt1080="youtube-dl -f 'bestvideo[height<=1080]+bestaudio'"
 
 # Enable local settings, which override general settings.
-if [[ -f ~/.zshrc.local ]]; then
+if [[ -f ~/.zshrc.local ]] ; then
   source ~/.zshrc.local
 fi
 
 # Attach to an existing tmux session or start a new one.
-if [[ $TERM_PROGRAM != "vscode" ]]; then
-  if which tmux &>/dev/null; then
-    if [[ -z $TMUX ]]; then
+if [[ $TERM_PROGRAM != "vscode" ]] ; then
+  if which tmux &>/dev/null ; then
+    if [[ -z $TMUX ]] ; then
       tmux has &>/dev/null
-      if [[ $? -eq 1 ]]; then
+      if [[ $? -eq 1 ]] ; then
         exec tmux new
       else
         exec tmux attach
@@ -130,10 +130,10 @@ fi
 # >>> conda initialize >>>
 # !!! Contents within this block are managed by `conda init` !!!
 __conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [[ $? -eq 0 ]]; then
+if [[ $? -eq 0 ]] ; then
     eval "$__conda_setup"
 else
-    if [[ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]]; then
+    if [[ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]] ; then
         source "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
     else
         export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
