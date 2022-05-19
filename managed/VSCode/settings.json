@@ -27,7 +27,6 @@
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
     "terminal.integrated.rendererType": "dom",
-    "window.zoomLevel": 0,
     "workbench.colorTheme": "Solarized Autumn",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
@@ -43,5 +42,10 @@
         "jsdelivr.com",
         "unpkg.com"
     ],
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.associations": {
+        "*.borg": "properties"
+    },
+    "window.zoomLevel": -1
 }
