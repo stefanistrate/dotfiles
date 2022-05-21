@@ -91,17 +91,37 @@ zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 alias ds="cd ~/datastore"
 alias ws="cd ~/workspace"
 
-alias mkenv="python3 -m venv .env && source .env/bin/activate"
 function activate() {
-  if [[ $# -gt 1 ]] ; then
-    echo "Too many arguments! Usage: activate [workspace_dir]"
+  if [[ $# -ge 2 ]] ; then
+    echo "Too many arguments! Usage: activate [env_dir]"
     return 1
   fi
-  if [[ $# -eq 0 ]] ; then
-    source .env/bin/activate
-  else
-    source "$HOME/workspace/$1/.env/bin/activate"
+
+  env_dir=".env"
+  if [[ $# -ge 1 ]] ; then
+    env_dir="$1"
   fi
+
+  source "$env_dir/bin/activate"
+}
+
+function mkenv() {
+  if [[ $# -gt 2 ]] ; then
+    echo "Too many arguments! Usage: mkenv [env_dir python_bin]"
+    return 1
+  fi
+
+  python_bin="python3"
+  if [[ $# -ge 2 ]] ; then
+    python_bin="$2"
+  fi
+
+  env_dir=".env"
+  if [[ $# -ge 1 ]] ; then
+    env_dir="$1"
+  fi
+
+  "$python_bin" -m venv "$env_dir" && source "$env_dir/bin/activate"
 }
 
 alias yt="yt720"
