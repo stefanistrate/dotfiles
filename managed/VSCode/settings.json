@@ -46,6 +46,5 @@
     "security.workspace.trust.untrustedFiles": "open",
     "files.associations": {
         "*.borg": "properties"
-    },
-    "window.zoomLevel": -1
+    }
 }
