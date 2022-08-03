@@ -47,5 +47,10 @@
     "files.associations": {
         "*.borg": "properties"
     },
-    "window.zoomLevel": -1
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "python.sortImports.args": [
+        "--force-single-line-imports"
+    ]
 }
