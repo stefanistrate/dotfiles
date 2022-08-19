@@ -8,7 +8,7 @@ else
   exit
 fi
 
-REPO_DIR=`mktemp -d`
+REPO_DIR=$( mktemp -d )
 cd $REPO_DIR
 
 git clone --depth 1 https://github.com/stefanistrate/dotfiles.git .
