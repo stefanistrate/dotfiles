@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-if [[ ! -f /Applications ]]; then
+if [[ ! -d /Applications ]]; then
   exit
 fi
 
