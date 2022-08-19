@@ -5,9 +5,7 @@ Adobe Lightroom Classic
 Adobe Media Encoder 2021
 Adobe Photoshop 2021
 Adobe Premiere Pro 2021
-Adobe Zii 2021 6.1.7.app
 Android File Transfer.app
-Anytype.app
 AppCleaner.app
 Arduino.app
 Avast.app
