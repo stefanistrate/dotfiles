@@ -1,1 +1,2 @@
-0 0 * * 1 DOTFILES_DIR/managed/cron/scripts/brew-list.sh  # MANAGED_BY_DOTFILES
+0 0 * * 1 DOTFILES_DIR/managed/cron/scripts/applications-list.sh  # MANAGED_BY_DOTFILES
+0 1 * * 1 DOTFILES_DIR/managed/cron/scripts/brew-list.sh  # MANAGED_BY_DOTFILES
