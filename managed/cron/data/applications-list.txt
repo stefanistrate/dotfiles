@@ -1,0 +1,58 @@
+Adobe Acrobat Reader DC.app
+Adobe Creative Cloud
+Adobe Illustrator 2021
+Adobe Lightroom Classic
+Adobe Media Encoder 2021
+Adobe Photoshop 2021
+Adobe Premiere Pro 2021
+Adobe Zii 2021 6.1.7.app
+Android File Transfer.app
+Anytype.app
+AppCleaner.app
+Arduino.app
+Avast.app
+Blackmagic RAW
+CheatSheet.app
+DaVinci Resolve
+Discord.app
+Docker.app
+Evernote.app
+Figma.app
+Firefox.app
+Flycut.app
+Garmin BaseCamp.app
+Garmin MapInstall.app
+Garmin MapManager.app
+Google Chrome.app
+Google Earth Pro.app
+HP Smart.app
+IDrive.app
+Insta360 Studio 2021.app
+Keynote.app
+Logi Options.app
+LuLu.app
+Maxon Cinema 4D R22
+Microsoft Teams.app
+Notion.app
+Numbers.app
+Pages.app
+Papers.app
+ProtonVPN.app
+QGIS.app
+Safari.app
+Skype.app
+Slack.app
+SpectraView II.app
+Spotify.app
+Tor Browser.app
+Transmission.app
+Utilities
+VLC.app
+VMware Fusion.app
+Visual Studio Code.app
+WhatsApp.app
+Windscribe.app
+calibre.app
+com.avast.av.uninstaller.app
+iTerm.app
+zoom.us.app
