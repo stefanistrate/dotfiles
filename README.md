@@ -1,23 +1,24 @@
-dotfiles
-================================================================================
+# dotfiles
 
-Settings for various tools I use frequently.
+Configs for common tools.
 
-Clone with the following:
+## Installation
+
+Clone repository with:
 
 ```bash
 git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
 ```
 
-[`managed/*`](managed) config files can be installed and updated via the
-[`install`](install) script.
+Install configs for [`managed/`](managed) tools with:
 
-[`unmanaged/*`](unmanaged) config files have to be loaded manually into their
-corresponding tools.
+```bash
+./install
+```
 
-The following files were adapted from other sources. Many thanks to their
-original developers!
+Install configs for [`unmanaged/`](unmanaged) tools manually.
 
-* [`managed/vim/after/indent/python.vim`](managed/vim/after/indent/python.vim)
-  was adapted from
-  [`google/styleguide`](https://github.com/google/styleguide/blob/gh-pages/google_python_style.vim).
+## License
+
+* Most code is licensed under the [MIT License](LICENSE.md).
+* [`managed/vim/after/indent/python.vim`](managed/vim/after/indent/python.vim) is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
