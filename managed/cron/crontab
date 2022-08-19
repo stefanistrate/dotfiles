@@ -1,0 +1,1 @@
+0 0 * * 1 DOTFILES_DIR/managed/cron/scripts/brew-list.sh  # MANAGED_BY_DOTFILES

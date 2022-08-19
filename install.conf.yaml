@@ -36,6 +36,15 @@
       path: managed/bullet-train.zsh/bullet-train.zsh-theme
 
 - shell:
-  - [~/.tmux/plugins/tpm/bin/install_plugins, Installing tmux plugins]
-  - [vim +PluginInstall +qall, Installing Vim plugins]
-  - [managed/fonts/install.sh, Installing Powerline fonts]
+  -
+    description: Installing tmux plugins
+    command: managed/tpm/bin/install_plugins
+  -
+    description: Installing Vim plugins
+    command: vim +PluginInstall +qall
+  -
+    description: Installing Powerline fonts
+    command: managed/fonts/install.sh
+  -
+    description: Installing crontab
+    command: (crontab -l 2>/dev/null | grep -v "# MANAGED_BY_DOTFILES"; cat managed/cron/crontab | sed "s#DOTFILES_DIR#`pwd`#") | crontab -
