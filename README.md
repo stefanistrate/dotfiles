@@ -20,5 +20,5 @@ Install configs for [`unmanaged/`](unmanaged) tools manually.
 
 ## Licenses
 
-* Most configs are licensed under the [MIT License](LICENSE.md) (Ștefan Istrate).
-* [`managed/vim/after/indent/python.vim`](managed/vim/after/indent/python.vim) is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) (Google LLC).
+* Most configs are licensed under the [MIT License](LICENSE.md) (by Ștefan Istrate).
+* [`managed/vim/after/indent/python.vim`](managed/vim/after/indent/python.vim) is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) (by Google LLC).
