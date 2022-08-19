@@ -147,7 +147,7 @@ openssl@1.1 1.1.1o
 opus 1.3.1
 p11-kit 0.24.1
 pango 1.50.6
-parallel 20220222
+parallel 20220722
 pcre 8.45
 pcre2 10.39
 perl 5.34.0
