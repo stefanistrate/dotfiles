@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [[ -f /usr/local/bin/brew ]]; then
-  BREW_BIN=/usr/local/bin/brew
-else
+PATH="$HOME/bin:$HOME/opt/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+
+if [[ ! -x "$(command -v brew)" ]]; then
   exit
 fi
 
@@ -11,8 +11,8 @@ cd $REPO_DIR
 
 git clone --depth 1 https://github.com/stefanistrate/dotfiles.git .
 
-$BREW_BIN list --version > data/brew-list.txt
+brew list --version > data/brew-list.txt
 
 git add data/brew-list.txt
-git commit -m "Sync brew packages."
+git commit -m "Sync Homebrew packages."
 git push

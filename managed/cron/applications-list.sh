@@ -12,5 +12,5 @@ git clone --depth 1 https://github.com/stefanistrate/dotfiles.git .
 ls -1 /Applications > data/applications-list.txt
 
 git add data/applications-list.txt
-git commit -m "Sync applications list."
+git commit -m "Sync /Applications list."
 git push
