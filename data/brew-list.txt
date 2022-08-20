@@ -208,7 +208,7 @@ zeromq 4.3.4
 zimg 3.0.4
 zsh 5.9
 zstd 1.5.2
-git-credential-manager-core 2.0.632.34631
+git-credential-manager-core 2.0.785
 google-cloud-sdk latest
 miniconda py39_4.11.0
-rar 6.10
+rar 6.12
