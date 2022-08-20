@@ -45,6 +45,3 @@
   -
     description: Installing Powerline fonts
     command: managed/fonts/install.sh
-  -
-    description: Installing crontab
-    command: (crontab -l 2>/dev/null | grep -v "# MANAGED_BY_DOTFILES"; cat managed/cron/crontab | sed "s#DOTFILES_DIR#`pwd`#") | crontab -
