@@ -53,5 +53,4 @@ Windscribe.app
 calibre.app
 com.avast.av.uninstaller.app
 iTerm.app
-test.app
 zoom.us.app
