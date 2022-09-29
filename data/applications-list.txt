@@ -9,6 +9,7 @@ Android File Transfer.app
 AppCleaner.app
 Arduino.app
 Avast.app
+Blackmagic Proxy Generator Lite.app
 Blackmagic RAW
 CheatSheet.app
 DaVinci Resolve
@@ -45,6 +46,7 @@ Spotify.app
 Tor Browser.app
 Transmission.app
 Utilities
+VERO.app
 VLC.app
 VMware Fusion.app
 Visual Studio Code.app
