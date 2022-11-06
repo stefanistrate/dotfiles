@@ -18,7 +18,6 @@
 	ui = true
 [core]
 	editor = vim
-	hooksPath = .githooks
 [credential]
 	helper =
 	helper = cache
