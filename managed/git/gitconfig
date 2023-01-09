@@ -21,7 +21,7 @@
 [credential]
 	helper =
 	helper = cache
-	helper = manager-core
+	helper = manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [diff]
