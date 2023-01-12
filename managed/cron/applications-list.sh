@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PATH="$HOME/bin:$HOME/opt/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+
 if [[ ! -d /Applications ]]; then
   exit
 fi
