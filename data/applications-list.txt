@@ -16,7 +16,6 @@ DaVinci Resolve
 Discord.app
 Docker.app
 EaseUS Data Recovery Wizard.app
-Evernote.app
 Figma.app
 Firefox.app
 Flycut.app
