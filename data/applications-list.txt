@@ -2,8 +2,7 @@ Adobe Acrobat Reader.app
 Adobe Creative Cloud
 Adobe Illustrator 2021
 Adobe Lightroom Classic
-Adobe Media Encoder 2021
-Adobe Photoshop 2021
+Adobe Photoshop 2023
 Adobe Premiere Pro 2021
 Android File Transfer.app
 AppCleaner.app
