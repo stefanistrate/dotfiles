@@ -9,7 +9,7 @@ fi
 REPO_DIR=$( mktemp -d )
 cd $REPO_DIR
 
-git clone --depth 1 https://github.com/stefanistrate/dotfiles.git .
+git clone --depth 1 git@github.com:stefanistrate/dotfiles.git .
 
 ls -1 /Applications > data/applications-list.txt
 
