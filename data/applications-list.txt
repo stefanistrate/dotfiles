@@ -3,7 +3,6 @@ Adobe Creative Cloud
 Adobe Illustrator 2021
 Adobe Lightroom Classic
 Adobe Photoshop 2023
-Adobe Premiere Pro 2021
 Android File Transfer.app
 AppCleaner.app
 Arduino.app
