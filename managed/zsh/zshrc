@@ -126,7 +126,9 @@ function mkenv() {
     env_dir="$1"
   fi
 
-  "$python_bin" -m venv "$env_dir" && source "$env_dir/bin/activate"
+  "$python_bin" -m venv "$env_dir"
+  source "$env_dir/bin/activate"
+  pip install --upgrade pip wheel
 }
 
 alias yt="yt720"
