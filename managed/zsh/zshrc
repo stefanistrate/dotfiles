@@ -140,7 +140,7 @@ if [[ -f ~/.zshrc.local ]] ; then
 fi
 
 # Attach to an existing tmux session or start a new one.
-if [[ $TERM_PROGRAM != "vscode" ]] ; then
+if [[ "$TERM_PROGRAM" != "" && "$TERM_PROGRAM" != "vscode" ]] ; then
   if which tmux &>/dev/null ; then
     if [[ -z $TMUX ]] ; then
       tmux has &>/dev/null
