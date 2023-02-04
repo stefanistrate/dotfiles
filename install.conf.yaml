@@ -29,7 +29,7 @@
 
     ~/Library/Application Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
-      path: managed/VSCode/settings.json
+      path: managed/Visual Studio Code/settings.json
 
 - link:
     ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
