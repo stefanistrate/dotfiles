@@ -142,9 +142,7 @@ if [[ -f ~/.zshrc.local ]] ; then
 fi
 
 # Attach to an existing tmux session or start a new one.
-# TODO(stefanistrate): Fix VS Code startup issues caused by tmux, as described
-# at https://github.com/microsoft/vscode/issues/173438.
-if [[ "$TERM_PROGRAM" != "vscode" ]] ; then
+if [[ "$VSCODE_RESOLVING_ENVIRONMENT" != "1" && "$TERM_PROGRAM" != "vscode" ]] ; then
   if which tmux &>/dev/null ; then
     if [[ -z $TMUX ]] ; then
       tmux has &>/dev/null
