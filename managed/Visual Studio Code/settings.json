@@ -21,6 +21,7 @@
     "git.enableCommitSigning": true,
     "git.path": "/usr/local/bin/git",
     "gitlens.hovers.currentLine.over": "line",
+    "isort.check": true,
     "jupyter.askForKernelRestart": false,
     "jupyter.widgetScriptSources": [
         "jsdelivr.com",
@@ -39,9 +40,6 @@
     "python.languageServer": "Jedi",
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "python.pythonPath": "/usr/local/bin/python3",
-    "python.sortImports.args": [
-        "--force-single-line-imports"
-    ],
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
