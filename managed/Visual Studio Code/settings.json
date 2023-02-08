@@ -34,7 +34,6 @@
         "jupyter-notebook": "left"
     },
     "python.analysis.typeCheckingMode": "basic",
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.formatting.provider": "yapf",
     "python.formatting.yapfPath": "/usr/local/bin/yapf",
     "python.languageServer": "Jedi",
