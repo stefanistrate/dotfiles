@@ -35,6 +35,7 @@
     },
     "python.analysis.typeCheckingMode": "basic",
     "python.formatting.provider": "yapf",
+    "python.formatting.yapfPath": "/usr/local/bin/yapf",
     "python.languageServer": "Jedi",
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "python.pythonPath": "/usr/local/bin/python3",
