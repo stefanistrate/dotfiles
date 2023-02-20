@@ -133,8 +133,9 @@ function mkenv() {
 
 alias yt="yt720"
 alias yto="yt-dlp"
-alias yt720="yt-dlp -f 'bestvideo[height<=720]+bestaudio'"
-alias yt1080="yt-dlp -f 'bestvideo[height<=1080]+bestaudio'"
+alias yt720="yt-dlp -f 'bestvideo[height>=720]+bestaudio'"
+alias yt1080="yt-dlp -f 'bestvideo[height>=1080]+bestaudio'"
+alias yt4k="yt-dlp -f 'bestvideo[height>=2160]+bestaudio'"
 
 # Enable local settings, which override general settings.
 if [[ -f ~/.zshrc.local ]] ; then
