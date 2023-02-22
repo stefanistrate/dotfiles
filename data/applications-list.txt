@@ -46,7 +46,6 @@ Skype.app
 Slack.app
 SpectraView II.app
 Spotify.app
-Streamlabs Desktop.app
 Tor Browser.app
 Transmission.app
 Utilities
