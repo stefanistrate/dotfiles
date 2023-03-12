@@ -31,6 +31,10 @@
       if: '[ `uname` = Darwin ]'
       path: managed/Visual Studio Code/settings.json
 
+    ~/Library/Preferences/org.videolan.vlc/vlcrc:
+      if: '[ `uname` = Darwin ]'
+      path: managed/VLC/vlcrc
+
 - link:
     ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
       path: managed/bullet-train.zsh/bullet-train.zsh-theme
