@@ -5,6 +5,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.dockerPath": "/usr/local/bin/docker",
     "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
     "editor.inlineSuggest.enabled": true,
     "editor.rulers": [
         80
