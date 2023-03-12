@@ -27,7 +27,7 @@ Google Chrome.app
 Google Earth Pro.app
 HP Smart.app
 IDrive.app
-Insta360 Studio 2021.app
+Insta360 Studio 2023.app
 Keynote.app
 Logi Options.app
 LuLu.app
@@ -46,7 +46,6 @@ Skype.app
 Slack.app
 SpectraView II.app
 Spotify.app
-Streamlabs Desktop.app
 Tor Browser.app
 Transmission.app
 Utilities
