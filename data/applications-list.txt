@@ -56,6 +56,7 @@ Visual Studio Code.app
 WhatsApp.app
 Windscribe.app
 calibre.app
+calibrite PROFILER.app
 com.avast.av.uninstaller.app
 iTerm.app
 zoom.us.app
