@@ -3,10 +3,12 @@ Adobe Creative Cloud
 Adobe Illustrator 2021
 Adobe Lightroom Classic
 Adobe Photoshop 2023
+AmorphousDiskMark.app
 Android File Transfer.app
 AppCleaner.app
 Arduino.app
 Avast.app
+Blackmagic Disk Speed Test.app
 Blackmagic Proxy Generator Lite.app
 Blackmagic RAW
 CheatSheet.app
