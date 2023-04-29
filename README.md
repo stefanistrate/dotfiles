@@ -4,19 +4,25 @@ Configs for common tools.
 
 ## Installation
 
-Clone repository with:
+1. Clone repository with:
 
 ```bash
 git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
 ```
 
-Install configs for [`managed/`](managed) tools with:
+2. Install configs for [`managed/`](managed) tools with:
 
 ```bash
 ./install
 ```
 
-Install configs for [`unmanaged/`](unmanaged) tools manually.
+3. Install configs for [`unmanaged/`](unmanaged) tools manually.
+
+4. Change shell to `zsh` with:
+
+```bash
+chsh -s $(which zsh)
+```
 
 ## Licenses
 
