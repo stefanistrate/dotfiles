@@ -41,11 +41,11 @@
 
 - shell:
   -
+    description: Installing Powerline fonts
+    command: managed/fonts/install.sh
+  -
     description: Installing tmux plugins
     command: managed/tpm/bin/install_plugins
   -
     description: Installing Vim plugins
     command: vim +PluginInstall +qall
-  -
-    description: Installing Powerline fonts
-    command: managed/fonts/install.sh
