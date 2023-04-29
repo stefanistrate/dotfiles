@@ -11,7 +11,7 @@ cd $REPO_DIR
 
 git clone --depth 1 git@github.com:stefanistrate/dotfiles.git .
 
-brew list --version > data/homebrew_packages.txt
+brew list --version >data/homebrew_packages.txt
 
 git add data/homebrew_packages.txt
 git commit -m "Sync Homebrew packages."

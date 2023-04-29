@@ -11,7 +11,7 @@ cd $REPO_DIR
 
 git clone --depth 1 git@github.com:stefanistrate/dotfiles.git .
 
-ls -1 /Applications > data/macos_applications.txt
+ls -1 /Applications >data/macos_applications.txt
 
 git add data/macos_applications.txt
 git commit -m "Sync macOS applications."
