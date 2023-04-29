@@ -2,17 +2,17 @@
 
 PATH="$HOME/bin:$HOME/opt/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
-if [[ ! -d /Applications ]]; then
+if [[ ! -x "$(command -v brew)" ]]; then
   exit
 fi
 
-REPO_DIR=$( mktemp -d )
+REPO_DIR=$(mktemp -d)
 cd $REPO_DIR
 
 git clone --depth 1 git@github.com:stefanistrate/dotfiles.git .
 
-ls -1 /Applications > data/applications-list.txt
+brew list --version > data/homebrew_packages.txt
 
-git add data/applications-list.txt
-git commit -m "Sync /Applications list."
+git add data/homebrew_packages.txt
+git commit -m "Sync Homebrew packages."
 git push

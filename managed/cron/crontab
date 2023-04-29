@@ -1,2 +1,2 @@
-0 12 * * * DOTFILES_DIR/managed/cron/applications-list.sh  # MANAGED_BY_DOTFILES
-0 13 * * * DOTFILES_DIR/managed/cron/brew-list.sh  # MANAGED_BY_DOTFILES
+0 12 * * * DOTFILES_DIR/managed/cron/sync_homebrew_packages.sh  # MANAGED_BY_DOTFILES
+0 13 * * * DOTFILES_DIR/managed/cron/sync_macos_applications.sh  # MANAGED_BY_DOTFILES
