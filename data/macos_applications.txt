@@ -61,5 +61,4 @@ calibre.app
 calibrite PROFILER.app
 com.avast.av.uninstaller.app
 iTerm.app
-test-dotfiles.app
 zoom.us.app
