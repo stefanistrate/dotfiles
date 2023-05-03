@@ -162,6 +162,7 @@ pcre 8.45
 pcre2 10.42
 perl 5.36.0
 pinentry 1.2.1
+pipdeptree 2.7.0
 pixman 0.42.2
 pkg-config 0.29.2_3
 pre-commit 3.2.2
