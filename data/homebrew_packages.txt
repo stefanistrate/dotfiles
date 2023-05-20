@@ -1,4 +1,4 @@
-aom 3.6.0
+aom 3.6.0 3.6.1
 aribb24 1.0.4
 atomicparsley 20221229.172126.d813aa6
 awscli 2.11.15
@@ -20,7 +20,7 @@ cmake 3.25.1
 cmocka 1.1.5
 cookiecutter 2.1.1
 coreutils 9.1
-dav1d 1.1.0
+dav1d 1.1.0 1.2.0
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 docutils 0.19_1
@@ -34,7 +34,7 @@ fontconfig 2.14.2
 freetype 2.13.0_1
 frei0r 1.8.0
 fribidi 1.0.12
-gcc 12.2.0
+gcc 13.1.0 12.2.0
 gd 2.3.3_4
 gdbm 1.23
 gdk-pixbuf 2.42.10
@@ -49,11 +49,11 @@ git-crypt 0.7.0
 git-filter-repo 2.38.0
 gl2ps 1.4.2
 glew 2.2.0_1
-glib 2.76.1
+glib 2.76.1 2.76.2
 glog 0.6.0
 gmp 6.2.1_1
 gnu-getopt 2.38.1
-gnupg 2.4.0
+gnupg 2.4.1
 gnutls 3.8.0
 gobject-introspection 1.76.1
 gradle 8.1.1
@@ -62,8 +62,8 @@ graphviz 8.0.4
 grc 1.13_1
 gts 0.7.6_2
 guile 3.0.9
-harfbuzz 7.1.0
-hdf5 1.12.2_2
+harfbuzz 7.3.0 7.1.0
+hdf5 1.12.2_2 1.14.1
 highway 1.0.4
 icu4c 72.1
 imagemagick 7.1.1-8
@@ -78,7 +78,7 @@ jpeg-xl 0.8.1_2
 jq 1.6
 jsoncpp 1.9.5
 lame 3.100
-leptonica 1.82.0_1
+leptonica 1.82.0_2 1.82.0_1
 libaec 1.0.6
 libarchive 3.6.2_1
 libass 0.17.1
@@ -89,15 +89,15 @@ libbluray 1.3.4
 libde265 1.0.11
 libevent 2.1.12
 libffi 3.4.4
-libgcrypt 1.10.1
-libgpg-error 1.46
+libgcrypt 1.10.2 1.10.1
+libgpg-error 1.46 1.47
 libheif 1.15.2
 libidn 1.41
 libidn2 2.3.4_1
 libksba 1.6.3
 liblqr 0.4.2_1
 libmpc 1.3.1
-libnghttp2 1.52.0
+libnghttp2 1.52.0 1.53.0
 libogg 1.3.5
 libomp 16.0.2
 libpng 1.6.39
@@ -110,7 +110,7 @@ libsndfile 1.2.0_1
 libsodium 1.0.18_1
 libsoxr 0.1.3
 libtasn1 4.19.0
-libtiff 4.4.0_1
+libtiff 4.5.0 4.4.0_1
 libtool 2.4.7
 libunibreak 5.1
 libunistring 1.1
@@ -128,7 +128,7 @@ libxext 1.3.5
 libxml2 2.10.4
 libxrender 0.9.11
 libyaml 0.2.5
-little-cms2 2.14
+little-cms2 2.14_1 2.14
 lua 5.4.4_1
 lz4 1.9.4
 lzo 2.10
@@ -136,23 +136,23 @@ m4 1.4.19
 mbedtls 3.4.0
 metis 5.1.0
 mpdecimal 2.5.1
-mpfr 4.2.0
+mpfr 4.2.0-p7 4.2.0
 mpg123 1.31.3
 ncurses 6.4
-netcdf 4.9.2
+netcdf 4.9.2 4.9.2_1
 netpbm 10.86.38
-nettle 3.8.1
-node 19.6.0
+nettle 3.9 3.8.1
+node 19.6.0 20.1.0
 npth 1.6
 numpy 1.24.3
 oniguruma 6.9.8
 openblas 0.3.23
 opencore-amr 0.1.6
-opencv 4.7.0_3
+opencv 4.7.0_4
 openexr 3.1.7
 openjdk 20
 openjdk@17 17.0.7
-openjpeg 2.5.0
+openjpeg 2.5.0 2.5.0_1
 openssl@1.1 1.1.1t
 opus 1.3.1
 p11-kit 0.24.1_1
@@ -162,6 +162,7 @@ pcre 8.45
 pcre2 10.42
 perl 5.36.0
 pinentry 1.2.1
+pipdeptree 2.7.0
 pixman 0.42.2
 pkg-config 0.29.2_3
 pre-commit 3.2.2
@@ -171,7 +172,7 @@ pugixml 1.13
 pycparser 2.21
 pylint 2.17.2
 pyqt@5 5.15.7_2
-pyright 1.1.292
+pyright 1.1.309
 python-typing-extensions 4.5.0
 python@3.10 3.10.11
 python@3.11 3.11.3
@@ -179,8 +180,8 @@ python@3.7 3.7.16
 python@3.8 3.8.16
 python@3.9 3.9.16
 pyyaml 6.0_1
-qt@5 5.15.8_2
-rav1e 0.6.4
+qt@5 5.15.8_3 5.15.8_2
+rav1e 0.6.4 0.6.6
 rclone 1.61.1
 readline 8.2.1
 rubberband 3.2.1
@@ -190,11 +191,11 @@ shared-mime-info 2.2
 six 1.16.0_3
 snappy 1.1.10
 speex 1.2.1
-sqlite 3.41.2
+sqlite 3.41.2 3.42.0
 srt 1.5.1
 streamlink 5.4.0
 suite-sparse 7.0.1
-svt-av1 1.4.1
+svt-av1 1.4.1 1.5.0
 tbb 2021.9.0
 tcl-tk 8.6.13
 telnet 64
@@ -209,15 +210,15 @@ utf8cpp 3.2.3
 utf8proc 2.8.0
 vim 9.0.1450
 virtualenv 20.22.0
-vtk 9.2.6
-webp 1.3.0
+vtk 9.2.6 9.2.6_2
+webp 1.3.0 1.3.0_1
 wget 1.21.3_1
 x264 r3095
 x265 3.5
 xmlto 0.0.28
 xorgproto 2022.2
 xvid 1.3.7
-xz 5.4.2
+xz 5.4.3 5.4.2
 yapf 0.33.0
 yt-dlp 2023.3.4
 zeromq 4.3.4
