@@ -21,6 +21,7 @@
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
     "git.path": "/usr/local/bin/git",
+    "githubPullRequests.createOnPublishBranch": "never",
     "gitlens.hovers.currentLine.over": "line",
     "isort.check": true,
     "jupyter.askForKernelRestart": false,
