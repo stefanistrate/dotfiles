@@ -131,8 +131,8 @@ function mkenv() {
 
 alias yt="yt720"
 alias yts="yt720 --write-subs"
-alias ytb="yt-dlp"
-alias ytbs="yt-dlp --write-subs"
+alias yto="yt-dlp"
+alias ytos="yt-dlp --write-subs"
 alias yt480="yt-dlp -f 'bestvideo[height<=480]+bestaudio'"
 alias yt720="yt-dlp -f 'bestvideo[height<=720]+bestaudio'"
 alias yt1080="yt-dlp -f 'bestvideo[height<=1080]+bestaudio'"
