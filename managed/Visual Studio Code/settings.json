@@ -8,7 +8,7 @@
     "editor.formatOnSaveMode": "modificationsIfAvailable",
     "editor.inlineSuggest.enabled": true,
     "editor.rulers": [
-        80
+        88
     ],
     "explorer.confirmDelete": false,
     "files.associations": {
@@ -36,8 +36,7 @@
         "jupyter-notebook": "left"
     },
     "python.analysis.typeCheckingMode": "basic",
-    "python.formatting.provider": "yapf",
-    "python.formatting.yapfPath": "/usr/local/bin/yapf",
+    "python.formatting.provider": "black",
     "python.languageServer": "Jedi",
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "python.pythonPath": "/usr/local/bin/python3",
