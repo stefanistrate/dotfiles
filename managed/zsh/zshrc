@@ -133,10 +133,11 @@ alias yt="yt720"
 alias yts="yt720 --write-subs"
 alias yto="yt-dlp"
 alias ytos="yt-dlp --write-subs"
-alias yt480="yt-dlp -f 'bestvideo[height<=480]+bestaudio'"
-alias yt720="yt-dlp -f 'bestvideo[height<=720]+bestaudio'"
-alias yt1080="yt-dlp -f 'bestvideo[height<=1080]+bestaudio'"
-alias yt4k="yt-dlp -f 'bestvideo[height<=2160]+bestaudio'"
+alias yt480="yt-dlp --format 'bestvideo[height<=480]+bestaudio'"
+alias yt720="yt-dlp --format 'bestvideo[height<=720]+bestaudio'"
+alias yt1080="yt-dlp --format 'bestvideo[height<=1080]+bestaudio'"
+alias yt4k="yt-dlp --format 'bestvideo[height<=2160]+bestaudio'"
+alias ytmp3="yt-dlp --format 'bestaudio' --extract-audio --audio-format mp3"
 
 # Enable local settings, which override general settings.
 if [[ -f ~/.zshrc.local ]] ; then
