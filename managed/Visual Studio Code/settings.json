@@ -2,10 +2,12 @@
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.dockerPath": "/usr/local/bin/docker",
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "modificationsIfAvailable",
     "editor.inlineSuggest.enabled": true,
     "editor.rulers": [
         88
@@ -35,7 +37,7 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.useLibraryCodeForTypes": false,
     "python.formatting.provider": "black",
     "python.languageServer": "Jedi",
     "python.linting.pylintPath": "/usr/local/bin/pylint",
