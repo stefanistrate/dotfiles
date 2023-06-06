@@ -1,6 +1,5 @@
 aom 3.6.1
 aribb24 1.0.4
-atomicparsley 20221229.172126.d813aa6
 awscli 2.11.15
 azcopy 10.16.2
 bazelisk 1.15.0
@@ -18,7 +17,6 @@ cffi 1.15.1
 cjson 1.7.15
 clang-format 15.0.6
 cmake 3.25.1
-cmocka 1.1.5
 cookiecutter 2.1.1
 coreutils 9.1
 dav1d 1.2.0
@@ -40,7 +38,6 @@ gd 2.3.3_4
 gdbm 1.23
 gdk-pixbuf 2.42.10
 geos 3.11.1
-get_iplayer 3.30_1
 gettext 0.21.1
 gflags 2.2.2
 ghostscript 10.01.1
