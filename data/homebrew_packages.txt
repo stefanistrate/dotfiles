@@ -223,6 +223,6 @@ zimg 3.0.4
 zsh 5.9
 zstd 1.5.5
 git-credential-manager-core 2.0.886
-google-cloud-sdk latest
+google-cloud-sdk 434.0.0
 miniconda py39_4.11.0
 rar 6.12
