@@ -130,15 +130,20 @@ function mkenv() {
   pip install --upgrade pip wheel
 }
 
+# TODO(stefanistrate): Implement a simpler way to configure addons. E.g. we
+# could call something like this instead: `yt 1080 PL SUB MP4`.
 alias yt="yt720"
-alias yts="yt720 --write-subs"
+alias ytpl="yt720 -o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
+alias ytsub="yt720 --write-subs"
 alias yto="yt-dlp"
-alias ytos="yt-dlp --write-subs"
+alias ytopl="yt-dlp -o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
+alias ytosub="yt-dlp --write-subs"
 alias yt480="yt-dlp --format 'bestvideo[height<=480]+bestaudio'"
 alias yt720="yt-dlp --format 'bestvideo[height<=720]+bestaudio'"
 alias yt1080="yt-dlp --format 'bestvideo[height<=1080]+bestaudio'"
 alias yt4k="yt-dlp --format 'bestvideo[height<=2160]+bestaudio'"
 alias ytmp3="yt-dlp --format 'bestaudio' --extract-audio --audio-format mp3"
+alias ytmp4="yt720 --recode-video mp4"
 
 # Enable local settings, which override general settings.
 if [[ -f ~/.zshrc.local ]] ; then
