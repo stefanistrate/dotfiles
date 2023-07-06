@@ -152,9 +152,9 @@ fi
 
 # Attach to an existing tmux session or start a new one.
 if [[ "$VSCODE_RESOLVING_ENVIRONMENT" != "1" && "$TERM_PROGRAM" != "vscode" ]] ; then
-  if which tmux &>/dev/null ; then
+  if which tmux &> /dev/null ; then
     if [[ -z $TMUX ]] ; then
-      tmux has &>/dev/null
+      tmux has &> /dev/null
       if [[ $? -eq 1 ]] ; then
         exec tmux new
       else
