@@ -24,10 +24,17 @@
 	helper = manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[credential "https://huggingface.co"]
+	provider = generic
 [diff]
 	tool = vimdiff
 [difftool]
 	prompt = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [include]
 	path = .gitconfig.local
 [init]
