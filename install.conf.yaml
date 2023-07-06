@@ -6,7 +6,7 @@
 - clean: ['~']
 
 - link:
-    ~/.condarc: managed/anaconda/condarc
+    ~/.condarc: managed/conda/condarc
 
     ~/.dircolors: managed/dircolors-solarized/dircolors.ansi-light
 
