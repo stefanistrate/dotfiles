@@ -95,20 +95,6 @@ zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 alias ds="cd ~/datastore"
 alias ws="cd ~/workspace"
 
-function activate() {
-  if [[ $# -ge 2 ]] ; then
-    echo "Too many arguments! Usage: activate [env_name]"
-    return 1
-  fi
-
-  env_name="base"
-  if [[ $# -ge 1 ]] ; then
-    env_name="$1"
-  fi
-
-  source ".env/$env_name/bin/activate"
-}
-
 function mkenv() {
   if [[ $# -gt 2 ]] ; then
     echo "Too many arguments! Usage: mkenv [env_name [python_bin]]"
@@ -128,6 +114,34 @@ function mkenv() {
   "$python_bin" -m venv ".env/$env_name"
   source ".env/$env_name/bin/activate"
   pip install --upgrade pip wheel
+}
+
+function rmenv() {
+  if [[ $# -gt 1 ]] ; then
+    echo "Too many arguments! Usage: rmenv [env_name]"
+    return 1
+  fi
+
+  env_name="base"
+  if [[ $# -ge 1 ]] ; then
+    env_name="$1"
+  fi
+
+  rm -rf ".env/$env_name"
+}
+
+function activate() {
+  if [[ $# -ge 2 ]] ; then
+    echo "Too many arguments! Usage: activate [env_name]"
+    return 1
+  fi
+
+  env_name="base"
+  if [[ $# -ge 1 ]] ; then
+    env_name="$1"
+  fi
+
+  source ".env/$env_name/bin/activate"
 }
 
 # TODO(stefanistrate): Implement a simpler way to configure addons. E.g. we
