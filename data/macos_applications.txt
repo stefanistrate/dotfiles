@@ -19,7 +19,6 @@ EaseUS Data Recovery Wizard.app
 Elgato Camera Hub.app
 FUJIFILM X Acquire.app
 FUJIFILM X Webcam 2.app
-Figma.app
 Firefox.app
 Flycut.app
 Garmin BaseCamp.app
