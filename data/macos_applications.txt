@@ -22,8 +22,10 @@ FUJIFILM X Webcam 2.app
 Firefox.app
 Flycut.app
 Garmin BaseCamp.app
+Garmin Express.app
 Garmin MapInstall.app
 Garmin MapManager.app
+Garmin WebUpdater.app
 Google Chrome.app
 Google Earth Pro.app
 HP Smart.app
