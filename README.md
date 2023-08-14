@@ -7,8 +7,7 @@ Configs for common tools.
 1. Clone repository with:
 
     ```bash
-    git clone --depth=1 --recurse-submodules \
-        https://github.com/stefanistrate/dotfiles.git
+    git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
     ```
 
 1. Install configs for [essential tools](tools) with:
