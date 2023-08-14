@@ -1,0 +1,21 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot.git
+[submodule "tools/bullet-train.zsh"]
+	path = tools/bullet-train.zsh
+	url = https://github.com/caiogondim/bullet-train.zsh.git
+[submodule "tools/dircolors-solarized"]
+	path = tools/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "tools/fonts"]
+	path = tools/fonts
+	url = https://github.com/powerline/fonts.git
+[submodule "tools/ohmyzsh"]
+	path = tools/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "tools/tpm"]
+	path = tools/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "tools/Vundle.vim"]
+	path = tools/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
