@@ -1,2 +1,0 @@
-0 12 * * * LOG=`DOTFILES_DIR/managed/cron/sync_homebrew_packages.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES
-0 13 * * * LOG=`DOTFILES_DIR/managed/cron/sync_macos_applications.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES

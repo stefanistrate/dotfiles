@@ -6,46 +6,46 @@
 - clean: ['~']
 
 - link:
-    ~/.condarc: managed/conda/condarc
+    ~/.condarc: tools/conda/condarc
 
-    ~/.dircolors: managed/dircolors-solarized/dircolors.ansi-light
+    ~/.dircolors: tools/dircolors-solarized/dircolors.ansi-light
 
-    ~/.gitconfig: managed/git/gitconfig
+    ~/.gitconfig: tools/git/gitconfig
 
     ~/.iterm2:
       if: '[ `uname` = Darwin ]'
-      path: managed/iTerm2
+      path: tools/iTerm2
 
-    ~/.oh-my-zsh: managed/ohmyzsh
+    ~/.oh-my-zsh: tools/ohmyzsh
 
-    ~/.tmux/plugins/tpm: managed/tpm
-    ~/.tmux.conf: managed/tmux/tmux.conf
+    ~/.tmux/plugins/tpm: tools/tpm
+    ~/.tmux.conf: tools/tmux/tmux.conf
 
-    ~/.vim/after: managed/vim/after
-    ~/.vim/bundle/Vundle.vim: managed/Vundle.vim
-    ~/.vimrc: managed/vim/vimrc
+    ~/.vim/after: tools/vim/after
+    ~/.vim/bundle/Vundle.vim: tools/Vundle.vim
+    ~/.vimrc: tools/vim/vimrc
 
-    ~/.zshrc: managed/zsh/zshrc
+    ~/.zshrc: tools/zsh/zshrc
 
     ~/Library/Application Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
-      path: managed/Visual Studio Code/settings.json
+      path: tools/Visual Studio Code/settings.json
 
     ~/Library/Preferences/org.videolan.vlc/vlcrc:
       if: '[ `uname` = Darwin ]'
-      path: managed/VLC/vlcrc
+      path: tools/VLC/vlcrc
 
 - link:
     ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
-      path: managed/bullet-train.zsh/bullet-train.zsh-theme
+      path: tools/bullet-train.zsh/bullet-train.zsh-theme
 
 - shell:
   -
     description: Installing Powerline fonts
-    command: managed/fonts/install.sh
+    command: tools/fonts/install.sh
   -
     description: Installing tmux plugins
-    command: managed/tpm/bin/install_plugins
+    command: tools/tpm/bin/install_plugins
   -
     description: Installing Vim plugins
     command: vim +PluginInstall +qall

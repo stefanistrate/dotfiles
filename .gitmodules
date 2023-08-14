@@ -2,21 +2,21 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "managed/ohmyzsh"]
-	path = managed/ohmyzsh
+[submodule "tools/ohmyzsh"]
+	path = tools/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh
-[submodule "managed/bullet-train.zsh"]
-	path = managed/bullet-train.zsh
+[submodule "tools/bullet-train.zsh"]
+	path = tools/bullet-train.zsh
 	url = https://github.com/caiogondim/bullet-train.zsh.git
-[submodule "managed/dircolors-solarized"]
-	path = managed/dircolors-solarized
+[submodule "tools/dircolors-solarized"]
+	path = tools/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized
-[submodule "managed/Vundle.vim"]
-	path = managed/Vundle.vim
+[submodule "tools/Vundle.vim"]
+	path = tools/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "managed/tpm"]
-	path = managed/tpm
+[submodule "tools/tpm"]
+	path = tools/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "managed/fonts"]
-	path = managed/fonts
+[submodule "tools/fonts"]
+	path = tools/fonts
 	url = https://github.com/powerline/fonts.git

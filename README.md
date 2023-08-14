@@ -6,25 +6,26 @@ Configs for common tools.
 
 1. Clone repository with:
 
-```bash
-git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
-```
+    ```bash
+    git clone --depth=1 --recurse-submodules \
+        https://github.com/stefanistrate/dotfiles.git
+    ```
 
-2. Install configs for [`managed/`](managed) tools with:
+1. Install configs for [essential tools](tools) with:
 
-```bash
-./install
-```
+    ```bash
+    ./install
+    ```
 
-3. Install configs for [`unmanaged/`](unmanaged) tools manually.
+1. Install configs for [extra tools](extras) manually.
 
-4. Change shell to `zsh` with:
+1. Change shell to `zsh` with:
 
-```bash
-chsh -s $(which zsh)
-```
+    ```bash
+    chsh -s $(which zsh)
+    ```
 
 ## Licenses
 
 * Most configs are licensed under the [MIT License](LICENSE.md) (by Ștefan Istrate).
-* [`managed/vim/after/indent/python.vim`](managed/vim/after/indent/python.vim) is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) (by Google LLC).
+* [`tools/vim/after/indent/python.vim`](tools/vim/after/indent/python.vim) is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) (by Google LLC).

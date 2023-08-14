@@ -24,7 +24,7 @@ while true; do
 
             (
                 crontab -l 2>/dev/null | ( grep -v "# MANAGED_BY_DOTFILES" || [[ $? == 1 ]] )
-                cat managed/cron/crontab | sed "s#DOTFILES_DIR#$(pwd)#"
+                cat tools/cron/crontab | sed "s#DOTFILES_DIR#$(pwd)#"
             ) | crontab -
 
             break
