@@ -23,7 +23,7 @@ while true; do
             echo "Installing crontab"
 
             (
-                crontab -l 2>/dev/null | ( grep -v "# MANAGED_BY_DOTFILES" || [[ $? == 1 ]] )
+                crontab -l 2> /dev/null | ( grep -v "# MANAGED_BY_DOTFILES" || [[ $? == 1 ]] )
                 cat tools/cron/crontab | sed "s#DOTFILES_DIR#$(pwd)#"
             ) | crontab -
 

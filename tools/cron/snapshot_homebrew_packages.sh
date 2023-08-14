@@ -4,8 +4,8 @@ set -e
 
 PATH="$HOME/bin:$HOME/opt/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
-if [[ ! -d /Applications ]]; then
-  echo "Missing /Applications directory!" >&2
+if [[ ! -x "$(command -v brew)" ]]; then
+  echo "Missing brew command!" >&2
   exit 1
 fi
 
@@ -14,8 +14,8 @@ cd $REPO_DIR
 
 git clone --depth 1 git@github.com:stefanistrate/dotfiles.git .
 
-ls -1 /Applications >data/macos_applications.txt
+brew list --version > snapshots/homebrew_packages.txt
 
-git add data/macos_applications.txt
-git commit -m "Sync macOS applications." || exit 0
+git add snapshots/homebrew_packages.txt
+git commit -m "Save current list of Homebrew packages." || exit 0
 git push
