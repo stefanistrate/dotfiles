@@ -16,7 +16,7 @@ Configs for common tools.
     ./install
     ```
 
-1. Install configs for [extra tools](extras) manually.
+1. Install configs for [extras](extras) manually.
 
 1. Change shell to `zsh` with:
 
