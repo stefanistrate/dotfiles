@@ -1,65 +1,73 @@
-Adobe Acrobat Reader.app
-Adobe Creative Cloud
-Adobe Illustrator 2021
-Adobe Lightroom Classic
-Adobe Photoshop 2023
-AmorphousDiskMark.app
-Android File Transfer.app
-AppCleaner.app
-Arduino.app
-Avast.app
-Blackmagic Disk Speed Test.app
-Blackmagic Proxy Generator Lite.app
-Blackmagic RAW
-CheatSheet.app
-DaVinci Resolve
-Discord.app
-Docker.app
-EaseUS Data Recovery Wizard.app
-Elgato Camera Hub.app
-FUJIFILM X Acquire.app
-FUJIFILM X Webcam 2.app
-Firefox.app
-Flycut.app
-Garmin BaseCamp.app
-Garmin Express.app
-Garmin MapInstall.app
-Garmin MapManager.app
-Garmin WebUpdater.app
-Google Chrome.app
-Google Earth Pro.app
-HP Smart.app
-IDrive.app
-Insta360 Studio 2023.app
-Keynote.app
-Logi Options.app
-LuLu.app
-Maxon Cinema 4D R22
-Microsoft Teams.app
-Notion.app
-Numbers.app
-OBS.app
-Pages.app
-Papers.app
-ProtonVPN.app
-QGIS.app
-Safari.app
-Skitch.app
-Skype.app
-Slack.app
-SpectraView II.app
-Spotify.app
-Tor Browser.app
-Transmission.app
-Utilities
-VERO.app
-VLC.app
-VMware Fusion.app
-Visual Studio Code.app
-WhatsApp.app
-Windscribe.app
-calibre.app
-calibrite PROFILER.app
-com.avast.av.uninstaller.app
-iTerm.app
-zoom.us.app
+/Applications/Adobe Acrobat Reader.app	23.003.20269
+/Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
+/Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	12.4
+/Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
+/Applications/AmorphousDiskMark.app	4.0.1
+/Applications/Android File Transfer.app	1.0.12
+/Applications/AppCleaner.app	3.6.8
+/Applications/Arduino.app	1.8.13
+/Applications/Avast.app	15.7.3
+/Applications/Blackmagic Disk Speed Test.app	3.4.2
+/Applications/Blackmagic Proxy Generator Lite.app	18.5.0
+/Applications/Blackmagic RAW/Blackmagic RAW Player.app	3.3
+/Applications/Blackmagic RAW/Blackmagic RAW Speed Test.app	3.3
+/Applications/CheatSheet.app	1.6.4
+/Applications/DaVinci Resolve/DaVinci Control Panels Setup.app
+/Applications/DaVinci Resolve/DaVinci Resolve.app	18.5.0
+/Applications/DaVinci Resolve/Fairlight Studio Utility.app
+/Applications/DaVinci Resolve/Uninstall Resolve.app
+/Applications/Discord.app	0.0.276
+/Applications/Docker.app	4.21.1
+/Applications/EaseUS Data Recovery Wizard.app	13.8.5
+/Applications/Elgato Camera Hub.app	1.5.2
+/Applications/FUJIFILM X Acquire.app	1.24.0.4
+/Applications/FUJIFILM X Webcam 2.app	2.1
+/Applications/Firefox.app	111.0.1
+/Applications/Flycut.app	1.9.6
+/Applications/Garmin BaseCamp.app	4.8.13
+/Applications/Garmin Express.app	7.17.2.0
+/Applications/Garmin MapInstall.app	4.3.6
+/Applications/Garmin MapManager.app	3.1.3
+/Applications/Garmin WebUpdater.app	2.2.1
+/Applications/Google Chrome.app	115.0.5790.170
+/Applications/Google Earth Pro.app	7.3
+/Applications/HP Smart.app	14.6.1
+/Applications/IDrive.app
+/Applications/Insta360 Studio 2023.app	4.6.6
+/Applications/Keynote.app	13.1
+/Applications/Logi Options.app	8.50.210
+/Applications/LuLu.app	2.4.2
+/Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Client.app	22.0
+/Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Server.app	22.0
+/Applications/Maxon Cinema 4D R22/Cinema 4D.app	22.0
+/Applications/Maxon Cinema 4D R22/Cineware.app	22.0
+/Applications/Maxon Cinema 4D R22/Commandline.app	22.0
+/Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
+/Applications/Microsoft Teams.app	1.00.601159
+/Applications/Notion.app	2.1.17
+/Applications/Numbers.app	13.1
+/Applications/OBS.app	29.0.2
+/Applications/Pages.app	13.1
+/Applications/Papers.app	4.36.2320
+/Applications/ProtonVPN.app	2.3.1
+/Applications/QGIS.app	3.32.1
+/Applications/Safari.app	16.5
+/Applications/Skitch.app	2.9
+/Applications/Skype.app	8.96
+/Applications/Slack.app	4.33.73
+/Applications/SpectraView II.app	SpectraView II version 1.1.43
+/Applications/Spotify.app	1.2.17.834.g26ee1129
+/Applications/Tor Browser.app	12.5.2
+/Applications/Transmission.app	4.0.3
+/Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
+/Applications/VERO.app	0.6.1-beta
+/Applications/VLC.app	3.0.18
+/Applications/VMware Fusion.app	12.2.1
+/Applications/Visual Studio Code.app	1.81.1
+/Applications/WhatsApp.app	2.2327.5
+/Applications/Windscribe.app	2.3.16
+/Applications/calibre.app	6.24.0
+/Applications/calibrite PROFILER.app	1.0.5
+/Applications/com.avast.av.uninstaller.app
+/Applications/iTerm.app	3.4.20
+/Applications/zoom.us.app	5.13.11 (16405)
