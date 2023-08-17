@@ -1,3 +1,3 @@
-0 12 * * * LOG=`DOTFILES_DIR/tools/cron/snapshot_homebrew_packages.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES
+00 12 * * * LOG=`DOTFILES_DIR/tools/cron/snapshot_homebrew_packages.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES
 15 12 * * * LOG=`DOTFILES_DIR/tools/cron/snapshot_macos_applications.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES
 30 12 * * * LOG=`DOTFILES_DIR/tools/cron/snapshot_macos_fonts.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES
