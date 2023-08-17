@@ -3,17 +3,19 @@ from __future__ import annotations
 import plistlib
 from pathlib import Path
 
-APP_DIR = "/Applications"
+SYSTEM_APPS_DIR = Path("/Applications")
+LOCAL_APPS_DIR = Path("~/Applications").expanduser()
 
 
 def list_all_apps() -> list[Path]:
     app_paths = []
-    for path in Path(APP_DIR).glob("*"):
-        if path.name.endswith(".app"):
-            app_paths.append(path)
-        elif path.is_dir():
-            for child_path in path.glob("*.app"):
-                app_paths.append(child_path)
+    for apps_dir in [SYSTEM_APPS_DIR, LOCAL_APPS_DIR]:
+        for path in apps_dir.glob("*"):
+            if path.name.endswith(".app"):
+                app_paths.append(path)
+            elif path.is_dir():
+                for child_path in path.glob("*.app"):
+                    app_paths.append(child_path)
     return sorted(app_paths)
 
 
