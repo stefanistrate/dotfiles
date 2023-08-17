@@ -70,3 +70,4 @@
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.4.20
 /Applications/zoom.us.app	5.13.11 (16405)
+/Users/stefan/Applications/Chrome Apps.localized/Instagram.app
