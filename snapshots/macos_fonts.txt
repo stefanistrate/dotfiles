@@ -360,3 +360,221 @@
 /System/Library/Fonts/ヒラギノ角ゴシック W7.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W8.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W9.ttc
+/Users/stefan/Library/Fonts/3270Medium.ttf
+/Users/stefan/Library/Fonts/3270Narrow.ttf
+/Users/stefan/Library/Fonts/3270SemiNarrow.ttf
+/Users/stefan/Library/Fonts/Anonymice Powerline Bold Italic.ttf
+/Users/stefan/Library/Fonts/Anonymice Powerline Bold.ttf
+/Users/stefan/Library/Fonts/Anonymice Powerline Italic.ttf
+/Users/stefan/Library/Fonts/Anonymice Powerline.ttf
+/Users/stefan/Library/Fonts/Arimo Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Arimo Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Arimo Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Arimo for Powerline.ttf
+/Users/stefan/Library/Fonts/Bariol_Serif_Regular.otf
+/Users/stefan/Library/Fonts/Bariol_Serif_Regular_Italic.otf
+/Users/stefan/Library/Fonts/Bitter-Italic-VariableFont_wght.ttf
+/Users/stefan/Library/Fonts/Bitter-VariableFont_wght.ttf
+/Users/stefan/Library/Fonts/Cousine Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Cousine Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Cousine Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Cousine for Powerline.ttf
+/Users/stefan/Library/Fonts/DejaVu Sans Mono Bold Oblique for Powerline.ttf
+/Users/stefan/Library/Fonts/DejaVu Sans Mono Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/DejaVu Sans Mono Oblique for Powerline.ttf
+/Users/stefan/Library/Fonts/DejaVu Sans Mono for Powerline.ttf
+/Users/stefan/Library/Fonts/Droid Sans Mono Dotted for Powerline.ttf
+/Users/stefan/Library/Fonts/Droid Sans Mono Slashed for Powerline.ttf
+/Users/stefan/Library/Fonts/Droid Sans Mono for Powerline.otf
+/Users/stefan/Library/Fonts/FuraMono-Bold Powerline.otf
+/Users/stefan/Library/Fonts/FuraMono-Medium Powerline.otf
+/Users/stefan/Library/Fonts/FuraMono-Regular Powerline.otf
+/Users/stefan/Library/Fonts/Go Mono Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Go Mono Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Go Mono Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Go Mono for Powerline.ttf
+/Users/stefan/Library/Fonts/Hack-Bold.ttf
+/Users/stefan/Library/Fonts/Hack-BoldItalic.ttf
+/Users/stefan/Library/Fonts/Hack-Italic.ttf
+/Users/stefan/Library/Fonts/Hack-Regular.ttf
+/Users/stefan/Library/Fonts/Inconsolata Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Inconsolata for Powerline.otf
+/Users/stefan/Library/Fonts/Inconsolata-dz for Powerline.otf
+/Users/stefan/Library/Fonts/Inconsolata-g for Powerline.otf
+/Users/stefan/Library/Fonts/Lato-Black.ttf
+/Users/stefan/Library/Fonts/Lato-BlackItalic.ttf
+/Users/stefan/Library/Fonts/Lato-Bold.ttf
+/Users/stefan/Library/Fonts/Lato-BoldItalic.ttf
+/Users/stefan/Library/Fonts/Lato-Italic.ttf
+/Users/stefan/Library/Fonts/Lato-Light.ttf
+/Users/stefan/Library/Fonts/Lato-LightItalic.ttf
+/Users/stefan/Library/Fonts/Lato-Regular.ttf
+/Users/stefan/Library/Fonts/Lato-Thin.ttf
+/Users/stefan/Library/Fonts/Lato-ThinItalic.ttf
+/Users/stefan/Library/Fonts/Literation Mono Powerline Bold Italic.ttf
+/Users/stefan/Library/Fonts/Literation Mono Powerline Bold.ttf
+/Users/stefan/Library/Fonts/Literation Mono Powerline Italic.ttf
+/Users/stefan/Library/Fonts/Literation Mono Powerline.ttf
+/Users/stefan/Library/Fonts/LucidaHandwritingRO-Italic.ttf
+/Users/stefan/Library/Fonts/Meslo LG L Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG L Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG L DZ Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG L DZ Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG L DZ Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG L DZ Regular for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG L Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG L Regular for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG M Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG M Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG M DZ Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG M DZ Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG M DZ Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG M DZ Regular for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG M Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG M Regular for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG S Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG S Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG S DZ Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG S DZ Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG S DZ Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG S DZ Regular for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG S Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Meslo LG S Regular for Powerline.ttf
+/Users/stefan/Library/Fonts/Monofur Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Monofur Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Monofur for Powerline.ttf
+/Users/stefan/Library/Fonts/Montserrat-Black.ttf
+/Users/stefan/Library/Fonts/Montserrat-BlackItalic.ttf
+/Users/stefan/Library/Fonts/Montserrat-Bold.ttf
+/Users/stefan/Library/Fonts/Montserrat-BoldItalic.ttf
+/Users/stefan/Library/Fonts/Montserrat-ExtraBold.ttf
+/Users/stefan/Library/Fonts/Montserrat-ExtraBoldItalic.ttf
+/Users/stefan/Library/Fonts/Montserrat-ExtraLight.ttf
+/Users/stefan/Library/Fonts/Montserrat-ExtraLightItalic.ttf
+/Users/stefan/Library/Fonts/Montserrat-Italic.ttf
+/Users/stefan/Library/Fonts/Montserrat-Light.ttf
+/Users/stefan/Library/Fonts/Montserrat-LightItalic.ttf
+/Users/stefan/Library/Fonts/Montserrat-Medium.ttf
+/Users/stefan/Library/Fonts/Montserrat-MediumItalic.ttf
+/Users/stefan/Library/Fonts/Montserrat-Regular.ttf
+/Users/stefan/Library/Fonts/Montserrat-SemiBold.ttf
+/Users/stefan/Library/Fonts/Montserrat-SemiBoldItalic.ttf
+/Users/stefan/Library/Fonts/Montserrat-Thin.ttf
+/Users/stefan/Library/Fonts/Montserrat-ThinItalic.ttf
+/Users/stefan/Library/Fonts/Noto Mono for Powerline.ttf
+/Users/stefan/Library/Fonts/NovaMono for Powerline.ttf
+/Users/stefan/Library/Fonts/Novela-Regular.otf
+/Users/stefan/Library/Fonts/Oswald-Bold.ttf
+/Users/stefan/Library/Fonts/Oswald-ExtraLight.ttf
+/Users/stefan/Library/Fonts/Oswald-Light.ttf
+/Users/stefan/Library/Fonts/Oswald-Medium.ttf
+/Users/stefan/Library/Fonts/Oswald-Regular.ttf
+/Users/stefan/Library/Fonts/Oswald-SemiBold.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-Black.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-BlackItalic.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-Bold.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-BoldItalic.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-ExtraBold.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-ExtraBoldItalic.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-Italic.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-Medium.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-MediumItalic.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-Regular.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-SemiBold.ttf
+/Users/stefan/Library/Fonts/PlayfairDisplay-SemiBoldItalic.ttf
+/Users/stefan/Library/Fonts/ProFont Bold For Powerline.ttf
+/Users/stefan/Library/Fonts/ProFont For Powerline.ttf
+/Users/stefan/Library/Fonts/Raleway-Black.ttf
+/Users/stefan/Library/Fonts/Raleway-BlackItalic.ttf
+/Users/stefan/Library/Fonts/Raleway-Bold.ttf
+/Users/stefan/Library/Fonts/Raleway-BoldItalic.ttf
+/Users/stefan/Library/Fonts/Raleway-ExtraBold.ttf
+/Users/stefan/Library/Fonts/Raleway-ExtraBoldItalic.ttf
+/Users/stefan/Library/Fonts/Raleway-ExtraLight.ttf
+/Users/stefan/Library/Fonts/Raleway-ExtraLightItalic.ttf
+/Users/stefan/Library/Fonts/Raleway-Italic.ttf
+/Users/stefan/Library/Fonts/Raleway-Light.ttf
+/Users/stefan/Library/Fonts/Raleway-LightItalic.ttf
+/Users/stefan/Library/Fonts/Raleway-Medium.ttf
+/Users/stefan/Library/Fonts/Raleway-MediumItalic.ttf
+/Users/stefan/Library/Fonts/Raleway-Regular.ttf
+/Users/stefan/Library/Fonts/Raleway-SemiBold.ttf
+/Users/stefan/Library/Fonts/Raleway-SemiBoldItalic.ttf
+/Users/stefan/Library/Fonts/Raleway-Thin.ttf
+/Users/stefan/Library/Fonts/Raleway-ThinItalic.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Light Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Light for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Medium Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Medium for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Thin Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono Thin for Powerline.ttf
+/Users/stefan/Library/Fonts/Roboto Mono for Powerline.ttf
+/Users/stefan/Library/Fonts/SonderSans-Black.otf
+/Users/stefan/Library/Fonts/SonderSans-BlackRough.otf
+/Users/stefan/Library/Fonts/SonderSlab-Black.otf
+/Users/stefan/Library/Fonts/SonderSlab-BlackRough.otf
+/Users/stefan/Library/Fonts/Source Code Pro Black for Powerline.otf
+/Users/stefan/Library/Fonts/Source Code Pro Bold for Powerline.otf
+/Users/stefan/Library/Fonts/Source Code Pro ExtraLight for Powerline.otf
+/Users/stefan/Library/Fonts/Source Code Pro Light for Powerline.otf
+/Users/stefan/Library/Fonts/Source Code Pro Medium for Powerline.otf
+/Users/stefan/Library/Fonts/Source Code Pro Powerline BlackItalic.otf
+/Users/stefan/Library/Fonts/Source Code Pro Powerline BoldItalic.otf
+/Users/stefan/Library/Fonts/Source Code Pro Powerline ExtraLightItalic.otf
+/Users/stefan/Library/Fonts/Source Code Pro Powerline Italic.otf
+/Users/stefan/Library/Fonts/Source Code Pro Powerline LightItalic.otf
+/Users/stefan/Library/Fonts/Source Code Pro Powerline MediumItalic.otf
+/Users/stefan/Library/Fonts/Source Code Pro Powerline SemiboldItalic.otf
+/Users/stefan/Library/Fonts/Source Code Pro Semibold for Powerline.otf
+/Users/stefan/Library/Fonts/Source Code Pro for Powerline.otf
+/Users/stefan/Library/Fonts/SourceSansPro-Black.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-BlackItalic.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-Bold.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-BoldItalic.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-ExtraLight.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-ExtraLightItalic.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-Italic.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-Light.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-LightItalic.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-Regular.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-SemiBold.ttf
+/Users/stefan/Library/Fonts/SourceSansPro-SemiBoldItalic.ttf
+/Users/stefan/Library/Fonts/Space Mono Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Space Mono Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Space Mono Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Space Mono for Powerline.ttf
+/Users/stefan/Library/Fonts/SpaceMono-Bold.ttf
+/Users/stefan/Library/Fonts/SpaceMono-BoldItalic.ttf
+/Users/stefan/Library/Fonts/SpaceMono-Italic.ttf
+/Users/stefan/Library/Fonts/SpaceMono-Regular.ttf
+/Users/stefan/Library/Fonts/Symbol Neu for Powerline.ttf
+/Users/stefan/Library/Fonts/Tinos Bold Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Tinos Bold for Powerline.ttf
+/Users/stefan/Library/Fonts/Tinos Italic for Powerline.ttf
+/Users/stefan/Library/Fonts/Tinos for Powerline.ttf
+/Users/stefan/Library/Fonts/Ubuntu Mono derivative Powerline Bold Italic.ttf
+/Users/stefan/Library/Fonts/Ubuntu Mono derivative Powerline Bold.ttf
+/Users/stefan/Library/Fonts/Ubuntu Mono derivative Powerline Italic.ttf
+/Users/stefan/Library/Fonts/Ubuntu Mono derivative Powerline.ttf
+/Users/stefan/Library/Fonts/ter-powerline-x12b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x12n.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x14b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x14n.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x16b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x16n.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x18b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x18n.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x20b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x20n.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x22b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x22n.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x24b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x24n.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x28b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x28n.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x32b.pcf.gz
+/Users/stefan/Library/Fonts/ter-powerline-x32n.pcf.gz
+/Users/stefan/Library/Fonts/watermarks.ttf
