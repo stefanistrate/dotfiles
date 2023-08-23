@@ -23,33 +23,33 @@ unsetopt NOMATCH
 # Set theme and configure prompt segments.
 ZSH_THEME="bullet-train"
 BULLETTRAIN_PROMPT_ORDER=(
-  time
-  status
-  custom
-  dir
-  perl
-  ruby
-  virtualenv
-  go
-  elixir
-  git
-  hg
-  cmd_exec_time
+    time
+    status
+    custom
+    dir
+    perl
+    ruby
+    virtualenv
+    go
+    elixir
+    git
+    hg
+    cmd_exec_time
 )
 BULLETTRAIN_TIME_BG=241
 BULLETTRAIN_TIME_FG=254
 
 # Set plugins to load.
 plugins=(
-  common-aliases  # aliases for many commonly used commands
-  copyfile  # copy file contents to system clipboard
-  copypath  # copy path of given file or directory to system clipboard
-  docker  # autocompletion for docker
-  emoji  # emojis using human-readable identifiers
-  macos  # access to a few macOS applications from terminal
-  pip  # autocompletion for pip
-  python  # useful python aliases (e.g. pyfind, pyclean, pygrep)
-  sudo  # prefix current/previous commands with sudo by pressing ESC twice
+    common-aliases  # aliases for many commonly used commands
+    copyfile  # copy file contents to system clipboard
+    copypath  # copy path of given file or directory to system clipboard
+    docker  # autocompletion for docker
+    emoji  # emojis using human-readable identifiers
+    macos  # access to a few macOS applications from terminal
+    pip  # autocompletion for pip
+    python  # useful python aliases (e.g. pyfind, pyclean, pygrep)
+    sudo  # prefix current/previous commands with sudo by pressing ESC twice
 )
 
 # Disable `url-quote-magic`.
@@ -60,10 +60,10 @@ source "$ZSH/oh-my-zsh.sh"
 
 # Load `google-cloud-sdk`.
 if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" ]] ; then
-  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 fi
 if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ]] ; then
-  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 fi
 
 # Map various keys to custom functionality.
@@ -79,69 +79,74 @@ bindkey "^[[4~" end-of-line  # Fn + Right arrow
 
 # Set colors for the GNU ls utility and for zsh completion.
 case "$OSTYPE" in
-  darwin*)
-    eval `gdircolors ~/.dircolors`
-    alias ls="gls -F --color=auto"
-    ;;
-  linux*)
-    eval `dircolors ~/.dircolors`
-    alias ls="ls -F --color=auto"
-    ;;
+    darwin*)
+        eval `gdircolors ~/.dircolors`
+        alias ls="gls -F --color=auto"
+        ;;
+    linux*)
+        eval `dircolors ~/.dircolors`
+        alias ls="ls -F --color=auto"
+        ;;
 esac
 zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 
 # Define additional aliases and functions.
 
-alias ds="cd ~/datastore"
 alias ws="cd ~/workspace"
 
+function _resolve_env_name() {
+    current_dir="${PWD##*/}"
+    env_prefix="${current_dir// /-}"
+    if [[ -z "$1" ]] ; then
+        echo "$env_prefix-base"
+    else
+        echo "$env_prefix-$1"
+    fi
+}
+
+function _resolve_python_bin() {
+    if [[ -z "$1" ]] ; then
+        echo "python3"
+    else
+        echo "$1"
+    fi
+}
+
 function mkenv() {
-  if [[ $# -gt 2 ]] ; then
-    echo "Too many arguments! Usage: mkenv [env_name [python_bin]]"
-    return 1
-  fi
+    if [[ $# -gt 2 ]] ; then
+        echo "Too many arguments! Usage: mkenv [env_name [python_bin]]"
+        return 1
+    fi
 
-  python_bin="python3"
-  if [[ $# -ge 2 ]] ; then
-    python_bin="$2"
-  fi
-
-  env_name="base"
-  if [[ $# -ge 1 ]] ; then
-    env_name="$1"
-  fi
-
-  "$python_bin" -m venv ".env/$env_name"
-  source ".env/$env_name/bin/activate"
-  pip install --upgrade pip wheel
+    env_name=$(_resolve_env_name $1)
+    python_bin=$(_resolve_python_bin $2)
+    "$python_bin" -m venv ".venv/$env_name"
+    source ".venv/$env_name/bin/activate"
+    pip install --upgrade pip setuptools wheel
 }
 
 function rmenv() {
-  if [[ $# -gt 1 ]] ; then
-    echo "Too many arguments! Usage: rmenv [env_name]"
-    return 1
-  fi
+    if [[ $# -gt 1 ]] ; then
+        echo "Too many arguments! Usage: rmenv [env_name]"
+        return 1
+    fi
 
-  env_name="base"
-  if [[ $# -ge 1 ]] ; then
-    env_name="$1"
-  fi
+    env_name=$(_resolve_env_name $1)
+    rm -rf ".venv/$env_name"
+}
 
-  rm -rf ".env/$env_name"
+function lsenv() {
+    ls -1 .venv 2> /dev/null
 }
 
 function activate() {
-  if [[ $# -ge 2 ]] ; then
-    echo "Too many arguments! Usage: activate [env_name]"
-    return 1
-  fi
+    if [[ $# -ge 2 ]] ; then
+        echo "Too many arguments! Usage: activate [env_name]"
+        return 1
+    fi
 
-  env_name="base"
-  if [[ $# -ge 1 ]] ; then
-    env_name="$1"
-  fi
-
-  source ".env/$env_name/bin/activate"
+    env_name=$(_resolve_env_name $1)
+    source ".venv/$env_name/bin/activate"
 }
 
 # TODO(stefanistrate): Implement a simpler way to configure addons. E.g. we
@@ -161,21 +166,21 @@ alias ytmp4="yt720 --recode-video mp4"
 
 # Enable local settings, which override general settings.
 if [[ -f ~/.zshrc.local ]] ; then
-  source ~/.zshrc.local
+    source ~/.zshrc.local
 fi
 
 # Attach to an existing tmux session or start a new one.
 if [[ "$VSCODE_RESOLVING_ENVIRONMENT" != "1" && "$TERM_PROGRAM" != "vscode" ]] ; then
-  if which tmux &> /dev/null ; then
-    if [[ -z $TMUX ]] ; then
-      tmux has &> /dev/null
-      if [[ $? -eq 1 ]] ; then
-        exec tmux new
-      else
-        exec tmux attach
-      fi
+    if which tmux &> /dev/null ; then
+        if [[ -z $TMUX ]] ; then
+            tmux has &> /dev/null
+            if [[ $? -eq 1 ]] ; then
+                exec tmux new
+            else
+                exec tmux attach
+            fi
+        fi
     fi
-  fi
 fi
 
 # >>> conda initialize >>>
