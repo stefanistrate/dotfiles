@@ -55,7 +55,7 @@
 /Applications/Safari.app	16.5
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.96
-/Applications/Slack.app	4.33.73
+/Applications/Slack.app	4.33.90
 /Applications/Spotify.app	1.2.18.999.g9b38fc27
 /Applications/Tor Browser.app	12.5.2
 /Applications/Transmission.app	4.0.3
@@ -64,7 +64,7 @@
 /Applications/VLC.app	3.0.18
 /Applications/VMware Fusion.app	12.2.1
 /Applications/Visual Studio Code.app	1.81.1
-/Applications/WhatsApp.app	2.2327.5
+/Applications/WhatsApp.app	2.2335.9
 /Applications/Windscribe.app	2.3.16
 /Applications/calibre.app	6.24.0
 /Applications/calibrite PROFILER.app	1.0.5
