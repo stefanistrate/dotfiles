@@ -70,5 +70,5 @@
 /Applications/calibrite PROFILER.app	1.0.5
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.4.20
-/Applications/zoom.us.app	5.13.11 (16405)
+/Applications/zoom.us.app	5.15.7 (21404)
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
