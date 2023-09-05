@@ -16,7 +16,7 @@
 /Applications/DaVinci Resolve/DaVinci Resolve.app	18.5.0
 /Applications/DaVinci Resolve/Fairlight Studio Utility.app
 /Applications/DaVinci Resolve/Uninstall Resolve.app
-/Applications/Discord.app	0.0.276
+/Applications/Discord.app	0.0.277
 /Applications/Docker.app	4.21.1
 /Applications/DotDotGoose.app	0.0.0
 /Applications/EaseUS Data Recovery Wizard.app	13.8.5
@@ -49,7 +49,7 @@
 /Applications/Numbers.app	13.1
 /Applications/OBS.app	29.0.2
 /Applications/Pages.app	13.1
-/Applications/Papers.app	4.36.2320
+/Applications/Papers.app	4.37.2357
 /Applications/ProtonVPN.app	2.3.1
 /Applications/QGIS.app	3.32.1
 /Applications/Safari.app	16.5
@@ -57,7 +57,7 @@
 /Applications/Skype.app	8.96
 /Applications/Slack.app	4.33.90
 /Applications/Spotify.app	1.2.18.999.g9b38fc27
-/Applications/Tor Browser.app	12.5.2
+/Applications/Tor Browser.app	12.5.3
 /Applications/Transmission.app	4.0.3
 /Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
 /Applications/VERO.app	0.6.1-beta
