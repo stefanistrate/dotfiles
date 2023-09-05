@@ -348,8 +348,8 @@
 /System/Library/Fonts/Times.ttc
 /System/Library/Fonts/TimesLTMM
 /System/Library/Fonts/ZapfDingbats.ttf
-/System/Library/Fonts/ヒラギノ明朝 ProN.ttc
 /System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc
+/System/Library/Fonts/ヒラギノ明朝 ProN.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W0.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W1.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W2.ttc
