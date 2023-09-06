@@ -56,7 +56,7 @@
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.96
 /Applications/Slack.app	4.33.90
-/Applications/Spotify.app	1.2.18.999.g9b38fc27
+/Applications/Spotify.app	1.2.19.941.gbf202593
 /Applications/Tor Browser.app	12.5.3
 /Applications/Transmission.app	4.0.3
 /Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
