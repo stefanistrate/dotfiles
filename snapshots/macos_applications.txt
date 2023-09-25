@@ -35,7 +35,7 @@
 /Applications/HP Smart.app	16.5.1
 /Applications/IDrive.app
 /Applications/Insta360 Studio 2023.app	4.6.6
-/Applications/Keynote.app	13.1
+/Applications/Keynote.app	13.2
 /Applications/Logi Options.app	8.50.210
 /Applications/LuLu.app	2.4.2
 /Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Client.app	22.0
@@ -46,9 +46,9 @@
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
 /Applications/Notion.app	2.1.17
-/Applications/Numbers.app	13.1
+/Applications/Numbers.app	13.2
 /Applications/OBS.app	29.0.2
-/Applications/Pages.app	13.1
+/Applications/Pages.app	13.2
 /Applications/Papers.app	4.37.2357
 /Applications/ProtonVPN.app	2.3.1
 /Applications/QGIS.app	3.32.1
