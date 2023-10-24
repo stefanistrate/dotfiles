@@ -187,6 +187,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.direnv/
 
 # Spyder project settings
 .spyderproject
@@ -261,9 +262,3 @@ tags
 
 # Built Visual Studio Code Extensions
 *.vsix
-
-#######################
-### Current project ###
-#######################
-
-.direnv/

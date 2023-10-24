@@ -14,7 +14,7 @@
 
     ~/.iterm2:
       if: '[ `uname` = Darwin ]'
-      path: tools/iTerm2
+      path: tools/iterm2
 
     ~/.oh-my-zsh: tools/ohmyzsh
 
@@ -22,18 +22,18 @@
     ~/.tmux.conf: tools/tmux/tmux.conf
 
     ~/.vim/after: tools/vim/after
-    ~/.vim/bundle/Vundle.vim: tools/Vundle.vim
+    ~/.vim/bundle/Vundle.vim: tools/vundle
     ~/.vimrc: tools/vim/vimrc
 
     ~/.zshrc: tools/zsh/zshrc
 
     ~/Library/Application Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
-      path: tools/Visual Studio Code/settings.json
+      path: tools/vscode/settings.json
 
     ~/Library/Preferences/org.videolan.vlc/vlcrc:
       if: '[ `uname` = Darwin ]'
-      path: tools/VLC/vlcrc
+      path: tools/vlc/vlcrc
 
 - link:
     ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
@@ -42,7 +42,7 @@
 - shell:
   -
     description: Installing Powerline fonts
-    command: tools/fonts/install.sh
+    command: tools/powerline-fonts/install.sh
   -
     description: Installing tmux plugins
     command: tools/tpm/bin/install_plugins

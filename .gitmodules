@@ -7,15 +7,15 @@
 [submodule "tools/dircolors-solarized"]
 	path = tools/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
-[submodule "tools/fonts"]
-	path = tools/fonts
-	url = https://github.com/powerline/fonts.git
 [submodule "tools/ohmyzsh"]
 	path = tools/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "tools/powerline-fonts"]
+	path = tools/powerline-fonts
+	url = https://github.com/powerline/fonts.git
 [submodule "tools/tpm"]
 	path = tools/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule "tools/Vundle.vim"]
-	path = tools/Vundle.vim
+[submodule "tools/vundle"]
+	path = tools/vundle
 	url = https://github.com/VundleVim/Vundle.vim.git
