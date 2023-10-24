@@ -14,8 +14,8 @@ cd $REPO_DIR
 
 git clone --depth 1 git@github.com:stefanistrate/dotfiles.git .
 
-brew list --version > snapshots/homebrew_packages.txt
+brew list --version > snapshots/macos_homebrew_packages.txt
 
-git add snapshots/homebrew_packages.txt
-git commit -m "Save current list of Homebrew packages." || exit 0
+git add snapshots/macos_homebrew_packages.txt
+git commit -m "Save the current list of macOS Homebrew packages." || exit 0
 git push
