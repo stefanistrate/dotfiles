@@ -1,3 +1,4 @@
+/System/Library/Fonts/ADTNumeric.ttc
 /System/Library/Fonts/Apple Braille Outline 6 Dot.ttf
 /System/Library/Fonts/Apple Braille Outline 8 Dot.ttf
 /System/Library/Fonts/Apple Braille Pinpoint 6 Dot.ttf
@@ -43,9 +44,16 @@
 /System/Library/Fonts/PingFang.ttc
 /System/Library/Fonts/SFArabic.ttf
 /System/Library/Fonts/SFArabicRounded.ttf
+/System/Library/Fonts/SFArmenian.ttf
+/System/Library/Fonts/SFArmenianRounded.ttf
+/System/Library/Fonts/SFCamera.ttf
 /System/Library/Fonts/SFCompact.ttf
 /System/Library/Fonts/SFCompactItalic.ttf
 /System/Library/Fonts/SFCompactRounded.ttf
+/System/Library/Fonts/SFGeorgian.ttf
+/System/Library/Fonts/SFGeorgianRounded.ttf
+/System/Library/Fonts/SFHebrew.ttf
+/System/Library/Fonts/SFHebrewRounded.ttf
 /System/Library/Fonts/SFNS.ttf
 /System/Library/Fonts/SFNSItalic.ttf
 /System/Library/Fonts/SFNSMono.ttf
