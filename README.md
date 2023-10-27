@@ -28,9 +28,9 @@ Configs for common tools.
 
 Currently, the following system info is periodically saved in this repo, to facilitate future system recoveries:
 
-* The list of installed Homebrew packages (macOS).
 * The list of installed applications (macOS).
 * The list of installed fonts (macOS).
+* The list of installed Homebrew packages (macOS).
 
 ## Licenses
 
