@@ -1,6 +1,6 @@
 # dotfiles
 
-Configs for common tools.
+Configs for frequently used tools.
 
 ## Installation
 
@@ -10,15 +10,15 @@ Configs for common tools.
     git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
     ```
 
-1. Install configs for [essential tools](tools) with:
+2. Install configs for supported [tools](tools) with:
 
     ```bash
     ./install
     ```
 
-1. Manually install configs for [extras](extras), if needed.
+3. If needed, restore [backups](backups) manually by following each tool's instructions.
 
-1. Change shell to `zsh` with:
+4. Change shell to `zsh` with:
 
     ```bash
     chsh -s $(which zsh)
@@ -26,7 +26,7 @@ Configs for common tools.
 
 ## Snapshots
 
-Currently, the following system info is periodically saved in this repo, to facilitate future system recoveries:
+Currently, the following system info is periodically saved into this repo, to facilitate future system recoveries:
 
 * The list of installed applications (macOS).
 * The list of installed fonts (macOS).
