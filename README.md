@@ -10,13 +10,13 @@ Configs for frequently used tools.
     git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
     ```
 
-2. Install configs for supported [tools](tools) with:
+2. Install configs for [supported tools](tools) with:
 
     ```bash
     ./install
     ```
 
-3. If needed, restore [backups](backups) manually by following each tool's instructions.
+3. If needed, manually restore backups for [optional tools](backups) by following their specific instructions.
 
 4. Change shell to `zsh` with:
 
