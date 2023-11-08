@@ -58,18 +58,18 @@
 /Applications/Skype.app	8.103
 /Applications/Slack.app	4.34.121
 /Applications/Spotify.app	1.2.23.1125.g920a7ada
-/Applications/Tor Browser.app	12.5.6
+/Applications/Tor Browser.app	13.0.1
 /Applications/Transmission.app	4.0.4
 /Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
 /Applications/VERO.app	0.6.1-beta
 /Applications/VLC.app	3.0.18
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.83.1
+/Applications/Visual Studio Code.app	1.84.0
 /Applications/WhatsApp.app	23.20.81
 /Applications/Windscribe.app	2.3.16
 /Applications/calibre.app	6.24.0
 /Applications/calibrite PROFILER.app	1.0.5
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.4.22
-/Applications/zoom.us.app	5.15.7 (21404)
+/Applications/zoom.us.app	5.16.2 (23409)
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
