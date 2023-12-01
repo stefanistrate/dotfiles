@@ -4,6 +4,7 @@ aribb24 1.0.4
 assimp 5.3.1
 awscli 2.13.28
 azcopy 10.21.0
+bash 5.2.21
 bazelisk 1.18.0
 bdw-gc 8.2.4
 berkeley-db 18.1.40_2
