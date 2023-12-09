@@ -5,6 +5,9 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
+    "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
+    },
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.dockerPath": "/usr/local/bin/docker",
     "editor.detectIndentation": false,
@@ -47,6 +50,7 @@
     "python.languageServer": "Jedi",
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "python.pythonPath": "/usr/local/bin/python3",
+    "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
