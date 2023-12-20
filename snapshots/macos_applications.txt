@@ -46,7 +46,7 @@
 /Applications/Maxon Cinema 4D R22/Commandline.app	22.0
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
-/Applications/Notion.app	2.3.2
+/Applications/Notion.app	3.1.0
 /Applications/Numbers.app	13.2
 /Applications/OBS.app	29.0.2
 /Applications/Pages.app	13.2
@@ -56,7 +56,7 @@
 /Applications/Safari.app	17.0
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.103
-/Applications/Slack.app	4.35.126
+/Applications/Slack.app	4.35.131
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
 /Applications/Spotify.app	1.2.25.1011.g0348b2ea
