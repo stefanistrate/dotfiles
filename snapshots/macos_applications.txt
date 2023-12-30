@@ -53,10 +53,10 @@
 /Applications/Papers.app	4.37.2374
 /Applications/ProtonVPN.app	2.3.1
 /Applications/QGIS.app	3.32.1
-/Applications/Safari.app	17.0
+/Applications/Safari.app	17.2.1
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.103
-/Applications/Slack.app	4.35.131
+/Applications/Slack.app	4.36.136
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
 /Applications/Spotify.app	1.2.26.1187.g36b715a1
@@ -66,8 +66,8 @@
 /Applications/VERO.app	0.6.1-beta
 /Applications/VLC.app	3.0.20
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.84.2
-/Applications/WhatsApp.app	23.24.80
+/Applications/Visual Studio Code.app	1.85.1
+/Applications/WhatsApp.app	23.25.86
 /Applications/Windscribe.app	2.3.16
 /Applications/calibre.app	6.24.0
 /Applications/calibrite PROFILER.app	1.0.5
