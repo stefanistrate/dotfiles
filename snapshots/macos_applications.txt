@@ -1,4 +1,4 @@
-/Applications/Adobe Acrobat Reader.app	23.006.20380
+/Applications/Adobe Acrobat Reader.app	23.008.20458
 /Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
 /Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.0.2
 /Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
