@@ -1,4 +1,4 @@
-/Applications/Adobe Acrobat Reader.app	23.008.20458
+/Applications/Adobe Acrobat Reader.app	23.008.20470
 /Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
 /Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.1
 /Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
@@ -31,7 +31,7 @@
 /Applications/Garmin MapInstall.app	4.3.6
 /Applications/Garmin MapManager.app	3.1.3
 /Applications/Garmin WebUpdater.app	2.2.1
-/Applications/Google Chrome.app	120.0.6099.216
+/Applications/Google Chrome.app	120.0.6099.234
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	16.15.1
 /Applications/IDrive.app
@@ -46,6 +46,7 @@
 /Applications/Maxon Cinema 4D R22/Commandline.app	22.0
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
+/Applications/Notion Calendar.app	1.117.0
 /Applications/Notion.app	3.1.0
 /Applications/Numbers.app	13.2
 /Applications/OBS.app	29.0.2
