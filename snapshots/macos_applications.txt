@@ -60,14 +60,14 @@
 /Applications/Slack.app	4.36.138
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.29.605.g66a43ceb
+/Applications/Spotify.app	1.2.30.1135.g02fef27a
 /Applications/Tor Browser.app	13.0.9
 /Applications/Transmission.app	4.0.5
 /Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
 /Applications/VERO.app	0.6.1-beta
 /Applications/VLC.app	3.0.20
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.85.1
+/Applications/Visual Studio Code.app	1.85.2
 /Applications/WhatsApp.app	23.25.86
 /Applications/Windscribe.app	2.3.16
 /Applications/calibre.app	6.24.0
