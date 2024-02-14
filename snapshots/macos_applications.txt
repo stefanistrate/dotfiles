@@ -47,7 +47,7 @@
 /Applications/Maxon Cinema 4D R22/Commandline.app	22.0
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
-/Applications/Notion Calendar.app	1.118.0
+/Applications/Notion Calendar.app	1.119.0
 /Applications/Notion.app	3.1.1
 /Applications/Numbers.app	13.2
 /Applications/OBS.app	29.0.2
@@ -75,5 +75,5 @@
 /Applications/calibrite PROFILER.app	1.0.5
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.4.23
-/Applications/zoom.us.app	5.16.2 (23409)
+/Applications/zoom.us.app	5.16.10 (25689)
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
