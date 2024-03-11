@@ -68,7 +68,7 @@
 /Applications/VERO.app	0.6.1-beta
 /Applications/VLC.app	3.0.20
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.87.0
+/Applications/Visual Studio Code.app	1.87.1
 /Applications/WhatsApp.app	24.3.79
 /Applications/Windscribe.app	2.9.9
 /Applications/calibre.app	6.24.0
