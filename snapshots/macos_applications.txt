@@ -34,7 +34,7 @@
 /Applications/Garmin WebUpdater.app	2.2.1
 /Applications/Google Chrome.app	122.0.6261.112
 /Applications/Google Earth Pro.app	7.3
-/Applications/HP Smart.app	17.0.1
+/Applications/HP Smart.app	17.5.1
 /Applications/IDrive.app
 /Applications/Insta360 Studio 2024.app	4.9.2
 /Applications/Keynote.app	13.2
