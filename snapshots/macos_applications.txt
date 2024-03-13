@@ -32,7 +32,7 @@
 /Applications/Garmin MapInstall.app	4.3.6
 /Applications/Garmin MapManager.app	3.1.3
 /Applications/Garmin WebUpdater.app	2.2.1
-/Applications/Google Chrome.app	122.0.6261.112
+/Applications/Google Chrome.app	122.0.6261.128
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	17.5.1
 /Applications/IDrive.app
@@ -68,7 +68,7 @@
 /Applications/VERO.app	0.6.1-beta
 /Applications/VLC.app	3.0.20
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.87.1
+/Applications/Visual Studio Code.app	1.87.2
 /Applications/WhatsApp.app	24.3.79
 /Applications/Windscribe.app	2.9.9
 /Applications/calibre.app	6.24.0
