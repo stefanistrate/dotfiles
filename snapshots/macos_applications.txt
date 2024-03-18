@@ -1,6 +1,6 @@
-/Applications/Adobe Acrobat Reader.app	23.008.20470
+/Applications/Adobe Acrobat Reader.app	23.008.20555
 /Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
-/Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.1
+/Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.2
 /Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
 /Applications/AmorphousDiskMark.app	4.0.1
 /Applications/Android File Transfer.app	1.0.12
@@ -32,11 +32,11 @@
 /Applications/Garmin MapInstall.app	4.3.6
 /Applications/Garmin MapManager.app	3.1.3
 /Applications/Garmin WebUpdater.app	2.2.1
-/Applications/Google Chrome.app	121.0.6167.139
+/Applications/Google Chrome.app	122.0.6261.129
 /Applications/Google Earth Pro.app	7.3
-/Applications/HP Smart.app	16.15.1
+/Applications/HP Smart.app	17.5.1
 /Applications/IDrive.app
-/Applications/Insta360 Studio 2023.app	4.6.6
+/Applications/Insta360 Studio 2024.app	4.9.2
 /Applications/Keynote.app	13.2
 /Applications/Logi Options.app	8.50.210
 /Applications/LuLu.app	2.5.1
@@ -47,33 +47,34 @@
 /Applications/Maxon Cinema 4D R22/Commandline.app	22.0
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
-/Applications/Notion Calendar.app	1.118.0
-/Applications/Notion.app	3.1.1
+/Applications/Notion Calendar.app	1.119.0
+/Applications/Notion.app	3.2.1
 /Applications/Numbers.app	13.2
 /Applications/OBS.app	29.0.2
 /Applications/Pages.app	13.2
 /Applications/Papers.app	4.37.2374
 /Applications/ProtonVPN.app	2.3.1
 /Applications/QGIS.app	3.32.1
-/Applications/Safari.app	17.2.1
+/Applications/Safari.app	17.3.1
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.103
 /Applications/Slack.app	4.36.140
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.30.1135.g02fef27a
-/Applications/Tor Browser.app	13.0.9
+/Applications/Spotify.app	1.2.32.997.g4c6498b6
+/Applications/Tor Browser.app	13.0.11
 /Applications/Transmission.app	4.0.5
 /Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
 /Applications/VERO.app	0.6.1-beta
 /Applications/VLC.app	3.0.20
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.85.2
-/Applications/WhatsApp.app	24.1.81
-/Applications/Windscribe.app	2.3.16
+/Applications/Visual Studio Code.app	1.87.2
+/Applications/WhatsApp.app	24.3.79
+/Applications/Windscribe.app	2.9.9
 /Applications/calibre.app	6.24.0
 /Applications/calibrite PROFILER.app	1.0.5
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.4.23
-/Applications/zoom.us.app	5.16.2 (23409)
+/Applications/zoom.us.app	5.16.10 (25689)
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
+/Users/stefan/Applications/Chrome Apps.localized/Lightning AI.app
