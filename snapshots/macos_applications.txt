@@ -55,7 +55,7 @@
 /Applications/Pages.app	13.2
 /Applications/Papers.app	4.37.2374
 /Applications/ProtonVPN.app	4.1.9
-/Applications/QGIS.app	3.32.1
+/Applications/QGIS-LTR.app	3.34.4
 /Applications/Safari.app	17.3.1
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.103
