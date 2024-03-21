@@ -63,7 +63,7 @@
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
 /Applications/Spotify.app	1.2.33.1039.g8ddb5918
-/Applications/Tor Browser.app	13.0.11
+/Applications/Tor Browser.app	13.0.12
 /Applications/Transmission.app	4.0.5
 /Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
 /Applications/VERO.app	0.6.1-beta
