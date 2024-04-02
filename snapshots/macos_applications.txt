@@ -12,6 +12,7 @@
 /Applications/Blackmagic RAW/Blackmagic RAW Player.app	3.6
 /Applications/Blackmagic RAW/Blackmagic RAW Speed Test.app	3.6
 /Applications/CheatSheet.app	1.6.4
+/Applications/DJI Assistant 2(Consumer Drones Series).app
 /Applications/DaVinci Resolve/DaVinci Control Panels Setup.app
 /Applications/DaVinci Resolve/DaVinci Remote Monitor.app	18.6
 /Applications/DaVinci Resolve/DaVinci Resolve.app	18.6.4
@@ -48,7 +49,7 @@
 /Applications/Maxon Cinema 4D R22/Commandline.app	22.0
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
-/Applications/Notion Calendar.app	1.119.0
+/Applications/Notion Calendar.app	1.120.0
 /Applications/Notion.app	3.3.0
 /Applications/Numbers.app	13.2
 /Applications/OBS.app	29.0.2
@@ -56,13 +57,13 @@
 /Applications/Papers.app	4.37.2374
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
-/Applications/Safari.app	17.3.1
+/Applications/Safari.app	17.4.1
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.103
-/Applications/Slack.app	4.36.140
+/Applications/Slack.app	4.37.94
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.33.1039.g8ddb5918
+/Applications/Spotify.app	1.2.33.1042.g26c92729
 /Applications/Tor Browser.app	13.0.12
 /Applications/Transmission.app	4.0.5
 /Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
