@@ -1,4 +1,4 @@
-/Applications/Adobe Acrobat Reader.app	24.001.20631
+/Applications/Adobe Acrobat Reader.app	24.001.20643
 /Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
 /Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.2
 /Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
@@ -33,13 +33,13 @@
 /Applications/Garmin MapInstall.app	4.3.6
 /Applications/Garmin MapManager.app	3.1.3
 /Applications/Garmin WebUpdater.app	2.2.1
-/Applications/Google Chrome.app	123.0.6312.87
+/Applications/Google Chrome.app	123.0.6312.106
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	17.5.1
 /Applications/HotSpotter.app	1.0.0
 /Applications/IDrive.app
 /Applications/Insta360 Studio 2024.app	4.9.2
-/Applications/Keynote.app	13.2
+/Applications/Keynote.app	14.0
 /Applications/Logi Options.app	8.50.210
 /Applications/LuLu.app	2.5.1
 /Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Client.app	22.0
@@ -51,9 +51,9 @@
 /Applications/Microsoft Teams.app	1.00.624065
 /Applications/Notion Calendar.app	1.120.0
 /Applications/Notion.app	3.3.0
-/Applications/Numbers.app	13.2
+/Applications/Numbers.app	14.0
 /Applications/OBS.app	29.0.2
-/Applications/Pages.app	13.2
+/Applications/Pages.app	14.0
 /Applications/Papers.app	4.37.2374
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
@@ -64,7 +64,7 @@
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
 /Applications/Spotify.app	1.2.33.1042.g26c92729
-/Applications/Tor Browser.app	13.0.12
+/Applications/Tor Browser.app	13.0.13
 /Applications/Transmission.app	4.0.5
 /Applications/Utilities/LogiMgr Uninstaller.app	8.50.210
 /Applications/VERO.app	0.6.1-beta
@@ -77,6 +77,7 @@
 /Applications/calibrite PROFILER.app	1.0.5
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.4.23
+/Applications/lghub.app
 /Applications/zoom.us.app	5.16.10 (25689)
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
 /Users/stefan/Applications/Chrome Apps.localized/Lightning AI.app
