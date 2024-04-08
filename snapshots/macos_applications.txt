@@ -40,6 +40,7 @@
 /Applications/IDrive.app
 /Applications/Insta360 Studio 2024.app	4.9.2
 /Applications/Keynote.app	14.0
+/Applications/LogiTune.app	3.5.249
 /Applications/LuLu.app	2.5.1
 /Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Client.app	22.0
 /Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Server.app	22.0
@@ -75,7 +76,6 @@
 /Applications/calibrite PROFILER.app	1.0.5
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.4.23
-/Applications/lghub.app
 /Applications/logioptionsplus.app	1.68.542186
 /Applications/zoom.us.app	5.16.10 (25689)
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
