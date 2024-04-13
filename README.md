@@ -10,15 +10,21 @@ Configs for frequently used tools.
     git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
     ```
 
-2. Install configs for [supported tools](tools) with:
+2. Install configs for [managed tools](managed_tools), all at once, with:
 
     ```bash
-    ./install
+    ./install.sh
     ```
 
-3. If needed, manually restore backups for [optional tools](backups) by following their specific instructions.
+3. Install configs for [sudo tools](sudo_tools), individually, with:
 
-4. Change shell to `zsh` with:
+    ```bash
+    sudo sudo_tools/[TOOL]/install.sh
+    ```
+
+4. Restore [backups](backups) manually.
+
+5. Change login shell to `zsh` with:
 
     ```bash
     chsh -s $(which zsh)
@@ -26,13 +32,14 @@ Configs for frequently used tools.
 
 ## Snapshots
 
-Currently, the following system info is periodically saved into this repo, to facilitate future system recoveries:
+Periodically, the following system info is saved into the [snapshots](snapshots) folder, to facilitate future system recoveries:
 
-* The list of installed applications (macOS).
-* The list of installed fonts (macOS).
-* The list of installed Homebrew packages (macOS).
+- The list of installed applications (macOS).
+- The list of installed fonts (macOS).
+- The list of installed Homebrew packages (macOS).
 
 ## Licenses
 
-* Most configs are licensed under the [MIT License](LICENSE.md) by Ștefan Istrate.
-* [`tools/vim/after/indent/python.vim`](tools/vim/after/indent/python.vim) is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Google LLC.
+Configs are licensed under the [MIT License](LICENSE.md) by Ștefan Istrate, except for:
+
+- [`managed_tools/vim/after/indent/python.vim`](managed_tools/vim/after/indent/python.vim): licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Google LLC.

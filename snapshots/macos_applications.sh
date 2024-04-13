@@ -14,7 +14,7 @@ cd $REPO_DIR
 
 git clone --depth 1 git@github.com:stefanistrate/dotfiles.git .
 
-python3 scripts/snapshot_macos_applications.py > snapshots/macos_applications.txt
+python3 snapshots/macos_applications.py > snapshots/macos_applications.txt
 
 git add snapshots/macos_applications.txt
 git commit -m "Save the current list of macOS applications." || exit 0

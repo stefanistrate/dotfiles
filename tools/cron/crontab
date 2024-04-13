@@ -1,3 +1,0 @@
-00 12 * * * LOG=`DOTFILES_DIR/scripts/snapshot_macos_applications.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES
-15 12 * * * LOG=`DOTFILES_DIR/scripts/snapshot_macos_fonts.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES
-30 12 * * * LOG=`DOTFILES_DIR/scripts/snapshot_macos_homebrew_packages.sh 2>&1` || echo "$LOG"  # MANAGED_BY_DOTFILES

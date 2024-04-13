@@ -1,21 +1,21 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot.git
-[submodule "tools/bullet-train.zsh"]
-	path = tools/bullet-train.zsh
+[submodule "managed_tools/bullet-train.zsh"]
+	path = managed_tools/bullet-train.zsh
 	url = https://github.com/caiogondim/bullet-train.zsh.git
-[submodule "tools/dircolors-solarized"]
-	path = tools/dircolors-solarized
+[submodule "managed_tools/dircolors-solarized"]
+	path = managed_tools/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
-[submodule "tools/ohmyzsh"]
-	path = tools/ohmyzsh
+[submodule "managed_tools/ohmyzsh"]
+	path = managed_tools/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
-[submodule "tools/powerline-fonts"]
-	path = tools/powerline-fonts
+[submodule "managed_tools/powerline-fonts"]
+	path = managed_tools/powerline-fonts
 	url = https://github.com/powerline/fonts.git
-[submodule "tools/tpm"]
-	path = tools/tpm
+[submodule "managed_tools/tpm"]
+	path = managed_tools/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule "tools/vundle"]
-	path = tools/vundle
+[submodule "managed_tools/vundle"]
+	path = managed_tools/vundle
 	url = https://github.com/VundleVim/Vundle.vim.git
