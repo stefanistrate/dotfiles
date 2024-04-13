@@ -22,7 +22,6 @@
 /Applications/Docker.app	4.22.1
 /Applications/DotDotGoose.app	0.0.0
 /Applications/EaseUS Data Recovery Wizard.app	13.8.5
-/Applications/Elgato Camera Hub.app	1.5.2
 /Applications/FUJIFILM X Acquire.app	1.24.0.4
 /Applications/FUJIFILM X Webcam 2.app	2.1
 /Applications/Firefox.app	111.0.1
@@ -63,7 +62,7 @@
 /Applications/Slack.app	4.37.94
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.34.783.g923721d9
+/Applications/Spotify.app	1.2.35.663.gb699649e
 /Applications/Tor Browser.app	13.0.13
 /Applications/Transmission.app	4.0.5
 /Applications/VERO.app	0.6.1-beta
