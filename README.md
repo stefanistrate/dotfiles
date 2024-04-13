@@ -40,6 +40,6 @@ Periodically, the following system info is saved into the [snapshots](snapshots)
 
 ## Licenses
 
-Configs are licensed under the [MIT License](LICENSE.md) by Ștefan Istrate, except for:
+Configs are licensed under the [MIT License](LICENSE.md) by Ștefan Istrate, except for...
 
 - [`managed_tools/vim/after/indent/python.vim`](managed_tools/vim/after/indent/python.vim): licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Google LLC.
