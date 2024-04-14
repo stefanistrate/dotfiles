@@ -356,8 +356,8 @@
 /System/Library/Fonts/Times.ttc
 /System/Library/Fonts/TimesLTMM
 /System/Library/Fonts/ZapfDingbats.ttf
-/System/Library/Fonts/ヒラギノ明朝 ProN.ttc
 /System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc
+/System/Library/Fonts/ヒラギノ明朝 ProN.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W0.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W1.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W2.ttc
@@ -368,8 +368,11 @@
 /System/Library/Fonts/ヒラギノ角ゴシック W7.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W8.ttc
 /System/Library/Fonts/ヒラギノ角ゴシック W9.ttc
+/Users/stefan/Library/Fonts/3270-Regular.ttf
+/Users/stefan/Library/Fonts/3270Condensed-Regular.ttf
 /Users/stefan/Library/Fonts/3270Medium.ttf
 /Users/stefan/Library/Fonts/3270Narrow.ttf
+/Users/stefan/Library/Fonts/3270SemiCondensed-Regular.ttf
 /Users/stefan/Library/Fonts/3270SemiNarrow.ttf
 /Users/stefan/Library/Fonts/Anonymice Powerline Bold Italic.ttf
 /Users/stefan/Library/Fonts/Anonymice Powerline Bold.ttf
@@ -383,6 +386,11 @@
 /Users/stefan/Library/Fonts/Bariol_Serif_Regular_Italic.otf
 /Users/stefan/Library/Fonts/Bitter-Italic-VariableFont_wght.ttf
 /Users/stefan/Library/Fonts/Bitter-VariableFont_wght.ttf
+/Users/stefan/Library/Fonts/CPMono_v07 Black.otf
+/Users/stefan/Library/Fonts/CPMono_v07 Bold.otf
+/Users/stefan/Library/Fonts/CPMono_v07 ExtraLight.otf
+/Users/stefan/Library/Fonts/CPMono_v07 Light.otf
+/Users/stefan/Library/Fonts/CPMono_v07 Plain.otf
 /Users/stefan/Library/Fonts/Cousine Bold Italic for Powerline.ttf
 /Users/stefan/Library/Fonts/Cousine Bold for Powerline.ttf
 /Users/stefan/Library/Fonts/Cousine Italic for Powerline.ttf
