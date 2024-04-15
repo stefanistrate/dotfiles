@@ -1,4 +1,4 @@
-/Applications/Adobe Acrobat Reader.app	24.001.20643
+/Applications/Adobe Acrobat Reader.app	24.002.20687
 /Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
 /Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.2
 /Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
@@ -19,6 +19,7 @@
 /Applications/DaVinci Resolve/Fairlight Studio Utility.app
 /Applications/DaVinci Resolve/Uninstall Resolve.app
 /Applications/Discord.app	0.0.297
+/Applications/DisplayQuickit.app	1.0.2
 /Applications/Docker.app	4.22.1
 /Applications/DotDotGoose.app	0.0.0
 /Applications/EaseUS Data Recovery Wizard.app	13.8.5
@@ -37,7 +38,7 @@
 /Applications/HP Smart.app	17.10.1
 /Applications/HotSpotter.app	1.0.0
 /Applications/IDrive.app
-/Applications/Insta360 Studio 2024.app	4.9.2
+/Applications/Insta360 Studio.app	5.0.0
 /Applications/Keynote.app	14.0
 /Applications/LogiTune.app	3.5.249
 /Applications/LuLu.app	2.5.1
@@ -53,6 +54,7 @@
 /Applications/Numbers.app	14.0
 /Applications/OBS.app	29.0.2
 /Applications/Pages.app	14.0
+/Applications/PaletteMasterUltimate.app	1.1
 /Applications/Papers.app	4.37.2374
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
