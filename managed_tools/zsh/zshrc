@@ -57,6 +57,7 @@ plugins=(
 DISABLE_MAGIC_FUNCTIONS=true
 
 # Load `oh-my-zsh`.
+zstyle ':omz:alpha:lib:git' async-prompt no
 source "$ZSH/oh-my-zsh.sh"
 
 # Load `google-cloud-sdk`.
