@@ -38,7 +38,7 @@
 /Applications/HP Smart.app	17.10.1
 /Applications/HotSpotter.app	1.0.0
 /Applications/IDrive.app
-/Applications/Insta360 Studio.app	5.0.0
+/Applications/Insta360 Studio.app	5.1.0
 /Applications/Keynote.app	14.0
 /Applications/LogiTune.app	3.5.249
 /Applications/LuLu.app	2.5.1
