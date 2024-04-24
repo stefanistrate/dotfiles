@@ -78,7 +78,7 @@ Plugin 'tComment'  " For easier commenting.
 
 Plugin 'tpope/vim-fugitive'  " For git.
 
-Plugin 'Valloric/MatchTagAlways'  " For highlighting the enclosing HTML/XML tags.
+" Plugin 'Valloric/MatchTagAlways'  " For highlighting the enclosing HTML/XML tags.
 
 Plugin 'vim-airline/vim-airline'  " For fast statusline.
 Plugin 'vim-airline/vim-airline-themes'  " Themes for vim-airline.
