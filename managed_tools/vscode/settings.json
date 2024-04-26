@@ -9,7 +9,6 @@
         "editor.defaultFormatter": "jock.svg"
     },
     "diffEditor.ignoreTrimWhitespace": false,
-    "docker.dockerPath": "/usr/local/bin/docker",
     "editor.detectIndentation": false,
     "editor.formatOnSave": true,
     "editor.inlineSuggest.enabled": true,
@@ -27,9 +26,7 @@
     "git.confirmSync": false,
     "git.detectSubmodules": false,
     "git.enableCommitSigning": true,
-    "git.path": "/usr/local/bin/git",
     "githubPullRequests.createOnPublishBranch": "never",
-    "gitlens.hovers.currentLine.over": "line",
     "isort.check": true,
     "jupyter.askForKernelRestart": false,
     "jupyter.widgetScriptSources": [
@@ -46,15 +43,12 @@
         "~/workspace"
     ],
     "python.analysis.useLibraryCodeForTypes": false,
-    "python.formatting.provider": "black",
     "python.languageServer": "Jedi",
-    "python.linting.pylintPath": "/usr/local/bin/pylint",
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.pythonPath": "python3",
     "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
-    "terminal.integrated.rendererType": "dom",
     "workbench.colorTheme": "Solarized Autumn",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
