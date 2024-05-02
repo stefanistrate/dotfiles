@@ -83,7 +83,7 @@ bindkey "^[[4~" end-of-line  # Fn + Right arrow
 case "$OSTYPE" in
     darwin*)
         eval `gdircolors ~/.dircolors`
-        alias ls="gls -F --color=auto"
+        alias ls="gls -F --color=auto --ignore $'Icon\r'"
         ;;
     linux*)
         eval `dircolors ~/.dircolors`
