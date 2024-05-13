@@ -26,7 +26,6 @@
 /Applications/FUJIFILM X Acquire.app	1.24.0.4
 /Applications/FUJIFILM X Webcam 2.app	2.1
 /Applications/Firefox.app	111.0.1
-/Applications/Firetail.app
 /Applications/Flycut.app	1.9.6
 /Applications/Garmin BaseCamp.app	4.8.13
 /Applications/Garmin Express.app	7.17.2.0
