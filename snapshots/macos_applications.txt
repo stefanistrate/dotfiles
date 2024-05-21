@@ -49,7 +49,7 @@
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
 /Applications/Notion Calendar.app	1.122.0
-/Applications/Notion.app	3.3.0
+/Applications/Notion.app	3.8.0
 /Applications/Numbers.app	14.0
 /Applications/OBS.app	29.0.2
 /Applications/Pages.app	14.0
@@ -57,14 +57,14 @@
 /Applications/Papers.app	4.37.2374
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
-/Applications/Safari.app	17.4.1
+/Applications/Safari.app	17.5
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.103
-/Applications/Slack.app	4.37.94
+/Applications/Slack.app	4.38.121
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.36.959.g04bf500c
-/Applications/Tor Browser.app	13.0.14
+/Applications/Spotify.app	1.2.37.701.ge66eb7bc
+/Applications/Tor Browser.app	13.0.15
 /Applications/Transmission.app	4.0.5
 /Applications/VERO.app	0.6.1-beta
 /Applications/VLC.app	3.0.20
