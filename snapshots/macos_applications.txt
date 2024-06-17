@@ -1,4 +1,4 @@
-/Applications/Adobe Acrobat Reader.app	24.002.20759
+/Applications/Adobe Acrobat Reader.app	24.002.20857
 /Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
 /Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.2
 /Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
@@ -63,7 +63,7 @@
 /Applications/Slack.app	4.38.125
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.37.701.ge66eb7bc
+/Applications/Spotify.app	1.2.39.578.g0ea3f38b
 /Applications/Tor Browser.app	13.0.16
 /Applications/Transmission.app	4.0.6
 /Applications/VERO.app	0.12.1736-beta
@@ -73,7 +73,7 @@
 /Applications/WhatsApp.app	24.10.80
 /Applications/Windscribe.app	2.9.9
 /Applications/calibre.app	6.24.0
-/Applications/calibrite PROFILER.app	1.0.5
+/Applications/calibrite PROFILER.app	1.3.2
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.5.1
 /Applications/logioptionsplus.app	1.74.577900
