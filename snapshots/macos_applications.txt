@@ -36,7 +36,7 @@
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	17.15.1
 /Applications/HotSpotter.app	1.0.0
-/Applications/IDrive.app	3.5.10.78
+/Applications/IDrive.app	3.5.10.79
 /Applications/Insta360 Studio.app	5.1.0
 /Applications/Keynote.app	14.1
 /Applications/LogiTune.app	3.5.249
