@@ -59,7 +59,7 @@
 /Applications/QGIS-LTR.app	3.34.4
 /Applications/Safari.app	17.5
 /Applications/Skitch.app	2.9
-/Applications/Skype.app	8.103
+/Applications/Skype.app	8.122
 /Applications/Slack.app	4.38.125
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
@@ -69,7 +69,7 @@
 /Applications/VERO.app	0.12.1736-beta
 /Applications/VLC.app	3.0.20
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.90.2
+/Applications/Visual Studio Code.app	1.91.0
 /Applications/WhatsApp.app	24.12.80
 /Applications/Windscribe.app	2.9.9
 /Applications/calibre.app	6.24.0
