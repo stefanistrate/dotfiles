@@ -24,8 +24,14 @@
 	helper = manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[credential "https://earthengine.googlesource.com"]
+	provider = generic
+	helper = gcloud
 [credential "https://huggingface.co"]
 	provider = generic
+[credential "https://source.developers.google.com"]
+	provider = generic
+	helper = gcloud
 [diff]
 	tool = vimdiff
 [difftool]
@@ -35,6 +41,8 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[http]
+	cookiefile = ~/.gitcookies
 [include]
 	path = .gitconfig.local
 [init]
