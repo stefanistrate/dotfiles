@@ -36,7 +36,7 @@
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	17.15.1
 /Applications/HotSpotter.app	1.0.0
-/Applications/IDrive.app	3.5.10.79
+/Applications/IDrive.app	3.5.10.80
 /Applications/Insta360 Studio.app	5.1.0
 /Applications/Keynote.app	14.1
 /Applications/LogiTune.app	3.5.249
@@ -77,7 +77,7 @@
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.5.2
 /Applications/logioptionsplus.app	1.76.583666
-/Applications/zoom.us.app	5.16.10 (25689)
+/Applications/zoom.us.app	6.0.11 (35001)
 /Users/stefan/Applications/Chrome Apps.localized/Cara | Artist Social & Portfolio Platform.app
 /Users/stefan/Applications/Chrome Apps.localized/GitHub.app
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
