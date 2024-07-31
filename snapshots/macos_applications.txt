@@ -32,7 +32,7 @@
 /Applications/Garmin MapInstall.app	4.3.6
 /Applications/Garmin MapManager.app	3.1.3
 /Applications/Garmin WebUpdater.app	2.2.1
-/Applications/Google Chrome.app	126.0.6478.183
+/Applications/Google Chrome.app	127.0.6533.73
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	17.20.1
 /Applications/HotSpotter.app	1.0.0
