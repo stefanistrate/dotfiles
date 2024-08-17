@@ -57,13 +57,13 @@
 /Applications/Papers.app	4.37.2394
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
-/Applications/Safari.app	17.5
+/Applications/Safari.app	17.6
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.122
 /Applications/Slack.app	4.39.95
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.42.290.g242057a2
+/Applications/Spotify.app	1.2.44.405.g81fd6352
 /Applications/Tor Browser.app	13.5.2
 /Applications/Transmission.app	4.0.6
 /Applications/VERO.app	0.12.1736-beta
