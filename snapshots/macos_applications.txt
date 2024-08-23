@@ -8,14 +8,14 @@
 /Applications/Arduino.app	1.8.13
 /Applications/Avast.app	15.8.0
 /Applications/Blackmagic Disk Speed Test.app	3.4.2
-/Applications/Blackmagic Proxy Generator.app	18.6.6
-/Applications/Blackmagic RAW/Blackmagic RAW Player.app	3.6.1
-/Applications/Blackmagic RAW/Blackmagic RAW Speed Test.app	3.6.1
+/Applications/Blackmagic Proxy Generator.app	19.0.0
+/Applications/Blackmagic RAW/Blackmagic RAW Player.app	4.2
+/Applications/Blackmagic RAW/Blackmagic RAW Speed Test.app	4.2
 /Applications/CheatSheet.app	1.6.4
 /Applications/DJI Assistant 2(Consumer Drones Series).app
 /Applications/DaVinci Resolve/DaVinci Control Panels Setup.app
-/Applications/DaVinci Resolve/DaVinci Remote Monitor.app	18.6
-/Applications/DaVinci Resolve/DaVinci Resolve.app	18.6.6
+/Applications/DaVinci Resolve/DaVinci Remote Monitor.app	19.0
+/Applications/DaVinci Resolve/DaVinci Resolve.app	19.0.0
 /Applications/DaVinci Resolve/Fairlight Studio Utility.app
 /Applications/DaVinci Resolve/Uninstall Resolve.app
 /Applications/Discord.app	0.0.297
