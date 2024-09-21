@@ -35,7 +35,6 @@
 /Applications/Google Chrome.app	129.0.6668.58
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	17.25.1
-/Applications/HotSpotter.app	1.0.0
 /Applications/IDrive.app	3.5.10.81
 /Applications/Insta360 Studio.app	5.1.0
 /Applications/Keynote.app	14.2
@@ -78,7 +77,6 @@
 /Applications/iTerm.app	3.5.4
 /Applications/logioptionsplus.app	1.82.618412
 /Applications/zoom.us.app	6.0.11 (35001)
-/Users/stefan/Applications/Chrome Apps.localized/Cara | Artist Social & Portfolio Platform.app
 /Users/stefan/Applications/Chrome Apps.localized/GitHub.app
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
 /Users/stefan/Applications/Chrome Apps.localized/Lightning AI.app
