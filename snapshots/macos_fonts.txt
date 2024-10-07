@@ -12,6 +12,7 @@
 /System/Library/Fonts/Avenir Next Condensed.ttc
 /System/Library/Fonts/Avenir Next.ttc
 /System/Library/Fonts/Avenir.ttc
+/System/Library/Fonts/CJKSymbolsFallback.ttc
 /System/Library/Fonts/Courier.ttc
 /System/Library/Fonts/GeezaPro.ttc
 /System/Library/Fonts/Geneva.ttf
@@ -41,7 +42,6 @@
 /System/Library/Fonts/NotoSerifMyanmar.ttc
 /System/Library/Fonts/Optima.ttc
 /System/Library/Fonts/Palatino.ttc
-/System/Library/Fonts/PingFang.ttc
 /System/Library/Fonts/SFArabic.ttf
 /System/Library/Fonts/SFArabicRounded.ttf
 /System/Library/Fonts/SFArmenian.ttf
@@ -244,7 +244,7 @@
 /System/Library/Fonts/Supplemental/NotoSansSamaritan-Regular.ttf
 /System/Library/Fonts/Supplemental/NotoSansSaurashtra-Regular.ttf
 /System/Library/Fonts/Supplemental/NotoSansSharada-Regular.ttf
-/System/Library/Fonts/Supplemental/NotoSansSiddham-Regular.ttf
+/System/Library/Fonts/Supplemental/NotoSansSiddham-Regular.otf
 /System/Library/Fonts/Supplemental/NotoSansSoraSompeng-Regular.ttf
 /System/Library/Fonts/Supplemental/NotoSansSundanese-Regular.ttf
 /System/Library/Fonts/Supplemental/NotoSansSylotiNagri-Regular.ttf
@@ -256,7 +256,7 @@
 /System/Library/Fonts/Supplemental/NotoSansTaiViet-Regular.ttf
 /System/Library/Fonts/Supplemental/NotoSansTakri-Regular.ttf
 /System/Library/Fonts/Supplemental/NotoSansThaana-Regular.ttf
-/System/Library/Fonts/Supplemental/NotoSansTifinagh-Regular.ttf
+/System/Library/Fonts/Supplemental/NotoSansTifinagh-Regular.otf
 /System/Library/Fonts/Supplemental/NotoSansTirhuta-Regular.ttf
 /System/Library/Fonts/Supplemental/NotoSansUgaritic-Regular.ttf
 /System/Library/Fonts/Supplemental/NotoSansVai-Regular.ttf
