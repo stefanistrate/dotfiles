@@ -114,9 +114,9 @@ function _resolve_python_bin() {
     fi
 }
 
-function mkenv() {
+function mke() {
     if [[ $# -gt 2 ]] ; then
-        echo "Too many arguments! Usage: mkenv [env_name [python_bin]]"
+        echo "Too many arguments! Usage: mke [env_name [python_bin]]"
         return 1
     fi
 
@@ -127,9 +127,9 @@ function mkenv() {
     pip install --upgrade pip setuptools wheel
 }
 
-function rmenv() {
+function rme() {
     if [[ $# -gt 1 ]] ; then
-        echo "Too many arguments! Usage: rmenv [env_name]"
+        echo "Too many arguments! Usage: rme [env_name]"
         return 1
     fi
 
@@ -137,13 +137,13 @@ function rmenv() {
     rm -rf ".direnv/$env_name"
 }
 
-function lsenv() {
+function lse() {
     ls -1 .direnv 2> /dev/null
 }
 
-function aenv() {
+function ae() {
     if [[ $# -ge 2 ]] ; then
-        echo "Too many arguments! Usage: aenv [env_name]"
+        echo "Too many arguments! Usage: ae [env_name]"
         return 1
     fi
 
@@ -151,7 +151,7 @@ function aenv() {
     source ".direnv/$env_name/bin/activate"
 }
 
-function denv() {
+function de() {
     deactivate
 }
 
