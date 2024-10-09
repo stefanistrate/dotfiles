@@ -32,7 +32,7 @@
 /Applications/Garmin MapInstall.app	4.3.6
 /Applications/Garmin MapManager.app	3.1.3
 /Applications/Garmin WebUpdater.app	2.2.1
-/Applications/Google Chrome.app	129.0.6668.90
+/Applications/Google Chrome.app	129.0.6668.91
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	17.25.1
 /Applications/IDrive.app	3.5.10.81
@@ -62,7 +62,7 @@
 /Applications/Slack.app	4.40.128
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.44.405.g81fd6352
+/Applications/Spotify.app	1.2.47.364
 /Applications/Tor Browser.app	13.5.2
 /Applications/Transmission.app	4.0.6
 /Applications/VERO.app	0.12.1736-beta
