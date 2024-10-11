@@ -1,4 +1,4 @@
-/Applications/Adobe Acrobat DC/Adobe Acrobat.app	24.003.20121
+/Applications/Adobe Acrobat DC/Adobe Acrobat.app	24.003.20180
 /Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
 /Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.5.1
 /Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
