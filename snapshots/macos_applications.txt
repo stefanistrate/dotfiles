@@ -47,7 +47,7 @@
 /Applications/Maxon Cinema 4D R22/Commandline.app	22.0
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
-/Applications/Notion Calendar.app	1.122.0
+/Applications/Notion Calendar.app	1.124.0
 /Applications/Notion.app	3.15.0
 /Applications/Numbers.app	14.2
 /Applications/OBS.app	29.0.2
