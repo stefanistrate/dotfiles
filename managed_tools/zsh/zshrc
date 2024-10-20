@@ -94,7 +94,23 @@ zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 
 # Define additional aliases and functions.
 
+alias dk="cd ~/Desktop"
+alias dw="cd ~/Downloads"
 alias ws="cd ~/workspace"
+# TODO(stefanistrate): Implement a simpler way to configure addons. E.g. we
+# could call something like this instead: `yt 1080 PL SUB MP4`.
+alias yt="yt720"
+alias ytpl="yt720 -o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
+alias ytsub="yt720 --write-subs"
+alias yto="yt-dlp"
+alias ytopl="yt-dlp -o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
+alias ytosub="yt-dlp --write-subs"
+alias yt480="yt-dlp --format 'bestvideo[height<=480]+bestaudio'"
+alias yt720="yt-dlp --format 'bestvideo[height<=720]+bestaudio'"
+alias yt1080="yt-dlp --format 'bestvideo[height<=1080]+bestaudio'"
+alias yt4k="yt-dlp --format 'bestvideo[height<=2160]+bestaudio'"
+alias ytmp3="yt-dlp --format 'bestaudio' --extract-audio --audio-format mp3"
+alias ytmp4="yt720 --recode-video mp4"
 
 function _resolve_env_name() {
     current_dir="${PWD##*/}"
@@ -154,21 +170,6 @@ function ae() {
 function de() {
     deactivate
 }
-
-# TODO(stefanistrate): Implement a simpler way to configure addons. E.g. we
-# could call something like this instead: `yt 1080 PL SUB MP4`.
-alias yt="yt720"
-alias ytpl="yt720 -o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
-alias ytsub="yt720 --write-subs"
-alias yto="yt-dlp"
-alias ytopl="yt-dlp -o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
-alias ytosub="yt-dlp --write-subs"
-alias yt480="yt-dlp --format 'bestvideo[height<=480]+bestaudio'"
-alias yt720="yt-dlp --format 'bestvideo[height<=720]+bestaudio'"
-alias yt1080="yt-dlp --format 'bestvideo[height<=1080]+bestaudio'"
-alias yt4k="yt-dlp --format 'bestvideo[height<=2160]+bestaudio'"
-alias ytmp3="yt-dlp --format 'bestaudio' --extract-audio --audio-format mp3"
-alias ytmp4="yt720 --recode-video mp4"
 
 # Enable local settings, which override general settings.
 if [[ -f ~/.zshrc.local ]] ; then
