@@ -6,7 +6,7 @@
 /Applications/Android File Transfer.app	1.0.12
 /Applications/AppCleaner.app	3.6.8
 /Applications/Arduino.app	1.8.13
-/Applications/Avast.app	15.8.0
+/Applications/Avast.app	15.9.2
 /Applications/Blackmagic Disk Speed Test.app	3.4.2
 /Applications/Blackmagic Proxy Generator.app	19.0.0
 /Applications/Blackmagic RAW/Blackmagic RAW Player.app	4.2
