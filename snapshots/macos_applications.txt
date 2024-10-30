@@ -34,7 +34,7 @@
 /Applications/Garmin WebUpdater.app	2.2.1
 /Applications/Google Chrome.app	130.0.6723.70
 /Applications/Google Earth Pro.app	7.3
-/Applications/HP Smart.app	17.25.1
+/Applications/HP Smart.app	17.30.1
 /Applications/IDrive.app	3.5.10.81
 /Applications/Insta360 Studio.app	5.1.0
 /Applications/Keynote.app	14.2
@@ -69,7 +69,7 @@
 /Applications/VERO.app	0.12.1736-beta
 /Applications/VLC.app	3.0.20
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.94.0
+/Applications/Visual Studio Code.app	1.94.2
 /Applications/WhatsApp.app	24.19.85
 /Applications/Windscribe.app	2.11.11
 /Applications/calibre.app	7.17.0
