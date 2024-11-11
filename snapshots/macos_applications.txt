@@ -53,7 +53,7 @@
 /Applications/OBS.app	29.0.2
 /Applications/Pages.app	14.2
 /Applications/PaletteMasterUltimate.app	1.1
-/Applications/Papers.app	4.37.2394
+/Applications/Papers.app	4.37.2395
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
 /Applications/Safari.app	18.1
