@@ -1,4 +1,4 @@
-/Applications/Adobe Acrobat DC/Adobe Acrobat.app	24.003.20180
+/Applications/Adobe Acrobat DC/Adobe Acrobat.app	24.004.20272
 /Applications/Adobe Illustrator 2021/Adobe Illustrator.app	25.4.1
 /Applications/Adobe Lightroom Classic/Adobe Lightroom Classic.app	13.5.1
 /Applications/Adobe Photoshop 2023/Adobe Photoshop 2023.app	24.4.0
@@ -6,7 +6,7 @@
 /Applications/Android File Transfer.app	1.0.12
 /Applications/AppCleaner.app	3.6.8
 /Applications/Arduino.app	1.8.13
-/Applications/Avast.app	15.8.0
+/Applications/Avast.app	15.9.2
 /Applications/Blackmagic Disk Speed Test.app	3.4.2
 /Applications/Blackmagic Proxy Generator.app	19.0.0
 /Applications/Blackmagic RAW/Blackmagic RAW Player.app	4.2
@@ -32,9 +32,9 @@
 /Applications/Garmin MapInstall.app	4.3.6
 /Applications/Garmin MapManager.app	3.1.3
 /Applications/Garmin WebUpdater.app	2.2.1
-/Applications/Google Chrome.app	129.0.6668.101
+/Applications/Google Chrome.app	131.0.6778.86
 /Applications/Google Earth Pro.app	7.3
-/Applications/HP Smart.app	17.25.1
+/Applications/HP Smart.app	17.30.1
 /Applications/IDrive.app	3.5.10.81
 /Applications/Insta360 Studio.app	5.1.0
 /Applications/Keynote.app	14.2
@@ -48,35 +48,35 @@
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
 /Applications/Notion Calendar.app	1.124.0
-/Applications/Notion.app	3.15.0
+/Applications/Notion.app	3.18.0
 /Applications/Numbers.app	14.2
 /Applications/OBS.app	29.0.2
 /Applications/Pages.app	14.2
 /Applications/PaletteMasterUltimate.app	1.1
-/Applications/Papers.app	4.37.2394
+/Applications/Papers.app	4.37.2395
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
-/Applications/Safari.app	18.0
+/Applications/Safari.app	18.1
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.122
-/Applications/Slack.app	4.40.128
+/Applications/Slack.app	4.40.133
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.48.405
-/Applications/Tor Browser.app	13.5.7
+/Applications/Spotify.app	1.2.50.335
+/Applications/Tor Browser.app	14.0.2
 /Applications/Transmission.app	4.0.6
 /Applications/Utilities/LogiPluginService.app	4.2.5
 /Applications/VERO.app	0.12.1736-beta
 /Applications/VLC.app	3.0.20
 /Applications/VMware Fusion.app	12.2.1
-/Applications/Visual Studio Code.app	1.94.0
-/Applications/WhatsApp.app	24.19.85
+/Applications/Visual Studio Code.app	1.95.1
+/Applications/WhatsApp.app	24.22.84
 /Applications/Windscribe.app	2.11.11
 /Applications/calibre.app	7.17.0
 /Applications/calibrite PROFILER.app	1.3.2
 /Applications/com.avast.av.uninstaller.app
-/Applications/iTerm.app	3.5.5
-/Applications/logioptionsplus.app	1.83.635658
+/Applications/iTerm.app	3.5.10
+/Applications/logioptionsplus.app	1.84.641293
 /Applications/zoom.us.app	6.0.11 (35001)
 /Users/stefan/Applications/Chrome Apps.localized/GitHub.app
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
