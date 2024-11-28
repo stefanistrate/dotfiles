@@ -29,6 +29,7 @@
     "githubPullRequests.createOnPublishBranch": "never",
     "isort.check": true,
     "jupyter.askForKernelRestart": false,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
     "jupyter.widgetScriptSources": [
         "jsdelivr.com",
         "unpkg.com"
