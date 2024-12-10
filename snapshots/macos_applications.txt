@@ -34,7 +34,7 @@
 /Applications/Garmin WebUpdater.app	2.2.1
 /Applications/Google Chrome.app	131.0.6778.109
 /Applications/Google Earth Pro.app	7.3
-/Applications/HP Smart.app	17.30.1
+/Applications/HP Smart.app	17.35.1
 /Applications/IDrive.app	3.5.10.81
 /Applications/Insta360 Studio.app	5.1.0
 /Applications/Keynote.app	14.2
@@ -48,7 +48,7 @@
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
 /Applications/Notion Calendar.app	1.124.0
-/Applications/Notion.app	3.18.0
+/Applications/Notion.app	4.1.2
 /Applications/Numbers.app	14.2
 /Applications/OBS.app	29.0.2
 /Applications/Pages.app	14.2
@@ -56,13 +56,13 @@
 /Applications/Papers.app	4.37.2395
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
-/Applications/Safari.app	18.1
+/Applications/Safari.app	18.1.1
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.122
-/Applications/Slack.app	4.40.133
+/Applications/Slack.app	4.41.97
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.51.345
+/Applications/Spotify.app	1.2.52.442
 /Applications/Tor Browser.app	14.0.3
 /Applications/Transmission.app	4.0.6
 /Applications/Utilities/LogiPluginService.app	4.2.5
@@ -76,7 +76,7 @@
 /Applications/calibrite PROFILER.app	1.3.2
 /Applications/com.avast.av.uninstaller.app
 /Applications/iTerm.app	3.5.10
-/Applications/logioptionsplus.app	1.84.641293
+/Applications/logioptionsplus.app	1.85.655119
 /Applications/zoom.us.app	6.0.11 (35001)
 /Users/stefan/Applications/Chrome Apps.localized/GitHub.app
 /Users/stefan/Applications/Chrome Apps.localized/Instagram.app
