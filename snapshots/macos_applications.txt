@@ -32,12 +32,12 @@
 /Applications/Garmin MapInstall.app	4.3.6
 /Applications/Garmin MapManager.app	3.1.3
 /Applications/Garmin WebUpdater.app	2.2.1
-/Applications/Google Chrome.app	131.0.6778.139
+/Applications/Google Chrome.app	131.0.6778.140
 /Applications/Google Earth Pro.app	7.3
 /Applications/HP Smart.app	17.35.1
 /Applications/IDrive.app	3.5.10.81
 /Applications/Insta360 Studio.app	5.1.0
-/Applications/Keynote.app	14.2
+/Applications/Keynote.app	14.3
 /Applications/LogiTune.app	3.5.249
 /Applications/LuLu.app	2.6.3
 /Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Client.app	22.0
@@ -47,19 +47,19 @@
 /Applications/Maxon Cinema 4D R22/Commandline.app	22.0
 /Applications/Maxon Cinema 4D R22/c4dpy.app	22.0
 /Applications/Microsoft Teams.app	1.00.624065
-/Applications/Notion Calendar.app	1.124.0
-/Applications/Notion.app	4.1.2
-/Applications/Numbers.app	14.2
+/Applications/Notion Calendar.app	1.125.0
+/Applications/Notion.app	4.2.0
+/Applications/Numbers.app	14.3
 /Applications/OBS.app	29.0.2
-/Applications/Pages.app	14.2
+/Applications/Pages.app	14.3
 /Applications/PaletteMasterUltimate.app	1.1
 /Applications/Papers.app	4.37.2395
 /Applications/ProtonVPN.app	4.1.9
 /Applications/QGIS-LTR.app	3.34.4
-/Applications/Safari.app	18.1.1
+/Applications/Safari.app	18.2
 /Applications/Skitch.app	2.9
 /Applications/Skype.app	8.122
-/Applications/Slack.app	4.41.97
+/Applications/Slack.app	4.41.98
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
 /Applications/Spotify.app	1.2.52.442
