@@ -63,7 +63,7 @@
 /Applications/Slack.app	4.41.98
 /Applications/Smart Switch/SmartSwitch.app	4.4.1.23081_6
 /Applications/Smart Switch/Uninstall.app	1.0
-/Applications/Spotify.app	1.2.52.442
+/Applications/Spotify.app	1.2.53.438
 /Applications/Tor Browser.app	14.0.3
 /Applications/Transmission.app	4.0.6
 /Applications/Utilities/LogiPluginService.app	4.2.5
