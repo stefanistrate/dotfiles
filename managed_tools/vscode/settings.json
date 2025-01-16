@@ -1,0 +1,61 @@
+{
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.maxComputationTime": 15000,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.rulers": [
+        88
+    ],
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "*.borg": "properties"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 60000,
+    "files.insertFinalNewline": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.detectSubmodules": false,
+    "git.enableCommitSigning": true,
+    "githubPullRequests.createOnPublishBranch": "never",
+    "isort.check": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "markdown.extension.math.enabled": false,
+    "markdown.preview.fontSize": 16,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "projectManager.git.baseFolders": [
+        "~/workspace"
+    ],
+    "python.analysis.useLibraryCodeForTypes": false,
+    "python.languageServer": "Jedi",
+    "python.pythonPath": "python3",
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
+    "workbench.colorTheme": "Solarized Autumn",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none"
+}

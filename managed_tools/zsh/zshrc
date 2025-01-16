@@ -1,0 +1,210 @@
+# Set global configuration.
+export EDITOR="vim"
+PATH="$HOME/.local/bin:$HOME/bin:$HOME/opt/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/opt/homebrew/sbin:/usr/local/sbin:/usr/sbin:/sbin"
+PATH="$PATH:/usr/local/opt/python@3.7/bin"
+PATH="$PATH:/usr/local/opt/python@3.8/bin"
+PATH="$PATH:/usr/local/opt/python@3.9/bin"
+PATH="$PATH:/usr/local/opt/python@3.10/bin"
+PATH="$PATH:/usr/local/opt/python@3.11/bin"
+PATH="$PATH:/usr/local/opt/python@3.12/bin"
+export PATH="$PATH"
+export TERM="xterm-256color"
+export ZSH=~/.oh-my-zsh
+export PIP_REQUIRE_VIRTUALENV=true
+
+# Display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS=true
+
+# Use hyphen-insensitive completion. _ and - will be interchangeable.
+HYPHEN_INSENSITIVE=true
+
+# Do not throw any error if a pattern for filename generation has no matches.
+unsetopt NOMATCH
+
+# Set theme and configure prompt segments.
+ZSH_THEME="bullet-train"
+BULLETTRAIN_PROMPT_ORDER=(
+    time
+    status
+    custom
+    dir
+    perl
+    ruby
+    virtualenv
+    go
+    elixir
+    git
+    hg
+    cmd_exec_time
+)
+BULLETTRAIN_TIME_BG=241
+BULLETTRAIN_TIME_FG=254
+
+# Set plugins to load.
+plugins=(
+    common-aliases  # aliases for many commonly used commands
+    copyfile  # copy file contents to system clipboard
+    copypath  # copy path of given file or directory to system clipboard
+    docker  # autocompletion for docker
+    emoji  # emojis using human-readable identifiers
+    macos  # access to a few macOS applications from terminal
+    pip  # autocompletion for pip
+    python  # useful python aliases (e.g. pyfind, pyclean, pygrep)
+    sudo  # prefix current/previous commands with sudo by pressing ESC twice
+)
+
+# Disable `url-quote-magic`.
+DISABLE_MAGIC_FUNCTIONS=true
+
+# Load `oh-my-zsh`.
+zstyle ':omz:alpha:lib:git' async-prompt no
+source "$ZSH/oh-my-zsh.sh"
+
+# Load `google-cloud-sdk`.
+if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" ]] ; then
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+fi
+if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ]] ; then
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+fi
+
+# Map various keys to custom functionality.
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+zmodload zsh/terminfo
+bindkey "$terminfo[kent]" accept-line  # keypad Enter
+bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end  # Up arrow
+bindkey "$terminfo[kcud1]" history-beginning-search-forward-end  # Down arrow
+bindkey "^[[1~" beginning-of-line  # Fn + Left arrow
+bindkey "^[[4~" end-of-line  # Fn + Right arrow
+
+# Set colors for the GNU ls utility and for zsh completion.
+case "$OSTYPE" in
+    darwin*)
+        eval `gdircolors ~/.dircolors`
+        alias ls="gls -F --color=auto --ignore $'Icon\r'"
+        ;;
+    linux*)
+        eval `dircolors ~/.dircolors`
+        alias ls="ls -F --color=auto"
+        ;;
+esac
+zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
+
+# Define additional aliases and functions.
+
+alias dk="cd ~/Desktop"
+alias dw="cd ~/Downloads"
+alias ws="cd ~/workspace"
+# TODO(stefanistrate): Implement a simpler way to configure addons. E.g. we
+# could call something like this instead: `yt 1080 PL SUB MP4`.
+alias yt="yt720"
+alias ytpl="yt720 -o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
+alias ytsub="yt720 --write-subs"
+alias yto="yt-dlp"
+alias ytopl="yt-dlp -o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
+alias ytosub="yt-dlp --write-subs"
+alias yt480="yt-dlp --format 'bestvideo[height<=480]+bestaudio'"
+alias yt720="yt-dlp --format 'bestvideo[height<=720]+bestaudio'"
+alias yt1080="yt-dlp --format 'bestvideo[height<=1080]+bestaudio'"
+alias yt4k="yt-dlp --format 'bestvideo[height<=2160]+bestaudio'"
+alias ytmp3="yt-dlp --format 'bestaudio' --extract-audio --audio-format mp3"
+alias ytmp4="yt720 --recode-video mp4"
+
+function _resolve_env_name() {
+    current_dir="${PWD##*/}"
+    env_prefix="${current_dir// /-}"
+    if [[ -z "$1" ]] ; then
+        echo "$env_prefix-base"
+    else
+        echo "$env_prefix-$1"
+    fi
+}
+
+function _resolve_python_bin() {
+    if [[ -z "$1" ]] ; then
+        echo "python3"
+    else
+        echo "$1"
+    fi
+}
+
+function mke() {
+    if [[ $# -gt 2 ]] ; then
+        echo "Too many arguments! Usage: mke [env_name [python_bin]]"
+        return 1
+    fi
+
+    env_name=$(_resolve_env_name $1)
+    python_bin=$(_resolve_python_bin $2)
+    "$python_bin" -m venv ".direnv/$env_name"
+    source ".direnv/$env_name/bin/activate"
+    pip install --upgrade pip setuptools wheel
+}
+
+function rme() {
+    if [[ $# -gt 1 ]] ; then
+        echo "Too many arguments! Usage: rme [env_name]"
+        return 1
+    fi
+
+    env_name=$(_resolve_env_name $1)
+    rm -rf ".direnv/$env_name"
+}
+
+function lse() {
+    ls -1 .direnv 2> /dev/null
+}
+
+function ae() {
+    if [[ $# -ge 2 ]] ; then
+        echo "Too many arguments! Usage: ae [env_name]"
+        return 1
+    fi
+
+    env_name=$(_resolve_env_name $1)
+    source ".direnv/$env_name/bin/activate"
+}
+
+function de() {
+    deactivate
+}
+
+# Enable local settings, which override general settings.
+if [[ -f ~/.zshrc.local ]] ; then
+    source ~/.zshrc.local
+fi
+
+# Attach to an existing tmux session or start a new one.
+if [[ "$VSCODE_RESOLVING_ENVIRONMENT" != "1" && "$TERM_PROGRAM" != "vscode" ]] ; then
+    if which tmux &> /dev/null ; then
+        if [[ -z $TMUX ]] ; then
+            tmux has &> /dev/null
+            if [[ $? -eq 1 ]] ; then
+                exec tmux new
+            else
+                exec tmux attach
+            fi
+        fi
+    fi
+fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/Caskroom/mambaforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/Caskroom/mambaforge/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/mambaforge/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/Caskroom/mambaforge/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/usr/local/Caskroom/mambaforge/base/etc/profile.d/mamba.sh" ]; then
+    . "/usr/local/Caskroom/mambaforge/base/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<

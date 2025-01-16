@@ -1,0 +1,138 @@
+" Configure Vim with the following features:
+"   --enable-cscope
+"   --enable-gui=no
+"   --enable-python3interp=yes
+"   --with-features=huge
+
+" General. {{{
+set encoding=utf-8
+set nocompatible  " Disable vi compatibility.
+set history=1024  " Number of items to remember in history.
+set clipboard=unnamed  " Copy to/from the system clipboard.
+set undolevels=1000  " 1000 undos.
+set updatecount=100  " Write the swap file to disk after typing 100 characters.
+
+set hlsearch  " Highlight search.
+set ignorecase  " Case insensitive matching.
+set smartcase  " Be case sensitive when there's a capital letter.
+set incsearch  " Show the match while typing.
+
+set whichwrap+=<,>,[,]  " Left/right keys navigation.
+set backspace=indent,eol,start  " More powerful backspacing.
+
+syntax on  " Enable syntax.
+" }}}
+
+" Visual. {{{
+set nowrap  " No text wrapping.
+set number  " Enable line numbers.
+set ruler  " Show ruler.
+set title  " Let vim set the title of the window.
+set cursorline  " Highlight the current line.
+set colorcolumn=81  " Highlight the length limit of code lines.
+set sidescroll=1  " Scroll horizontally 1 position at a time.
+set showmatch  " Show matching brackets.
+
+set list  " Display unprintable characters.
+set listchars=tab:·\ ,trail:·,extends:»,precedes:«  " Unprintable chars.
+
+set mouse=a  " Enable mouse.
+set ttymouse=sgr  " Fix mouse issues with wide terminals.
+
+set splitbelow
+set splitright
+
+set wildmenu  " Enable better command completion.
+set wildmode=list:longest
+
+set lazyredraw
+" }}}
+
+" Vundle plugins. {{{
+filetype off  " Required!
+
+set runtimepath+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+" Required! Let Vundle manage itself.
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'altercation/vim-colors-solarized.git'  " For solarized theme.
+set background=light
+set t_Co=256
+let g:solarized_termcolors=&t_Co
+let g:solarized_termtrans=1
+
+Plugin 'google/vim-maktaba'  " Needed by 'google/vim-codefmt'.
+Plugin 'google/vim-codefmt'  " For code formatting.
+Plugin 'google/vim-glaive'  " Needed by 'google/vim-codefmt'.
+
+Plugin 'kien/ctrlp.vim'  " For fuzzy path finder.
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:25,results:25'
+
+Plugin 'octol/vim-cpp-enhanced-highlight'  " For C++11/14 syntax highlighting.
+
+Plugin 'sudo.vim'  " For editing files with sudo from non-sudo vim sessions.
+
+Plugin 'tComment'  " For easier commenting.
+
+Plugin 'tpope/vim-fugitive'  " For git.
+
+" Plugin 'Valloric/MatchTagAlways'  " For highlighting the enclosing HTML/XML tags.
+
+Plugin 'vim-airline/vim-airline'  " For fast statusline.
+Plugin 'vim-airline/vim-airline-themes'  " Themes for vim-airline.
+set laststatus=2
+let g:airline_powerline_fonts=1
+
+Plugin 'xolox/vim-misc'  " Required by 'xolox/vim-session'.
+Plugin 'xolox/vim-session'  " For session management.
+let g:session_autoload='no'
+let g:session_autosave='no'
+
+call vundle#end()  " Required!
+
+colorscheme solarized  " Enable the solarized theme after plugins are loaded.
+
+call glaive#Install()  " Needed by 'google/vim-codefmt'.
+" }}}
+
+" Functions. {{{
+function! GetCurrentGitBranch()
+  let l:branch=system("git rev-parse --abbrev-ref HEAD")
+  if v:shell_error
+    return '_'
+  else
+    return substitute(l:branch, '\n', '', '') . '.git'
+endfunction
+
+function! GetCurrentSession()
+  return getcwd() . '/' . GetCurrentGitBranch()
+endfunction
+" }}}
+
+" Commands. {{{
+let mapleader=','
+
+" Comment/Uncomment lines.
+noremap <silent> <Leader>c :TComment<CR>
+" Toggle highlight search.
+nnoremap <silent> <Leader>h :set hlsearch!<CR>
+" Toggle paste mode.
+nnoremap <silent> <Leader>p :set paste!<CR>
+" Toggle spell checking.
+nnoremap <silent> <Leader>s :set invspell<CR>
+" Open/Save the local session.
+nnoremap <silent> <Leader><Leader>o :execute 'OpenSession ' . GetCurrentSession()<CR>
+nnoremap <silent> <Leader><Leader>s :execute 'SaveSession ' . GetCurrentSession()<CR>
+" }}}
+
+" Local settings to overwrite general settings. {{{
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
+" }}}
+
+" Final settings. {{{
+filetype plugin indent on  " Detect file types.
+" }}}

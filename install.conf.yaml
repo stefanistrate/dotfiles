@@ -1,0 +1,47 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.condarc: managed_tools/conda/condarc
+
+    ~/.dircolors: managed_tools/dircolors-solarized/dircolors.ansi-light
+
+    ~/.gitconfig: managed_tools/git/gitconfig
+
+    ~/.iterm2:
+      if: '[ `uname` = Darwin ]'
+      path: managed_tools/iterm2
+
+    ~/.oh-my-zsh: managed_tools/ohmyzsh
+
+    ~/.tmux/plugins/tpm: managed_tools/tpm
+    ~/.tmux.conf: managed_tools/tmux/tmux.conf
+
+    ~/.vim/after: managed_tools/vim/after
+    ~/.vim/bundle/Vundle.vim: managed_tools/vundle
+    ~/.vimrc: managed_tools/vim/vimrc
+
+    ~/.zshrc: managed_tools/zsh/zshrc
+
+    ~/Library/Application Support/Code/User/settings.json:
+      if: '[ `uname` = Darwin ]'
+      path: managed_tools/vscode/settings.json
+
+- link:
+    ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
+      path: managed_tools/bullet-train.zsh/bullet-train.zsh-theme
+
+- shell:
+  -
+    description: Installing Powerline fonts
+    command: managed_tools/powerline-fonts/install.sh
+  -
+    description: Installing tmux plugins
+    command: managed_tools/tpm/bin/install_plugins
+  -
+    description: Installing Vim plugins
+    command: vim +PluginInstall +qall

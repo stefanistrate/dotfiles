@@ -1,0 +1,58 @@
+[alias]
+	a = add
+	ai = add --interactive
+	b = branch
+	ci = commit
+	cl = clone
+	co = checkout
+	df = diff
+	dfc = diff --cached
+	dfh = diff HEAD
+	fl = log -u
+	hist = log --pretty=format:"%C(yellow)%h\\ %ad\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --graph --date=short
+	ll = log --pretty=format:"%C(yellow)%h\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --decorate --numstat
+	ls = log --pretty=format:"%C(yellow)%h\\ %C(red)%d\\ %C(reset)%s\\ %C(blue)[%an]" --decorate
+	st = status -s
+	who = shortlog -s --
+[color]
+	ui = true
+[core]
+	editor = vim
+[credential]
+	helper =
+	helper = cache
+	helper = manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://earthengine.googlesource.com"]
+	provider = generic
+	helper = gcloud
+[credential "https://huggingface.co"]
+	provider = generic
+[credential "https://source.developers.google.com"]
+	provider = generic
+	helper = gcloud
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[http]
+	cookiefile = ~/.gitcookies
+[include]
+	path = .gitconfig.local
+[init]
+	defaultBranch = main
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[mergetool]
+	prompt = false
+[pull]
+	rebase = false
+[push]
+	default = simple
