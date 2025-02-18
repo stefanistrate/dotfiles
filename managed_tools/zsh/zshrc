@@ -116,7 +116,7 @@ function _resolve_env_name() {
     current_dir="${PWD##*/}"
     env_prefix="${current_dir// /-}"
     if [[ -z "$1" ]] ; then
-        echo "$env_prefix-base"
+        echo "$env_prefix"
     else
         echo "$env_prefix-$1"
     fi
