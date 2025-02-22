@@ -44,6 +44,7 @@
     "projectManager.git.baseFolders": [
         "~/workspace"
     ],
+    "projectManager.git.maxDepthRecursion": 1,
     "python.analysis.useLibraryCodeForTypes": false,
     "python.languageServer": "Jedi",
     "python.pythonPath": "python3",
