@@ -10,7 +10,6 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.maxComputationTime": 15000,
-    "editor.detectIndentation": false,
     "editor.formatOnSave": true,
     "editor.inlineSuggest.enabled": true,
     "editor.rulers": [
