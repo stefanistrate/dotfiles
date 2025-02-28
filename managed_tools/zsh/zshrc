@@ -132,12 +132,12 @@ function _resolve_python_bin() {
 
 function mke() {
     if [[ $# -gt 2 ]] ; then
-        echo "Too many arguments! Usage: mke [env_name [python_bin]]"
+        echo "Too many arguments! Usage: mke [python_bin [env_name]]"
         return 1
     fi
 
-    env_name=$(_resolve_env_name $1)
-    python_bin=$(_resolve_python_bin $2)
+    python_bin=$(_resolve_python_bin $1)
+    env_name=$(_resolve_env_name $2)
     "$python_bin" -m venv ".direnv/$env_name"
     source ".direnv/$env_name/bin/activate"
     pip install --upgrade pip setuptools wheel
