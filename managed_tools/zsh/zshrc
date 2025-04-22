@@ -94,9 +94,9 @@ zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 
 # Define additional aliases and functions.
 
-alias dk="cd ~/Desktop"
-alias dw="cd ~/Downloads"
-alias ws="cd ~/workspace"
+alias desk="cd ~/Desktop"
+alias down="cd ~/Downloads"
+alias work="cd ~/workspace"
 # TODO(stefanistrate): Implement a simpler way to configure addons. E.g. we
 # could call something like this instead: `yt 1080 PL SUB MP4`.
 alias yt="yt720"
