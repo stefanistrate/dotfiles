@@ -41,15 +41,46 @@ BULLETTRAIN_TIME_FG=254
 
 # Set plugins to load.
 plugins=(
-    common-aliases  # aliases for many commonly used commands
-    copyfile  # copy file contents to system clipboard
-    copypath  # copy path of given file or directory to system clipboard
-    docker  # autocompletion for docker
-    emoji  # emojis using human-readable identifiers
-    macos  # access to a few macOS applications from terminal
-    pip  # autocompletion for pip
-    python  # useful python aliases (e.g. pyfind, pyclean, pygrep)
-    sudo  # prefix current/previous commands with sudo by pressing ESC twice
+    # Syntax-highlight file contents of over 300 supported languages and other text
+    # formats.
+    colorize  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize
+
+    # Helpful shortcut aliases for many commonly used commands.
+    common-aliases  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases
+
+    # Add the `Ctrl-O` shortcut to copy the current text in the command line to the
+    # system clipboard.
+    copybuffer  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer
+
+    # Put the contents of a file in the system clipboard.
+    copyfile  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copyfile
+
+    # Copy the path of given directory or file to the system clipboard.
+    copypath  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath
+
+    # Pull `gitignore.io` templates from the command line.
+    gitignore  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
+
+    # Helpful utilities to access a few macOS applications from the terminal.
+    macos  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
+
+    # Add the `ESC + man` shortcut to insert `man` before the previous command.
+    man  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/man
+
+    # Add several aliases for useful Python commands.
+    python  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/python
+
+    # Prefix current or previous commands with `sudo` by pressing `ESC` twice.
+    sudo  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
+
+    # Add the `ESC + tldr` shortcut to insert `tldr` before the previous command.
+    tldr  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tldr
+
+    # Plugins that offer autocompletion, but may be redundant in the current setup.
+    # docker  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
+    # gcloud  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
+    # pip  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/pip
+    # rclone  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/rclone
 )
 
 # Disable `url-quote-magic`.
@@ -96,6 +127,7 @@ zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
 alias work="cd ~/workspace"
+
 # TODO(stefanistrate): Implement a simpler way to configure addons. E.g. we
 # could call something like this instead: `yt 1080 PL SUB MP4`.
 alias yt="yt720"
