@@ -127,6 +127,7 @@ zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
 alias work="cd ~/workspace"
+alias sysicons="open /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/"
 
 alias yt="yt-dlp 720p"
 alias -g 480p="--format 'bestvideo[height<=480]+bestaudio'"
