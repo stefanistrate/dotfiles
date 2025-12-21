@@ -19,8 +19,12 @@
 [core]
 	editor = vim
 [credential]
-	helper =
 	helper = cache
+[credential "https://earthengine.googlesource.com"]
+	provider = generic
+	helper = gcloud
+[credential "https://github.com"]
+	provider = generic
 	helper = manager
 [diff]
 	tool = vimdiff
