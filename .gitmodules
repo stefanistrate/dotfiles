@@ -19,3 +19,6 @@
 [submodule "managed_tools/vundle"]
 	path = managed_tools/vundle
 	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "managed_tools/ro-keyboard-layout"]
+	path = managed_tools/ro-keyboard-layout
+	url = https://github.com/SaltwaterC/romanian-programmers-mac.git

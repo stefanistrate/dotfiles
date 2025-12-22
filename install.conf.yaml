@@ -41,11 +41,32 @@
 
 - shell:
   -
+    description: Installing RO keyboard layout
+    command: if [ "$(uname)" = "Darwin" ] ; then managed_tools/ro-keyboard-layout/install.sh ; fi
+    stdin: true
+    stdout: true
+    stderr: true
+  -
+    description: Mapping some keys with hidutil
+    command: if [ "$(uname)" = "Darwin" ] ; then managed_tools/hidutil/install.sh ; fi
+    stdin: true
+    stdout: true
+    stderr: true
+  -
     description: Installing Powerline fonts
     command: managed_tools/powerline-fonts/install.sh
+    stdin: true
+    stdout: true
+    stderr: true
   -
     description: Installing tmux plugins
     command: managed_tools/tpm/bin/install_plugins
+    stdin: true
+    stdout: true
+    stderr: true
   -
     description: Installing Vim plugins
     command: vim +PluginInstall +qall
+    stdin: true
+    stdout: true
+    stderr: true

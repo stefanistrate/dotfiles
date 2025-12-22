@@ -16,13 +16,7 @@ Configs for frequently used tools.
     ./install.sh
     ```
 
-3. Install configs for [sudo tools](sudo_tools), individually, with:
-
-    ```bash
-    sudo sudo_tools/[TOOL]/install.sh
-    ```
-
-4. Change login shell to `zsh` with:
+3. Change login shell to `zsh` with:
 
     ```bash
     chsh -s $(which zsh)
