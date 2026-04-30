@@ -125,9 +125,10 @@ zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 
 # Define additional aliases and functions.
 
+alias work="cd ~/work"
+alias dotf="cd ~/work/dotfiles"
 alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
-alias work="cd ~/workspace"
 alias sysicons="open /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/"
 
 alias yt="yt-dlp 720p"
@@ -138,68 +139,10 @@ alias -g 2160p="--format 'bestvideo[height<=2160]+bestaudio'"
 alias -g LIVE="--live-from-start"
 alias -g MP3="--format 'bestaudio' --extract-audio --audio-format mp3"
 alias -g MP4="--recode-video mp4"
-alias -g SUB="--write-subs"
+alias -g SUB="--write-subs --write-auto-subs"
 alias -g COOK="--cookies-from-browser chrome"
 alias -g PLIST="-o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
 
-function _resolve_env_name() {
-    current_dir="${PWD##*/}"
-    env_prefix="${current_dir// /-}"
-    if [[ -z "$1" ]] ; then
-        echo "$env_prefix"
-    else
-        echo "$env_prefix-$1"
-    fi
-}
-
-function _resolve_python_bin() {
-    if [[ -z "$1" ]] ; then
-        echo "python3"
-    else
-        echo "$1"
-    fi
-}
-
-function mke() {
-    if [[ $# -gt 2 ]] ; then
-        echo "Too many arguments! Usage: mke [python_bin [env_name]]"
-        return 1
-    fi
-
-    python_bin=$(_resolve_python_bin $1)
-    env_name=$(_resolve_env_name $2)
-    "$python_bin" -m venv ".direnv/$env_name"
-    source ".direnv/$env_name/bin/activate"
-    pip install --upgrade pip setuptools wheel
-}
-
-function rme() {
-    if [[ $# -gt 1 ]] ; then
-        echo "Too many arguments! Usage: rme [env_name]"
-        return 1
-    fi
-
-    env_name=$(_resolve_env_name $1)
-    rm -rf ".direnv/$env_name"
-}
-
-function lse() {
-    ls -1 .direnv 2> /dev/null
-}
-
-function ae() {
-    if [[ $# -ge 2 ]] ; then
-        echo "Too many arguments! Usage: ae [env_name]"
-        return 1
-    fi
-
-    env_name=$(_resolve_env_name $1)
-    source ".direnv/$env_name/bin/activate"
-}
-
-function de() {
-    deactivate
-}
 
 # Enable local settings, which override general settings.
 if [[ -f ~/.zshrc.local ]] ; then

@@ -8,6 +8,9 @@
     "[svg]": {
         "editor.defaultFormatter": "jock.svg"
     },
+    "chat.disableAIFeatures": true,
+    "claudeCode.initialPermissionMode": "acceptEdits",
+    "claudeCode.preferredLocation": "panel",
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.maxComputationTime": 15000,
     "editor.formatOnSave": true,
@@ -41,7 +44,7 @@
         "jupyter-notebook": "left"
     },
     "projectManager.git.baseFolders": [
-        "~/workspace"
+        "~/work"
     ],
     "projectManager.git.maxDepthRecursion": 1,
     "python.analysis.useLibraryCodeForTypes": false,
@@ -49,6 +52,7 @@
     "python.pythonPath": "python3",
     "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.telemetryLevel": "off",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
     "workbench.colorTheme": "Solarized Autumn",
