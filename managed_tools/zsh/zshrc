@@ -110,6 +110,13 @@ bindkey "$terminfo[kcud1]" history-beginning-search-forward-end  # Down arrow
 bindkey "^[[1~" beginning-of-line  # Fn + Left arrow
 bindkey "^[[4~" end-of-line  # Fn + Right arrow
 
+# Raise the open-files soft limit without ever exceeding the hard cap.
+if [[ "$(ulimit -Hn)" = "unlimited" ]] ; then
+  ulimit -Sn 65536           # pick a sane soft limit
+else
+  ulimit -Sn "$(ulimit -Hn)"  # raise soft limit up to hard limit
+fi
+
 # Set colors for the GNU ls utility and for zsh completion.
 case "$OSTYPE" in
     darwin*)
@@ -142,7 +149,6 @@ alias -g MP4="--recode-video mp4"
 alias -g SUB="--write-subs --write-auto-subs"
 alias -g COOK="--cookies-from-browser chrome"
 alias -g PLIST="-o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
-
 
 # Enable local settings, which override general settings.
 if [[ -f ~/.zshrc.local ]] ; then
