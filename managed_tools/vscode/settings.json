@@ -55,6 +55,7 @@
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
+    "update.mode": "start",
     "workbench.colorTheme": "Solarized Autumn",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
