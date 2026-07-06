@@ -3,7 +3,7 @@
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "[svg]": {
         "editor.defaultFormatter": "jock.svg"
@@ -55,6 +55,8 @@
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
+    "ty.inlayHints.variableTypes": false,
+    "ty.inlayHints.callArgumentNames": false,
     "update.mode": "start",
     "workbench.colorTheme": "Solarized Autumn",
     "workbench.editorAssociations": {
