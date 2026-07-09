@@ -39,6 +39,17 @@
     ],
     "markdown.extension.math.enabled": false,
     "markdown.preview.fontSize": 16,
+    "markdownlint.config": {
+        "MD013": false,
+        "MD024": {
+            "siblings_only": true
+        },
+        "MD033": {
+            "allowed_elements": [
+                "br"
+            ]
+        }
+    },
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
@@ -55,8 +66,8 @@
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
-    "ty.inlayHints.variableTypes": false,
     "ty.inlayHints.callArgumentNames": false,
+    "ty.inlayHints.variableTypes": false,
     "update.mode": "start",
     "workbench.colorTheme": "Solarized Autumn",
     "workbench.editorAssociations": {

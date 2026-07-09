@@ -99,6 +99,12 @@ if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completio
     source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 fi
 
+# Enable `uv` completions.
+if which uv &> /dev/null ; then
+    eval "$(uv generate-shell-completion zsh)"
+    eval "$(uvx --generate-shell-completion zsh)"
+fi
+
 # Map various keys to custom functionality.
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
