@@ -1,0 +1,19 @@
+[default]
+s3 =
+  preferred_transfer_client = crt
+  multipart_threshold = 64MB
+
+[profile echo-admin]
+sso_session = echo
+sso_account_id = 769265544171
+sso_role_name = AdministratorAccess
+region = eu-west-2
+output = json
+s3 =
+  preferred_transfer_client = crt
+  multipart_threshold = 64MB
+
+[sso-session echo]
+sso_start_url = https://echo-labs-org.awsapps.com/start
+sso_region = eu-west-2
+sso_registration_scopes = sso:account:access

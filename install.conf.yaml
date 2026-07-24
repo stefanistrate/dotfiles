@@ -6,6 +6,8 @@
 - clean: ['~']
 
 - link:
+    ~/.aws/config: managed_tools/aws/config
+
     ~/.condarc: managed_tools/conda/condarc
 
     ~/.dircolors: managed_tools/dircolors-solarized/dircolors.ansi-light
