@@ -13,6 +13,7 @@
     ~/.dircolors: managed_tools/dircolors-solarized/dircolors.ansi-light
 
     ~/.gitconfig: managed_tools/git/gitconfig
+    ~/.gitconfig.echo: managed_tools/git/gitconfig.echo
 
     ~/.iterm2:
       if: '[ `uname` = Darwin ]'

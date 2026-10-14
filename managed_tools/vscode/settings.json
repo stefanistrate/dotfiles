@@ -1,4 +1,7 @@
 {
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
@@ -8,7 +11,9 @@
     "[svg]": {
         "editor.defaultFormatter": "jock.svg"
     },
+    "application.shellEnvironmentResolutionTimeout": 30,
     "chat.disableAIFeatures": true,
+    "claudeCode.hideOnboarding": true,
     "claudeCode.initialPermissionMode": "acceptEdits",
     "claudeCode.preferredLocation": "panel",
     "diffEditor.ignoreTrimWhitespace": false,
@@ -29,6 +34,7 @@
     "git.confirmSync": false,
     "git.detectSubmodules": false,
     "git.enableCommitSigning": true,
+    "git.suggestSmartCommit": false,
     "githubPullRequests.createOnPublishBranch": "never",
     "isort.check": true,
     "jupyter.askForKernelRestart": false,

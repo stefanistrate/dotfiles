@@ -16,6 +16,8 @@
 	who = shortlog -s --
 [color]
 	ui = true
+[commit]
+	gpgsign = true
 [core]
 	editor = vim
 [credential]
@@ -37,8 +39,6 @@
 	process = git-lfs filter-process
 [http]
 	cookiefile = ~/.gitcookies
-[include]
-	path = .gitconfig.local
 [init]
 	defaultBranch = main
 [lfs "customtransfer.xet"]
@@ -54,5 +54,16 @@
 	rebase = false
 [push]
 	default = simple
+[tag]
+	gpgsign = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[user]
+	name = Ștefan Istrate
+	email = stefan.istrate@gmail.com
+
+# Must come last to override the defaults above.
+[includeIf "hasconfig:remote.*.url:git@github.com:echo-labs-org/**"]
+	path = .gitconfig.echo
+[includeIf "hasconfig:remote.*.url:https://github.com/echo-labs-org/**"]
+	path = .gitconfig.echo
