@@ -14,7 +14,6 @@
     "application.shellEnvironmentResolutionTimeout": 30,
     "chat.disableAIFeatures": true,
     "claudeCode.hideOnboarding": true,
-    "claudeCode.initialPermissionMode": "acceptEdits",
     "claudeCode.preferredLocation": "panel",
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.maxComputationTime": 15000,

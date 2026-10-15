@@ -5,6 +5,47 @@
     "commit": "",
     "pr": ""
   },
+  "permissions": {
+    "defaultMode": "auto",
+    "deny": [
+      "Bash(sudo *)",
+      "Bash(su *)",
+      "Bash(doas *)",
+
+      "Bash(ssh *)",
+      "Bash(scp *)",
+      "Bash(sftp *)",
+      "Bash(sshpass *)",
+      "Bash(rsync *)",
+
+      "Edit(**/.git/**)",
+      "Bash(git push *)",
+      "Bash(git * push)",
+      "Bash(git * push *)",
+      "Bash(git send-pack *)",
+      "Bash(git http-push *)",
+      "Bash(git send-email *)",
+      "Bash(git clean *)",
+      "Bash(git * clean *)",
+      "Bash(git -c *)",
+      "Bash(git * foreach *)",
+      "Bash(git credential*)",
+      "Bash(git * credential*)",
+      "Bash(git-credential-*)",
+
+      "Read(~/.ssh/**)",
+      "Read(~/.gnupg/**)"
+    ],
+    "ask": [
+      "Bash(gh *)",
+      "Bash(aws *)",
+      "Bash(gcloud *)",
+      "Bash(gsutil *)",
+      "Bash(bq *)",
+      "Bash(earthengine *)",
+      "Bash(az *)"
+    ]
+  },
   "model": "opus[1m]",
   "enabledPlugins": {
     "notebook@notebook": true
@@ -23,5 +64,19 @@
       "effortLevel": "high"
     }
   },
-  "theme": "light"
+  "theme": "light",
+  "sandbox": {
+    "enabled": true,
+    "allowUnsandboxedCommands": false,
+    "failIfUnavailable": true,
+    "filesystem": {
+      "denyRead": [
+        "~/.ssh",
+        "~/.gnupg"
+      ],
+      "denyWrite": [
+        "**/.git"
+      ]
+    }
+  }
 }
