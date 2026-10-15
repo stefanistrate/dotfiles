@@ -10,6 +10,13 @@ Configs for frequently used tools.
     git clone --recurse-submodules https://github.com/stefanistrate/dotfiles.git
     ```
 
+    If the repo was already cloned without `--recurse-submodules`, fetch the submodules
+    from inside the repo with:
+
+    ```bash
+    git submodule update --init --recursive
+    ```
+
 2. Install configs for [managed tools](managed_tools), all at once, with:
 
     ```bash
