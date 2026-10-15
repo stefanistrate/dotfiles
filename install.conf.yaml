@@ -6,7 +6,12 @@
 - clean: ['~']
 
 - link:
+    ~/.agents/.skill-lock.json: managed_tools/agents/.skill-lock.json
+    ~/.agents/skills: managed_tools/agents/skills
+
     ~/.aws/config: managed_tools/aws/config
+
+    ~/.claude/skills: managed_tools/agents/skills
 
     ~/.condarc: managed_tools/conda/condarc
 
@@ -21,22 +26,18 @@
 
     ~/.oh-my-zsh: managed_tools/ohmyzsh
 
-    ~/.tmux/plugins/tpm: managed_tools/tpm
     ~/.tmux.conf: managed_tools/tmux/tmux.conf
+    ~/.tmux/plugins/tpm: managed_tools/tpm
 
+    ~/.vimrc: managed_tools/vim/vimrc
     ~/.vim/after: managed_tools/vim/after
     ~/.vim/bundle/Vundle.vim: managed_tools/vundle
-    ~/.vimrc: managed_tools/vim/vimrc
 
     ~/.zshrc: managed_tools/zsh/zshrc
 
     ~/Library/Application Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
       path: managed_tools/vscode/settings.json
-
-    ~/Library/Application Support/Cursor/User/settings.json:
-      if: '[ `uname` = Darwin ]'
-      path: managed_tools/cursor/settings.json
 
 - link:
     ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:

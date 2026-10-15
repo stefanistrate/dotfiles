@@ -1,0 +1,78 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "76a98a285cb0434f3d39e1a873823556330e398b",
+      "installedAt": "2026-07-16T16:40:06.794Z",
+      "updatedAt": "2026-09-17T16:22:14.967Z"
+    },
+    "manim-video": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/affaan-m/ecc.git",
+      "skillPath": "skills/manim-video/SKILL.md",
+      "skillFolderHash": "5bfc2096a0ef4fd1a489bcd8615a1c1ab4e491c3",
+      "installedAt": "2026-09-17T15:35:25.581Z",
+      "updatedAt": "2026-09-17T15:58:03.421Z"
+    },
+    "manim": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/davila7/claude-code-templates.git",
+      "skillPath": "cli-tool/components/skills/video/manim/SKILL.md",
+      "skillFolderHash": "ea4da55911ebe2ef40ba76243ed3291aa7080f75",
+      "installedAt": "2026-09-17T17:26:29.938Z",
+      "updatedAt": "2026-09-17T17:26:29.938Z"
+    },
+    "manim-composer": {
+      "source": "adithya-s-k/manim_skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/adithya-s-k/manim_skill.git",
+      "skillPath": "skills/manim-composer/SKILL.md",
+      "skillFolderHash": "134e1413eda79ef0a894c3407cc0805aa802a342",
+      "installedAt": "2026-09-17T17:29:05.827Z",
+      "updatedAt": "2026-09-17T17:29:05.827Z"
+    },
+    "geotessera": {
+      "source": "ucam-eo/geotessera",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ucam-eo/geotessera.git",
+      "skillPath": "skills/geotessera/SKILL.md",
+      "skillFolderHash": "2ac19e2e488f530672463e8ea5943318ab01e379",
+      "installedAt": "2026-10-05T12:57:21.989Z",
+      "updatedAt": "2026-10-05T12:57:21.989Z"
+    },
+    "reverse-engineer-anything": {
+      "source": "morluto/rea",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/morluto/rea.git",
+      "skillPath": ".agents/skills/reverse-engineer-anything/SKILL.md",
+      "skillFolderHash": "95bb70a8379ce251932e223349946041a60c376c",
+      "installedAt": "2026-10-14T10:55:52.464Z",
+      "updatedAt": "2026-10-14T10:55:52.464Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "pi",
+    "warp",
+    "zed",
+    "claude-code"
+  ]
+}
