@@ -1,0 +1,27 @@
+{
+  "cleanupPeriodDays": 3650,
+  "includeGitInstructions": false,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "model": "opus[1m]",
+  "enabledPlugins": {
+    "notebook@notebook": true
+  },
+  "extraKnownMarketplaces": {
+    "notebook": {
+      "source": {
+        "source": "github",
+        "repo": "echo-labs-org/notebook-plugin"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
+  },
+  "theme": "light"
+}

@@ -11,6 +11,7 @@
 
     ~/.aws/config: managed_tools/aws/config
 
+    ~/.claude/settings.json: managed_tools/claude/settings.json
     ~/.claude/skills: managed_tools/agents/skills
 
     ~/.condarc: managed_tools/conda/condarc
