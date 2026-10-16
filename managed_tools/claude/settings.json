@@ -1,23 +1,20 @@
 {
   "cleanupPeriodDays": 3650,
-  "includeGitInstructions": false,
   "attribution": {
     "commit": "",
     "pr": ""
   },
+  "includeGitInstructions": false,
   "permissions": {
-    "defaultMode": "auto",
     "deny": [
       "Bash(sudo *)",
       "Bash(su *)",
       "Bash(doas *)",
-
       "Bash(ssh *)",
       "Bash(scp *)",
       "Bash(sftp *)",
       "Bash(sshpass *)",
       "Bash(rsync *)",
-
       "Edit(**/.git/**)",
       "Bash(git push *)",
       "Bash(git * push)",
@@ -32,7 +29,6 @@
       "Bash(git credential*)",
       "Bash(git * credential*)",
       "Bash(git-credential-*)",
-
       "Read(~/.ssh/**)",
       "Read(~/.gnupg/**)"
     ],
@@ -44,11 +40,13 @@
       "Bash(bq *)",
       "Bash(earthengine *)",
       "Bash(az *)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "model": "opus[1m]",
   "enabledPlugins": {
-    "notebook@notebook": true
+    "notebook@notebook": true,
+    "artifact@artifact": true
   },
   "extraKnownMarketplaces": {
     "notebook": {
@@ -56,6 +54,26 @@
         "source": "github",
         "repo": "echo-labs-org/notebook-plugin"
       }
+    },
+    "artifact": {
+      "source": {
+        "source": "github",
+        "repo": "echo-labs-org/artifact-plugin"
+      }
+    }
+  },
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": true,
+    "allowUnsandboxedCommands": false,
+    "filesystem": {
+      "denyWrite": [
+        "**/.git"
+      ],
+      "denyRead": [
+        "~/.ssh",
+        "~/.gnupg"
+      ]
     }
   },
   "effortLevel": "high",
@@ -64,19 +82,5 @@
       "effortLevel": "high"
     }
   },
-  "theme": "light",
-  "sandbox": {
-    "enabled": true,
-    "allowUnsandboxedCommands": false,
-    "failIfUnavailable": true,
-    "filesystem": {
-      "denyRead": [
-        "~/.ssh",
-        "~/.gnupg"
-      ],
-      "denyWrite": [
-        "**/.git"
-      ]
-    }
-  }
+  "theme": "light"
 }
