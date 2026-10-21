@@ -14,8 +14,6 @@
     ~/.claude/settings.json: managed_tools/claude/settings.json
     ~/.claude/skills: managed_tools/agents/skills
 
-    ~/.condarc: managed_tools/conda/condarc
-
     ~/.dircolors: managed_tools/dircolors-solarized/dircolors.ansi-light
 
     ~/.gitconfig: managed_tools/git/gitconfig
