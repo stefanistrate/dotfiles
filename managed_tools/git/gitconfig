@@ -56,8 +56,6 @@
 	default = simple
 [tag]
 	gpgsign = true
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 [user]
 	name = Ștefan Istrate
 	email = stefan.istrate@gmail.com
