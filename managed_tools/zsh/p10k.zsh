@@ -142,9 +142,9 @@
 
   # Connect left prompt lines with these symbols. You'll probably want to use the same color
   # as POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND below.
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%242F╭─'
-  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='%242F├─'
-  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%242F╰─'
+  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%14F╭─'
+  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='%14F├─'
+  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%14F╰─'
   # Connect right prompt lines with these symbols.
   typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX=
   typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX=
@@ -160,7 +160,7 @@
   if [[ $POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR != ' ' ]]; then
     # The color of the filler. You'll probably want to match the color of POWERLEVEL9K_MULTILINE
     # ornaments defined above.
-    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=242
+    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=14
     # Start filler from the edge of the screen if there are no left segments on the first line.
     typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_FIRST_SEGMENT_END_SYMBOL='%{%}'
     # End filler on the edge of the screen if there are no right segments on the first line.
@@ -191,7 +191,7 @@
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=232
+  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=0
   typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
@@ -200,9 +200,9 @@
   # Transparent background.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_BACKGROUND=
   # Green prompt symbol if the last command succeeded.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=76
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=2
   # Red prompt symbol if the last command failed.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=196
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=1
   # Default prompt symbol.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯'
   # Prompt symbol in command vi mode.
@@ -223,17 +223,17 @@
   # Current directory background color.
   typeset -g POWERLEVEL9K_DIR_BACKGROUND=4
   # Default current directory foreground color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=15
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=250
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=7
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=255
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=15
   # Display anchor directory segments in bold.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.
@@ -365,7 +365,7 @@
   typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=3
   typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=2
   typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=8
+  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=7
 
   # Branch icon. Set this parameter to '\UE0A0 ' for the popular Powerline branch icon.
   typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
@@ -520,14 +520,14 @@
   typeset -g POWERLEVEL9K_STATUS_OK=true
   typeset -g POWERLEVEL9K_STATUS_OK_VISUAL_IDENTIFIER_EXPANSION='✔'
   typeset -g POWERLEVEL9K_STATUS_OK_FOREGROUND=2
-  typeset -g POWERLEVEL9K_STATUS_OK_BACKGROUND=0
+  typeset -g POWERLEVEL9K_STATUS_OK_BACKGROUND=7
 
   # Status when some part of a pipe command fails but the overall exit status is zero. It may look
   # like this: 1|0.
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE=true
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE_VISUAL_IDENTIFIER_EXPANSION='✔'
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE_FOREGROUND=2
-  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND=0
+  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND=7
 
   # Status when it's just an error code (e.g., '1'). No need to show it if prompt_char is enabled as
   # it will signify error by turning red.
@@ -569,7 +569,7 @@
   #######################[ background_jobs: presence of background jobs ]#######################
   # Background jobs color.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=6
-  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND=0
+  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND=7
   # Don't show the number of background jobs.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=false
   # Custom icon.
@@ -578,7 +578,7 @@
   #######################[ direnv: direnv status (https://direnv.net/) ]########################
   # Direnv color.
   typeset -g POWERLEVEL9K_DIRENV_FOREGROUND=3
-  typeset -g POWERLEVEL9K_DIRENV_BACKGROUND=0
+  typeset -g POWERLEVEL9K_DIRENV_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_DIRENV_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -670,7 +670,7 @@
 
   # Rust version from asdf.
   typeset -g POWERLEVEL9K_ASDF_RUST_FOREGROUND=0
-  typeset -g POWERLEVEL9K_ASDF_RUST_BACKGROUND=208
+  typeset -g POWERLEVEL9K_ASDF_RUST_BACKGROUND=9
   # typeset -g POWERLEVEL9K_ASDF_RUST_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_RUST_SHOW_ON_UPGLOB='*.foo|*.bar'
 
@@ -753,14 +753,14 @@
   #################[ ranger: ranger shell (https://github.com/ranger/ranger) ]##################
   # Ranger shell color.
   typeset -g POWERLEVEL9K_RANGER_FOREGROUND=3
-  typeset -g POWERLEVEL9K_RANGER_BACKGROUND=0
+  typeset -g POWERLEVEL9K_RANGER_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_RANGER_VISUAL_IDENTIFIER_EXPANSION='⭐'
   
   ####################[ yazi: yazi shell (https://github.com/sxyazi/yazi) ]#####################
   # Yazi shell color.
   typeset -g POWERLEVEL9K_YAZI_FOREGROUND=3
-  typeset -g POWERLEVEL9K_YAZI_BACKGROUND=0
+  typeset -g POWERLEVEL9K_YAZI_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_YAZI_VISUAL_IDENTIFIER_EXPANSION='⭐'
   
@@ -795,7 +795,7 @@
   ######[ midnight_commander: midnight commander shell (https://midnight-commander.org/) ]######
   # Midnight Commander shell color.
   typeset -g POWERLEVEL9K_MIDNIGHT_COMMANDER_FOREGROUND=3
-  typeset -g POWERLEVEL9K_MIDNIGHT_COMMANDER_BACKGROUND=0
+  typeset -g POWERLEVEL9K_MIDNIGHT_COMMANDER_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_MIDNIGHT_COMMANDER_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -823,7 +823,7 @@
   ##################################[ disk_usage: disk usage ]##################################
   # Colors for different levels of disk usage.
   typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND=3
-  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_BACKGROUND=0
+  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_BACKGROUND=7
   typeset -g POWERLEVEL9K_DISK_USAGE_WARNING_FOREGROUND=0
   typeset -g POWERLEVEL9K_DISK_USAGE_WARNING_BACKGROUND=3
   typeset -g POWERLEVEL9K_DISK_USAGE_CRITICAL_FOREGROUND=7
@@ -850,7 +850,7 @@
   typeset -g POWERLEVEL9K_VI_MODE_OVERWRITE_BACKGROUND=3
   # Text and color for insert vi mode.
   typeset -g POWERLEVEL9K_VI_INSERT_MODE_STRING=
-  typeset -g POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND=8
+  typeset -g POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND=14
   # Custom icon.
   # typeset -g POWERLEVEL9K_VI_MODE_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -886,7 +886,7 @@
   ################[ todo: todo items (https://github.com/todotxt/todo.txt-cli) ]################
   # Todo color.
   typeset -g POWERLEVEL9K_TODO_FOREGROUND=0
-  typeset -g POWERLEVEL9K_TODO_BACKGROUND=8
+  typeset -g POWERLEVEL9K_TODO_BACKGROUND=7
   # Hide todo when the total number of tasks is zero.
   typeset -g POWERLEVEL9K_TODO_HIDE_ZERO_TOTAL=true
   # Hide todo when the number of tasks after filtering is zero.
@@ -910,8 +910,8 @@
 
   ###########[ timewarrior: timewarrior tracking status (https://timewarrior.net/) ]############
   # Timewarrior color.
-  typeset -g POWERLEVEL9K_TIMEWARRIOR_FOREGROUND=255
-  typeset -g POWERLEVEL9K_TIMEWARRIOR_BACKGROUND=8
+  typeset -g POWERLEVEL9K_TIMEWARRIOR_FOREGROUND=0
+  typeset -g POWERLEVEL9K_TIMEWARRIOR_BACKGROUND=7
 
   # If the tracked task is longer than 24 characters, truncate and append "…".
   # Tip: To always display tasks without truncation, delete the following parameter.
@@ -973,13 +973,13 @@
   ##################################[ context: user@hostname ]##################################
   # Context color when running with privileges.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=1
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=0
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=7
   # Context color in SSH without privileges.
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=3
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=0
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=7
   # Default context color (no privileges, no SSH).
   typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=3
-  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=0
+  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=7
 
   # Context format when running with privileges: user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%n@%m'
@@ -1089,7 +1089,7 @@
   ##########[ nodenv: node.js version from nodenv (https://github.com/nodenv/nodenv) ]##########
   # Nodenv color.
   typeset -g POWERLEVEL9K_NODENV_FOREGROUND=2
-  typeset -g POWERLEVEL9K_NODENV_BACKGROUND=0
+  typeset -g POWERLEVEL9K_NODENV_BACKGROUND=7
   # Hide node version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_NODENV_SOURCES=(shell local global)
   # If set to false, hide node version if it's the same as global:
@@ -1115,7 +1115,7 @@
   ############[ nodeenv: node.js environment (https://github.com/ekalinin/nodeenv) ]############
   # Nodeenv color.
   typeset -g POWERLEVEL9K_NODEENV_FOREGROUND=2
-  typeset -g POWERLEVEL9K_NODEENV_BACKGROUND=0
+  typeset -g POWERLEVEL9K_NODEENV_BACKGROUND=7
   # Don't show Node version next to the environment name.
   typeset -g POWERLEVEL9K_NODEENV_SHOW_NODE_VERSION=false
   # Separate environment name from Node version only with a space.
@@ -1134,7 +1134,7 @@
 
   #######################[ go_version: go version (https://golang.org) ]########################
   # Go version color.
-  typeset -g POWERLEVEL9K_GO_VERSION_FOREGROUND=255
+  typeset -g POWERLEVEL9K_GO_VERSION_FOREGROUND=15
   typeset -g POWERLEVEL9K_GO_VERSION_BACKGROUND=2
   # Show go version only when in a go project subdirectory.
   typeset -g POWERLEVEL9K_GO_VERSION_PROJECT_ONLY=true
@@ -1144,7 +1144,7 @@
   #################[ rust_version: rustc version (https://www.rust-lang.org) ]##################
   # Rust version color.
   typeset -g POWERLEVEL9K_RUST_VERSION_FOREGROUND=0
-  typeset -g POWERLEVEL9K_RUST_VERSION_BACKGROUND=208
+  typeset -g POWERLEVEL9K_RUST_VERSION_BACKGROUND=9
   # Show rust version only when in a rust project subdirectory.
   typeset -g POWERLEVEL9K_RUST_VERSION_PROJECT_ONLY=true
   # Custom icon.
@@ -1218,7 +1218,7 @@
   #######################[ rvm: ruby version from rvm (https://rvm.io) ]########################
   # Rvm color.
   typeset -g POWERLEVEL9K_RVM_FOREGROUND=0
-  typeset -g POWERLEVEL9K_RVM_BACKGROUND=240
+  typeset -g POWERLEVEL9K_RVM_BACKGROUND=7
   # Don't show @gemset at the end.
   typeset -g POWERLEVEL9K_RVM_SHOW_GEMSET=false
   # Don't show ruby- at the front.
@@ -1277,7 +1277,7 @@
 
   ###########[ perlbrew: perl version from perlbrew (https://github.com/gugod/App-perlbrew) ]############
   # Perlbrew color.
-  typeset -g POWERLEVEL9K_PERLBREW_FOREGROUND=67
+  typeset -g POWERLEVEL9K_PERLBREW_FOREGROUND=4
   # Show perlbrew version only when in a perl project subdirectory.
   typeset -g POWERLEVEL9K_PERLBREW_PROJECT_ONLY=true
   # Don't show "perl-" at the front.
@@ -1353,7 +1353,7 @@
   # You can define different colors, icons and content expansions for different classes:
   #
   #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_FOREGROUND=2
-  #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_BACKGROUND=0
+  #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_BACKGROUND=7
   #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_TERRAFORM_TEST_CONTENT_EXPANSION='> ${P9K_CONTENT} <'
   typeset -g POWERLEVEL9K_TERRAFORM_CLASSES=(
@@ -1361,13 +1361,13 @@
       # '*test*'  TEST    # to match your needs. Customize them as needed.
       '*'         OTHER)
   typeset -g POWERLEVEL9K_TERRAFORM_OTHER_FOREGROUND=4
-  typeset -g POWERLEVEL9K_TERRAFORM_OTHER_BACKGROUND=0
+  typeset -g POWERLEVEL9K_TERRAFORM_OTHER_BACKGROUND=7
   # typeset -g POWERLEVEL9K_TERRAFORM_OTHER_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   #############[ terraform_version: terraform version (https://www.terraform.io) ]##############
   # Terraform version color.
   typeset -g POWERLEVEL9K_TERRAFORM_VERSION_FOREGROUND=4
-  typeset -g POWERLEVEL9K_TERRAFORM_VERSION_BACKGROUND=0
+  typeset -g POWERLEVEL9K_TERRAFORM_VERSION_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_TERRAFORM_VERSION_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1505,7 +1505,7 @@
   #[ aws_eb_env: aws elastic beanstalk environment (https://aws.amazon.com/elasticbeanstalk/) ]#
   # AWS Elastic Beanstalk environment color.
   typeset -g POWERLEVEL9K_AWS_EB_ENV_FOREGROUND=2
-  typeset -g POWERLEVEL9K_AWS_EB_ENV_BACKGROUND=0
+  typeset -g POWERLEVEL9K_AWS_EB_ENV_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_AWS_EB_ENV_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1535,7 +1535,7 @@
   # You can define different colors, icons and content expansions for different classes:
   #
   #   typeset -g POWERLEVEL9K_AZURE_TEST_FOREGROUND=2
-  #   typeset -g POWERLEVEL9K_AZURE_TEST_BACKGROUND=0
+  #   typeset -g POWERLEVEL9K_AZURE_TEST_BACKGROUND=7
   #   typeset -g POWERLEVEL9K_AZURE_TEST_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_AZURE_TEST_CONTENT_EXPANSION='> ${P9K_CONTENT} <'
   typeset -g POWERLEVEL9K_AZURE_CLASSES=(
@@ -1659,8 +1659,8 @@
 
   ###############################[ public_ip: public IP address ]###############################
   # Public IP color.
-  typeset -g POWERLEVEL9K_PUBLIC_IP_FOREGROUND=7
-  typeset -g POWERLEVEL9K_PUBLIC_IP_BACKGROUND=0
+  typeset -g POWERLEVEL9K_PUBLIC_IP_FOREGROUND=0
+  typeset -g POWERLEVEL9K_PUBLIC_IP_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_PUBLIC_IP_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1707,7 +1707,7 @@
   #########################[ proxy: system-wide http/https/ftp proxy ]##########################
   # Proxy color.
   typeset -g POWERLEVEL9K_PROXY_FOREGROUND=4
-  typeset -g POWERLEVEL9K_PROXY_BACKGROUND=0
+  typeset -g POWERLEVEL9K_PROXY_BACKGROUND=7
   # Custom icon.
   # typeset -g POWERLEVEL9K_PROXY_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1723,7 +1723,7 @@
   typeset -g POWERLEVEL9K_BATTERY_STAGES='\UF008E\UF007A\UF007B\UF007C\UF007D\UF007E\UF007F\UF0080\UF0081\UF0082\UF0079'
   # Don't show the remaining time to charge/discharge.
   typeset -g POWERLEVEL9K_BATTERY_VERBOSE=false
-  typeset -g POWERLEVEL9K_BATTERY_BACKGROUND=0
+  typeset -g POWERLEVEL9K_BATTERY_BACKGROUND=7
 
   #####################################[ wifi: wifi speed ]#####################################
   # WiFi color.
