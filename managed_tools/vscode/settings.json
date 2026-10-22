@@ -70,7 +70,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.drawBoldTextInBrightColors": false,
-    "terminal.integrated.fontFamily": "'Droid Sans Mono Dotted for Powerline', monospace",
+    "terminal.integrated.fontFamily": "'MesloLGS NF', monospace",
     "ty.inlayHints.callArgumentNames": false,
     "ty.inlayHints.variableTypes": false,
     "update.mode": "start",

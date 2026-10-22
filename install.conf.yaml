@@ -25,6 +25,8 @@
 
     ~/.oh-my-zsh: managed_tools/ohmyzsh
 
+    ~/.p10k.zsh: managed_tools/zsh/p10k.zsh
+
     ~/.tmux.conf: managed_tools/tmux/tmux.conf
     ~/.tmux/plugins/tpm: managed_tools/tpm
 
@@ -39,8 +41,7 @@
       path: managed_tools/vscode/settings.json
 
 - link:
-    ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme:
-      path: managed_tools/bullet-train.zsh/bullet-train.zsh-theme
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: managed_tools/powerlevel10k
 
 - shell:
   -
@@ -58,6 +59,19 @@
   -
     description: Installing Powerline fonts
     command: managed_tools/powerline-fonts/install.sh
+    stdin: true
+    stdout: true
+    stderr: true
+  -
+    description: Installing Meslo Nerd Font
+    command: >-
+      if [ "$(uname)" = "Darwin" ] ; then
+        cp managed_tools/powerlevel10k-media/MesloLGS*.ttf ~/Library/Fonts/ ;
+      else
+        mkdir -p ~/.local/share/fonts &&
+        cp managed_tools/powerlevel10k-media/MesloLGS*.ttf ~/.local/share/fonts/ &&
+        fc-cache -f ~/.local/share/fonts ;
+      fi
     stdin: true
     stdout: true
     stderr: true

@@ -1,24 +1,36 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot.git
-[submodule "managed_tools/bullet-train.zsh"]
-	path = managed_tools/bullet-train.zsh
-	url = https://github.com/caiogondim/bullet-train.zsh.git
+	shallow = true
 [submodule "managed_tools/dircolors-solarized"]
 	path = managed_tools/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+	shallow = true
 [submodule "managed_tools/ohmyzsh"]
 	path = managed_tools/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+	shallow = true
 [submodule "managed_tools/powerline-fonts"]
 	path = managed_tools/powerline-fonts
 	url = https://github.com/powerline/fonts.git
+	shallow = true
 [submodule "managed_tools/tpm"]
 	path = managed_tools/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+	shallow = true
 [submodule "managed_tools/vundle"]
 	path = managed_tools/vundle
 	url = https://github.com/VundleVim/Vundle.vim.git
+	shallow = true
 [submodule "managed_tools/ro-keyboard-layout"]
 	path = managed_tools/ro-keyboard-layout
 	url = https://github.com/SaltwaterC/romanian-programmers-mac.git
+	shallow = true
+[submodule "managed_tools/powerlevel10k"]
+	path = managed_tools/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+	shallow = true
+[submodule "managed_tools/powerlevel10k-media"]
+	path = managed_tools/powerlevel10k-media
+	url = https://github.com/romkatv/powerlevel10k-media.git
+	shallow = true

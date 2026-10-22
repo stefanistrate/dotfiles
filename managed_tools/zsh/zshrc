@@ -23,6 +23,13 @@ if (( $+commands[tmux] )) \
     fi
 fi
 
+# Enable Powerlevel10k instant prompt, which shows the prompt while the rest of this file
+# loads. Code that may need console input (e.g., password prompts, [y/n] confirmations)
+# must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]] ; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Set environment variables.
 export EDITOR="vim"
 export ZSH=~/.oh-my-zsh
@@ -37,19 +44,8 @@ HYPHEN_INSENSITIVE=true
 # Do not throw any error if a pattern for filename generation has no matches.
 unsetopt NOMATCH
 
-# Set theme and configure prompt segments.
-ZSH_THEME="bullet-train"
-BULLETTRAIN_PROMPT_ORDER=(
-    time
-    status
-    custom
-    dir
-    virtualenv
-    git
-    cmd_exec_time
-)
-BULLETTRAIN_TIME_BG=241
-BULLETTRAIN_TIME_FG=254
+# Set theme. Its prompt segments are configured in `p10k.zsh`, loaded below.
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set plugins to load.
 plugins=(
@@ -104,20 +100,10 @@ DISABLE_MAGIC_FUNCTIONS=true
 fpath+=(/opt/homebrew/share/zsh/site-functions(N-/))
 
 # Load `oh-my-zsh`.
-zstyle ':omz:alpha:lib:git' async-prompt no
 source "$ZSH/oh-my-zsh.sh"
 
-# Show the current directory in the prompt with only `$HOME` shortened to `~`, not
-# named directories (e.g., `~/work/...`, not `~work/...`). This replaces the theme's
-# segment and keeps its format: the last 3 parts, prefixed with `...` if there are more.
-prompt_dir() {
-    local dir=${PWD/#$HOME/\~}
-    local -a parts=(${(s:/:)dir})
-    if (( $#parts > 3 )) ; then
-        dir="...${(j:/:)parts[-3,-1]}"
-    fi
-    prompt_segment $BULLETTRAIN_DIR_BG $BULLETTRAIN_DIR_FG ${dir//\%/%%}
-}
+# Configure the Powerlevel10k prompt. Run `p10k configure` to change it.
+source ~/.p10k.zsh
 
 # Map various keys to custom functionality.
 autoload -U history-search-end
