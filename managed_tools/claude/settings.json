@@ -34,7 +34,6 @@
     ],
     "ask": [
       "Bash(gh *)",
-      "Bash(aws *)",
       "Bash(gcloud *)",
       "Bash(gsutil *)",
       "Bash(bq *)",
@@ -82,5 +81,6 @@
       "effortLevel": "high"
     }
   },
-  "theme": "light"
+  "theme": "light",
+  "switchModelsOnFlag": false
 }

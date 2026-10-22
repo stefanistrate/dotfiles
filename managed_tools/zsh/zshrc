@@ -1,4 +1,4 @@
-# Set global configuration.
+# Set the command search path: own tools first, then Homebrew, then the system.
 typeset -U path PATH  # Keep entries unique; the first occurrence wins.
 path=(
     $HOME/.local/bin $HOME/bin $HOME/opt/bin
@@ -9,8 +9,22 @@ path=(
 )
 path=($^path(N-/))  # Drop entries that aren't existing directories.
 export PATH
+
+# Attach to tmux or start it, before the rest of the setup so it isn't loaded twice.
+# Skip it inside tmux, without a terminal, for `zsh -i -c ...`, and in VS Code.
+if (( $+commands[tmux] )) \
+    && [[ -z $TMUX ]] \
+    && [[ -t 0 && -t 1 && -z $ZSH_EXECUTION_STRING ]] \
+    && [[ "$VSCODE_RESOLVING_ENVIRONMENT" != "1" && "$TERM_PROGRAM" != "vscode" ]] ; then
+    if tmux has &> /dev/null ; then
+        exec tmux attach
+    else
+        exec tmux new
+    fi
+fi
+
+# Set environment variables.
 export EDITOR="vim"
-export TERM="xterm-256color"
 export ZSH=~/.oh-my-zsh
 export PIP_REQUIRE_VIRTUALENV=true
 
@@ -30,13 +44,8 @@ BULLETTRAIN_PROMPT_ORDER=(
     status
     custom
     dir
-    perl
-    ruby
     virtualenv
-    go
-    elixir
     git
-    hg
     cmd_exec_time
 )
 BULLETTRAIN_TIME_BG=241
@@ -61,6 +70,9 @@ plugins=(
     # Copy the path of given directory or file to the system clipboard.
     copypath  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath
 
+    # Find the Google Cloud SDK and enable `gcloud` completions.
+    gcloud  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
+
     # Pull `gitignore.io` templates from the command line.
     gitignore  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
 
@@ -79,57 +91,67 @@ plugins=(
     # Add the `ESC + tldr` shortcut to insert `tldr` before the previous command.
     tldr  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tldr
 
-    # Plugins that offer autocompletion, but may be redundant in the current setup.
-    # docker  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
-    # gcloud  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
-    # pip  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/pip
+    # Generate `rclone` completions from the installed version, in case zsh's own
+    # completions miss newer flags.
     # rclone  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/rclone
 )
 
 # Disable `url-quote-magic`.
 DISABLE_MAGIC_FUNCTIONS=true
 
+# Add completions installed by Homebrew (e.g., for `aws`, `brew`, `uv`). They're
+# appended, so zsh's own completions (e.g., for `git`) take precedence.
+fpath+=(/opt/homebrew/share/zsh/site-functions(N-/))
+
 # Load `oh-my-zsh`.
 zstyle ':omz:alpha:lib:git' async-prompt no
 source "$ZSH/oh-my-zsh.sh"
 
-# Load `google-cloud-sdk`.
-if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" ]] ; then
-    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-fi
-if [[ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ]] ; then
-    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-fi
-
-# Enable `uv` completions.
-if which uv &> /dev/null ; then
-    eval "$(uv generate-shell-completion zsh)"
-    eval "$(uvx --generate-shell-completion zsh)"
-fi
+# Show the current directory in the prompt with only `$HOME` shortened to `~`, not
+# named directories (e.g., `~/work/...`, not `~work/...`). This replaces the theme's
+# segment and keeps its format: the last 3 parts, prefixed with `...` if there are more.
+prompt_dir() {
+    local dir=${PWD/#$HOME/\~}
+    local -a parts=(${(s:/:)dir})
+    if (( $#parts > 3 )) ; then
+        dir="...${(j:/:)parts[-3,-1]}"
+    fi
+    prompt_segment $BULLETTRAIN_DIR_BG $BULLETTRAIN_DIR_FG ${dir//\%/%%}
+}
 
 # Map various keys to custom functionality.
-autoload history-search-end
+autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-zmodload zsh/terminfo
-bindkey "$terminfo[kent]" accept-line  # keypad Enter
-bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end  # Up arrow
-bindkey "$terminfo[kcud1]" history-beginning-search-forward-end  # Down arrow
-bindkey "^[[1~" beginning-of-line  # Fn + Left arrow
-bindkey "^[[4~" end-of-line  # Fn + Right arrow
+bindkey "^[OM" accept-line  # keypad Enter
+bindkey "^[OA" history-beginning-search-backward-end  # Up arrow (application mode)
+bindkey "^[[A" history-beginning-search-backward-end  # Up arrow (normal mode)
+bindkey "^[OB" history-beginning-search-forward-end  # Down arrow (application mode)
+bindkey "^[[B" history-beginning-search-forward-end  # Down arrow (normal mode)
+bindkey "^[[H" beginning-of-line  # Home (normal mode)
+bindkey "^[OH" beginning-of-line  # Home (application mode)
+bindkey "^[[1~" beginning-of-line  # Home (tmux)
+bindkey "^[[F" end-of-line  # End (normal mode)
+bindkey "^[OF" end-of-line  # End (application mode)
+bindkey "^[[4~" end-of-line  # End (tmux)
+bindkey "^[[1;3D" backward-word  # Alt + Left arrow (xterm style, e.g., on Linux)
+bindkey "^[[1;3C" forward-word  # Alt + Right arrow (xterm style, e.g., on Linux)
 
 # Raise the open-files soft limit without ever exceeding the hard cap.
 if [[ "$(ulimit -Hn)" = "unlimited" ]] ; then
-  ulimit -Sn 65536           # pick a sane soft limit
+    ulimit -Sn 65536            # pick a sane soft limit
 else
-  ulimit -Sn "$(ulimit -Hn)"  # raise soft limit up to hard limit
+    ulimit -Sn "$(ulimit -Hn)"  # raise soft limit up to hard limit
 fi
 
-# Set colors for the GNU ls utility and for zsh completion.
+# Set colors for the GNU ls utility and for zsh completion. On macOS, this needs GNU
+# coreutils (`gls`, `gdircolors`).
 case "$OSTYPE" in
     darwin*)
-        eval `gdircolors ~/.dircolors`
-        alias ls="gls -F --color=auto --ignore $'Icon\r'"
+        if (( $+commands[gls] )) ; then
+            eval `gdircolors ~/.dircolors`
+            alias ls="gls -F --color=auto --ignore $'Icon\r'"
+        fi
         ;;
     linux*)
         eval `dircolors ~/.dircolors`
@@ -138,14 +160,18 @@ case "$OSTYPE" in
 esac
 zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 
+# Name frequent directories, so that they work in any path (e.g., `cp file ~down/`) and
+# show up shortened in the prompt.
+hash -d work=~/work
+hash -d desk=~/Desktop
+hash -d down=~/Downloads
+
+# Let `cd` find repos in `~/work` from anywhere (e.g., `cd notebooks`). Directories
+# relative to the current one take precedence.
+cdpath=(~/work)
+
 # Define additional aliases and functions.
-
-alias work="cd ~/work"
-alias dotf="cd ~/work/dotfiles"
-alias desk="cd ~/Desktop"
-alias down="cd ~/Downloads"
-alias sysicons="open /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/"
-
+# TODO(stefanistrate): Improve these aliases.
 alias yt="yt-dlp 720p"
 alias -g 480p="--format 'bestvideo[height<=480]+bestaudio'"
 alias -g 720p="--format 'bestvideo[height<=720]+bestaudio'"
@@ -161,18 +187,4 @@ alias -g PLIST="-o '[%(playlist_index)s] %(title)s [%(id)s].%(ext)s'"
 # Enable local settings, which override general settings.
 if [[ -f ~/.zshrc.local ]] ; then
     source ~/.zshrc.local
-fi
-
-# Attach to an existing tmux session or start a new one.
-if [[ "$VSCODE_RESOLVING_ENVIRONMENT" != "1" && "$TERM_PROGRAM" != "vscode" ]] ; then
-    if which tmux &> /dev/null ; then
-        if [[ -z $TMUX ]] ; then
-            tmux has &> /dev/null
-            if [[ $? -eq 1 ]] ; then
-                exec tmux new
-            else
-                exec tmux attach
-            fi
-        fi
-    fi
 fi
