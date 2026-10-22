@@ -105,6 +105,10 @@ source "$ZSH/oh-my-zsh.sh"
 # Configure the Powerlevel10k prompt. Run `p10k configure` to change it.
 source ~/.p10k.zsh
 
+# Fit the prompt colors to the Solarized Light terminal palette. This lives in its own
+# file, since `p10k configure` overwrites `p10k.zsh`.
+source ~/.p10k-solarized.zsh
+
 # Map various keys to custom functionality.
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end

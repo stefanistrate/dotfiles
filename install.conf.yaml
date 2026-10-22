@@ -26,6 +26,7 @@
     ~/.oh-my-zsh: managed_tools/ohmyzsh
 
     ~/.p10k.zsh: managed_tools/zsh/p10k.zsh
+    ~/.p10k-solarized.zsh: managed_tools/zsh/p10k-solarized.zsh
 
     ~/.tmux.conf: managed_tools/tmux/tmux.conf
     ~/.tmux/plugins/tpm: managed_tools/tpm
