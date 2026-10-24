@@ -153,6 +153,7 @@ zstyle ":completion:*" list-colors ${(s.:.)LS_COLORS}
 # Name frequent directories, so that they work in any path (e.g., `cp file ~down/`) and
 # show up shortened in the prompt.
 hash -d work=~/work
+hash -d dotf=~/work/dotfiles
 hash -d desk=~/Desktop
 hash -d down=~/Downloads
 
