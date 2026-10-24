@@ -791,6 +791,8 @@
 			<true/>
 			<key>Draw Powerline Glyphs</key>
 			<true/>
+			<key>Faint Text Alpha (Dark)</key>
+			<real>0.5</real>
 			<key>Faint Text Alpha (Light)</key>
 			<real>0.5</real>
 			<key>Flashing Bell</key>
@@ -962,6 +964,8 @@
 				<key>Red Component</key>
 				<real>0.99697142839431763</real>
 			</dict>
+			<key>Minimum Contrast (Dark)</key>
+			<real>0.40000000000000002</real>
 			<key>Minimum Contrast (Light)</key>
 			<real>0.40000000000000002</real>
 			<key>Mouse Reporting</key>
