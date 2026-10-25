@@ -90,6 +90,8 @@ Plugin 'xolox/vim-session'  " For session management.
 let g:session_autoload='no'
 let g:session_autosave='no'
 
+Plugin 'ryanoasis/vim-devicons'  " For file-type icons.
+
 call vundle#end()  " Required!
 
 colorscheme solarized  " Enable the solarized theme after plugins are loaded.

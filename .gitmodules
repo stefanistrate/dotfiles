@@ -10,10 +10,6 @@
 	path = managed_tools/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 	shallow = true
-[submodule "managed_tools/powerline-fonts"]
-	path = managed_tools/powerline-fonts
-	url = https://github.com/powerline/fonts.git
-	shallow = true
 [submodule "managed_tools/tpm"]
 	path = managed_tools/tpm
 	url = https://github.com/tmux-plugins/tpm.git

@@ -57,12 +57,6 @@
     stdout: true
     stderr: true
   -
-    description: Installing Powerline fonts
-    command: managed_tools/powerline-fonts/install.sh
-    stdin: true
-    stdout: true
-    stderr: true
-  -
     description: Installing Meslo Nerd Font
     command: >-
       if [ "$(uname)" = "Darwin" ] ; then
