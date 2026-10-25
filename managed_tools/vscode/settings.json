@@ -69,7 +69,6 @@
     "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontFamily": "'MesloLGS NF', monospace",
     "ty.inlayHints.callArgumentNames": false,
     "ty.inlayHints.variableTypes": false,
