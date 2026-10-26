@@ -11,11 +11,13 @@ path=($^path(N-/))  # Drop entries that aren't existing directories.
 export PATH
 
 # Attach to tmux or start it, before the rest of the setup so it isn't loaded twice.
-# Skip it inside tmux, without a terminal, for `zsh -i -c ...`, and in VS Code.
+# Skip it inside tmux, without a terminal, for `zsh -i -c ...`, in VS Code, and in
+# Claude Code and the Claude desktop app.
 if (( $+commands[tmux] )) \
     && [[ -z $TMUX ]] \
     && [[ -t 0 && -t 1 && -z $ZSH_EXECUTION_STRING ]] \
-    && [[ "$VSCODE_RESOLVING_ENVIRONMENT" != "1" && "$TERM_PROGRAM" != "vscode" ]] ; then
+    && [[ "$VSCODE_RESOLVING_ENVIRONMENT" != "1" && "$TERM_PROGRAM" != "vscode" ]] \
+    && [[ -z $CLAUDECODE && "$TERM_PROGRAM" != "claude-desktop" ]] ; then
     if tmux has &> /dev/null ; then
         exec tmux attach
     else
