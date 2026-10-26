@@ -1,0 +1,33 @@
+# Pre-commit hooks. Install with `pre-commit install`.
+
+repos:
+  # General file-hygiene checks (community-maintained hooks).
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-json                # Validate JSON syntax.
+      - id: check-yaml                # Validate YAML syntax.
+      - id: check-merge-conflict      # Block leftover merge-conflict markers.
+      - id: check-added-large-files   # Block accidentally committed large files.
+        args: [--maxkb=1024]
+      # `.skill-lock.json` is written by the skills CLI and `p10k.zsh` by
+      # `p10k configure`, so the two whitespace fixers skip them rather than fight the
+      # generators.
+      - id: end-of-file-fixer         # Ensure files end with a single newline.
+        exclude: ^managed_tools/(agents/\.skill-lock\.json|zsh/p10k\.zsh)$
+      - id: trailing-whitespace       # Strip trailing whitespace.
+        exclude: ^managed_tools/(agents/\.skill-lock\.json|zsh/p10k\.zsh)$
+      - id: mixed-line-ending         # Normalize inconsistent line endings.
+      - id: detect-private-key        # Block committing private keys.
+      - id: detect-aws-credentials    # Block committing AWS secrets.
+        args: [--allow-missing-credentials]
+
+  # Secret scanning. Complements detect-private-key/detect-aws-credentials above, which
+  # only match PEM keys and AWS key IDs -- gitleaks also catches JWTs (e.g. API tokens),
+  # provider key prefixes and high-entropy strings. It scans raw file bytes, so it
+  # covers secrets pasted into notebook cell outputs as well as source. `--redact` keeps
+  # matched values out of the hook output.
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
