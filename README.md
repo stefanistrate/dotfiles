@@ -29,6 +29,26 @@ Configs for frequently used tools.
     chsh -s $(which zsh)
     ```
 
+## Development
+
+Install [pre-commit](https://pre-commit.com) (e.g. `brew install pre-commit`), then install the git hooks so file-hygiene and secret-scanning checks run automatically before each commit:
+
+```bash
+pre-commit install
+```
+
+Run all hooks on demand against every file in the repo:
+
+```bash
+pre-commit run --all-files
+```
+
+Bump the hook versions in [`.pre-commit-config.yaml`](.pre-commit-config.yaml) with:
+
+```bash
+pre-commit autoupdate
+```
+
 ## Licenses
 
 Configs are licensed under the [MIT License](LICENSE.md) by Ștefan Istrate, except for...
