@@ -1810,6 +1810,10 @@
   #               typed after changing current working directory.
   typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=off
 
+  # Mark where each prompt starts (OSC 133), so tmux can jump between prompts in its
+  # scrollback.
+  typeset -g POWERLEVEL9K_TERM_SHELL_INTEGRATION=true
+
   # Instant prompt mode.
   #
   #   - off:     Disable instant prompt. Choose this if you've tried instant prompt and found
