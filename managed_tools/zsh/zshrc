@@ -156,6 +156,9 @@ hash -d down=~/Downloads
 # relative to the current one take precedence.
 cdpath=(~/work)
 
+# Clear the screen but keep the scrollback, which newer ncurses (e.g., on Linux) wipes.
+alias clear="clear -x"
+
 # Define additional aliases and functions.
 # TODO(stefanistrate): Improve these aliases.
 alias yt="yt-dlp 720p"
