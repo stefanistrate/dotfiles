@@ -122,6 +122,15 @@ bindkey "^[[4~" end-of-line  # End (tmux)
 bindkey "^[[1;3D" backward-word  # Alt + Left arrow (xterm style, e.g., on Linux)
 bindkey "^[[1;3C" forward-word  # Alt + Right arrow (xterm style, e.g., on Linux)
 
+# Turn off mouse and focus reporting before each prompt, in case a program (e.g., vim,
+# Claude Code, or one over a dropped SSH connection) left them on and mouse moves or
+# window switches show up as `0;112;31M` or `^[[I` at the prompt.
+_reset_terminal_reporting() {
+    printf '\e[?1000l\e[?1002l\e[?1003l\e[?1006l\e[?1015l\e[?1004l'
+}
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd _reset_terminal_reporting
+
 # Raise the open-files soft limit without ever exceeding the hard cap.
 if [[ "$(ulimit -Hn)" = "unlimited" ]] ; then
     ulimit -Sn 65536            # pick a sane soft limit
