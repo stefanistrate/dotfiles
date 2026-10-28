@@ -124,9 +124,14 @@ bindkey "^[[1;3C" forward-word  # Alt + Right arrow (xterm style, e.g., on Linux
 
 # Turn off mouse and focus reporting before each prompt, in case a program (e.g., vim,
 # Claude Code, or one over a dropped SSH connection) left them on and mouse moves or
-# window switches show up as `0;112;31M` or `^[[I` at the prompt.
+# window switches show up as `0;112;31M` or `^[[I` at the prompt. Skip the first prompt:
+# the shell starts clean, and Powerlevel10k's instant prompt reports any output before
+# then as a startup problem.
 _reset_terminal_reporting() {
-    printf '\e[?1000l\e[?1002l\e[?1003l\e[?1006l\e[?1015l\e[?1004l'
+    if (( $+_terminal_reporting_armed )) ; then
+        printf '\e[?1000l\e[?1002l\e[?1003l\e[?1006l\e[?1015l\e[?1004l'
+    fi
+    typeset -g _terminal_reporting_armed=1
 }
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd _reset_terminal_reporting
