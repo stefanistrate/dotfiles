@@ -9,6 +9,38 @@ set encoding=utf-8
 set nocompatible  " Disable vi compatibility.
 set history=1024  " Number of items to remember in history.
 set clipboard=unnamed  " Copy to/from the system clipboard.
+" Over ssh there is no system clipboard, so send yanks to the local terminal with OSC 52
+" (through tmux, see tmux.conf) and let it put them on the macOS clipboard.
+if !empty($SSH_CONNECTION) && exists('v:clipproviders')
+  " Vim 9.2 and later: use the bundled clipboard provider.
+  let g:osc52_force_avail = 1  " tmux answers the OSC 52 support probe itself, wrongly.
+  let g:osc52_disable_paste = 1  " iTerm2 ignores OSC 52 reads, so p would hang; p uses
+                                 " the last yank instead.
+  packadd osc52
+  set clipmethod=osc52
+elseif !empty($SSH_CONNECTION) && exists('##TextYankPost')
+  " Vim 8.0.1394 and later: send each yank into the unnamed, * or + register ourselves.
+  " Deletes are left out, so dd and x don't overwrite the macOS clipboard.
+  function! s:Osc52Yank() abort
+    if v:event.operator !=# 'y' || index(['', '*', '+'], v:event.regname) < 0
+      return
+    endif
+    let l:text = join(v:event.regcontents, "\n")
+    if v:event.regtype ==# 'V'
+      let l:text .= "\n"
+    endif
+    let l:seq = "\e]52;c;" . system('base64 | tr -d "\n"', l:text) . "\x07"
+    if exists('*echoraw')
+      call echoraw(l:seq)
+    else
+      call writefile([l:seq], '/dev/tty', 'b')
+    endif
+  endfunction
+  augroup Osc52Yank
+    autocmd!
+    autocmd TextYankPost * call s:Osc52Yank()
+  augroup END
+endif
 set undolevels=1000  " 1000 undos.
 set updatecount=100  " Write the swap file to disk after typing 100 characters.
 
