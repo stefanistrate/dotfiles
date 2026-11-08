@@ -5743,6 +5743,8 @@
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<true/>
+	<key>PassOnControlClick</key>
+	<true/>
 	<key>PasteTabToStringTabStopSize</key>
 	<integer>4</integer>
 	<key>PointerActions</key>
@@ -5755,7 +5757,7 @@
 		<key>Button,2,1,,</key>
 		<dict>
 			<key>Action</key>
-			<string>kPasteFromSelectionPointerAction</string>
+			<string>kPasteFromClipboardPointerAction</string>
 		</dict>
 		<key>Gesture,ThreeFingerSwipeDown,,</key>
 		<dict>
@@ -5783,6 +5785,8 @@
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
+	<true/>
+	<key>ReportRightClick</key>
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
