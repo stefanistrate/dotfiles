@@ -28,6 +28,9 @@
     ~/.p10k.zsh: managed_tools/zsh/p10k.zsh
 
     ~/.tmux.conf: managed_tools/tmux/tmux.conf
+    ~/.tmux/gpu_usage.sh:
+      if: '[ `uname` = Darwin ]'
+      path: managed_tools/tmux/gpu_usage.sh
     ~/.tmux/plugins/tpm: managed_tools/tpm
 
     ~/.vimrc: managed_tools/vim/vimrc
